@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styling/NavigationBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -111,7 +112,11 @@ function NavigationBar() {
         <div className="container">
           <div className="row">
             <div className="col-xs-12 big-logo-container">
-              <h1 className="big-logo">↧ upVisionMedia</h1>
+              <Link className="bigLogo-link" to="/home">
+                <h1 className="big-logo" href="/home">
+                  ↧ upVisionMedia
+                </h1>
+              </Link>
             </div>
           </div>
         </div>

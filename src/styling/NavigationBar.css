@@ -40,10 +40,6 @@
     color: #22f;
 }
 
-ul.nav {
-    /* Add any custom styles for ul.nav here if needed */
-}
-
 /* *********************************
            Toolbar Logo
   ********************************** */
@@ -80,6 +76,13 @@ h1.big-logo {
     font-size: 4em;
     margin: 0;
     padding: 0 0 var(--big-logo-padding) 0;
+}
+
+.bigLogo-link,
+.bigLogo-link:hover
+{
+    text-decoration: none;
+    color: #000000;
 }
 
 @media (min-width: 300px) {
