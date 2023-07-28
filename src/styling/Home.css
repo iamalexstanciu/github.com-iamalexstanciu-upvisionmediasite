@@ -53,13 +53,14 @@
     width: 35%;
     justify-content: center;
     position: relative;
+    top: 10%;
 }
 
 .right-side-home img {
-    width: 100%;
+    width: 90%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 
     .left-side-home {
             display: flex;
