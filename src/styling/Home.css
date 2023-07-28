@@ -1,0 +1,37 @@
+.container-home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: "Major Mono Display";
+    font-weight: 400;
+    word-spacing: 4px;
+    background-image: url("../assets//home-page-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+    min-height: 67vh;
+    height: 67vh;
+}
+
+.left-side-home {
+    display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    color: yellow !important;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.right-side-home {
+    max-width: 50%;
+    width: 35%;
+    justify-content: center;
+    position: relative;
+    right: 5%;
+}
+
+.right-side-home img {
+    width: 100%;
+}
