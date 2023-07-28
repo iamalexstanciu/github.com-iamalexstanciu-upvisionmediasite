@@ -58,3 +58,47 @@
 .right-side-home img {
     width: 100%;
 }
+
+@media (max-width: 991px) {
+
+    .left-side-home {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            color: yellow !important;
+            justify-content: center;
+            justify-items: center;
+            height: 50%;
+            font-family: monospace;
+            max-height: 55%;
+            align-items: center;
+            width: 55%;
+            max-width: 80%;
+            position: relative;
+            top: 20%;
+            left: 0%;
+    
+        }
+    
+        .left-side-home button {
+            background-color: rgba(85, 85, 85, 0.678);
+            text-decoration: none;
+            color: gold;
+            font-family: monospace;
+            border-radius: 5%;
+            border: none;
+            width: 40vw;
+            position: relative;
+            top: 70%;
+            height: 10vh;
+            font-size: 25px;
+    
+        }
+    
+    
+        .right-side-home {
+            display: none;
+        }
+    
+
+}

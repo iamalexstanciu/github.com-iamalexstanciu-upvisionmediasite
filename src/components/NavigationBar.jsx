@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../styling/NavigationBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 function NavigationBar() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -22,19 +21,23 @@ function NavigationBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const navbarHeight = document.querySelector(".navbar").clientHeight;
+      const navbarElement = document.querySelector(".navbar");
       const smallLogoContainer = document.querySelector(
         ".small-logo-container"
       );
-      const smallLogoHeight =
-        document.querySelector(".small-logo").clientHeight;
+      const smallLogoElement = document.querySelector(".small-logo");
 
-      if (window.scrollY > navbarHeight) {
-        setIsSticky(true);
-        smallLogoContainer.style.paddingTop = `${smallLogoHeight}px`;
-      } else {
-        setIsSticky(false);
-        smallLogoContainer.style.paddingTop = `${navbarHeight}px`;
+      if (navbarElement && smallLogoContainer && smallLogoElement) {
+        const navbarHeight = navbarElement.clientHeight;
+        const smallLogoHeight = smallLogoElement.clientHeight;
+
+        if (window.scrollY > navbarHeight) {
+          setIsSticky(true);
+          smallLogoContainer.style.paddingTop = `${smallLogoHeight}px`;
+        } else {
+          setIsSticky(false);
+          smallLogoContainer.style.paddingTop = `${navbarHeight}px`;
+        }
       }
     };
 
@@ -52,7 +55,10 @@ function NavigationBar() {
     <>
       {isMobile ? (
         <div className={`mobile-navbar ${menuIsOpen ? "open" : ""}`}>
-          <button className="navbar-toggle" onClick={openMenu}>
+          <button
+            className="navbar-toggle"
+            style={{ zIndex: "10" }}
+            onClick={openMenu}>
             {" "}
             |||
           </button>
@@ -112,7 +118,9 @@ function NavigationBar() {
       <div className="container-fluid big-logo-row">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 big-logo-container">
+            <div
+              className="col-xs-12 big-logo-container"
+              style={{ zIndex: "1" }}>
               <Link className="bigLogo-link" to="/home">
                 <h1 className="big-logo" href="/home">
                   ↧ upVisionMedia
