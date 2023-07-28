@@ -3,24 +3,48 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    font-family: "Major Mono Display";
     font-weight: 400;
     word-spacing: 4px;
-    background-image: url("../assets//home-page-background.jpg");
+    background: url("../assets/gif-back-home.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 100%;
-    min-height: 67vh;
-    height: 67vh;
+    max-height: 700%;
+    min-height: 80vh;
+    height: 70vh;
 }
 
 .left-side-home {
     display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     color: yellow !important;
     justify-content: center;
     justify-items: center;
+    height: 50%;
+    font-family: monospace;
+    max-height: 55%;
+    align-items: center;
+    width: 55%;
+    max-width: 80%;
+    position: relative;
+    top: 15%;
+    left: 0%;
+
+}
+
+.left-side-home button {
+    background-color: black;
+    text-decoration: none;
+    color: gold;
+    font-family: monospace;
+    border-radius: 5%;
+    border: none;
+    width: 15vw;
+    position: relative;
+    top: 50%;
+    height: 7vh;
+    font-size: 25px;
+
 }
 
 
@@ -29,7 +53,6 @@
     width: 35%;
     justify-content: center;
     position: relative;
-    right: 5%;
 }
 
 .right-side-home img {
