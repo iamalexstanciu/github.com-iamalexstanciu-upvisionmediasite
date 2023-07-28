@@ -82,6 +82,12 @@ h1.big-logo {
     padding: 0 0 var(--big-logo-padding) 0;
 }
 
+@media (min-width: 300px) {
+    h1.big-logo {
+        font-size: 2.5em;
+    }
+}
+
 @media (min-width: 400px) {
     h1.big-logo {
         font-size: 3em;
