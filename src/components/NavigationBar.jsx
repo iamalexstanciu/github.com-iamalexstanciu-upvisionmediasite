@@ -64,10 +64,10 @@ function NavigationBar() {
           </button>
           <div className="menu-items">
             <ul className="menu-items-links">
-              <a href="/services">Services</a>
-              <a href="/clients">Clients</a>
-              <a href="/contact">Contact</a>
-              <a href="/about">About Us</a>
+              <a href="/services">services</a>
+              <a href="/clients">clients</a>
+              <a href="/contact">contact</a>
+              <a href="/about">about us</a>
             </ul>
           </div>
         </div>
@@ -98,16 +98,16 @@ function NavigationBar() {
             <div className="navbar-collapse collapse">
               <ul className="nav navbar-nav navbar-right">
                 <li className="active">
-                  <a href="/services">Services</a>
+                  <a href="/services">services</a>
                 </li>
                 <li>
-                  <a href="/clients">Clients</a>
+                  <a href="/clients">clients</a>
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
+                  <a href="/contact">contact</a>
                 </li>
                 <li>
-                  <a href="/about">About Us</a>
+                  <a href="/about">about us</a>
                 </li>
               </ul>
             </div>

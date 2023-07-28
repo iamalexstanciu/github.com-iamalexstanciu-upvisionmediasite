@@ -1,0 +1,16 @@
+.contact-form {
+    background-color: black;
+    width: 800px;
+    height: 300px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+
+}
+
+.contact-form input {
+    z-index: 100000;
+    color: black;
+}
