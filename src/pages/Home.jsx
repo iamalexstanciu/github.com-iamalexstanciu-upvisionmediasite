@@ -8,10 +8,7 @@ function Home() {
     <div className="container-home">
       <div className="left-side-home">
         <h1>Your business, our priority.</h1>
-        <h3>
-          "Unleash Your Digital Potential. Welcome to upvisionMedia. Crafting
-          Digital Brilliance Together."
-        </h3>
+        <h3>"Unleash Your Digital Potential. Welcome to upvisionMedia."</h3>
         <Link to="/contact">
           <button className="contact-homepage">Let's Begin!</button>
         </Link>

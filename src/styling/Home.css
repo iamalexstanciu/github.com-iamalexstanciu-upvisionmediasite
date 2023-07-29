@@ -5,19 +5,17 @@
     justify-content: center;
     font-weight: 400;
     word-spacing: 4px;
-    background: url("../assets/gif-back-home.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 700%;
-    min-height: 80vh;
-    height: 70vh;
+    height: 80vh;
 }
 
 .left-side-home {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    color: yellow !important;
+    color: rgb(133, 133, 133) !important;
+    text-shadow: 1px 1px 2px rgb(184, 187, 2);
     justify-content: center;
     justify-items: center;
     height: 50%;
@@ -32,19 +30,43 @@
 
 }
 
-.left-side-home button {
-    background-color: black;
-    text-decoration: none;
-    color: gold;
-    font-family: monospace;
-    border-radius: 5%;
-    border: none;
-    width: 15vw;
-    position: relative;
+.contact-homepage {
+    background-color: gold;
+    border: 2px solid #303030;
+    border-radius: 30px;
+    box-shadow: #a0a0a0 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    letter-spacing: 3px;
     top: 50%;
-    height: 7vh;
-    font-size: 25px;
+    position: relative;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
 
+.contact-homepage:hover {
+    background-color: #070705;
+    color: gold;
+}
+
+.contact-homepage:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .contact-homepage {
+        min-width: 120px;
+        padding: 0 25px;
+    }
 }
 
 
@@ -62,6 +84,10 @@
 
 @media (max-width: 768px) {
 
+.container-home {
+    height: 90vh;
+}
+
     .left-side-home {
             display: flex;
             flex-direction: column;
@@ -74,7 +100,6 @@
             max-height: 55%;
             align-items: center;
             width: 55%;
-            max-width: 80%;
             position: relative;
             top: 20%;
             left: 0%;
@@ -103,3 +128,8 @@
     
 
 }
+
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/compass/1.0.3/css3.min.css');
+

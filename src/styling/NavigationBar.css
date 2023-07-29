@@ -52,6 +52,7 @@
     height: var(--navbar-height);
     overflow: hidden;
     position: absolute;
+    text-decoration: none !important;
 }
 
 .small-logo {
@@ -59,10 +60,16 @@
     font-size: 2.5em;
     padding-bottom: var(--small-logo-padding);
     transition: padding-bottom 0.2s ease-in-out;
+    text-decoration: none !important; 
 }
 
 .small-logo-container.sticky .small-logo {
     padding-bottom: 0;
+}
+
+.small-logo:hover {
+    text-decoration: none !important;
+    color: black;
 }
 
 /* *********************************
@@ -85,7 +92,7 @@ h1.big-logo {
 .bigLogo-link,
 .bigLogo-link:hover
 {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #000000;
 }
 

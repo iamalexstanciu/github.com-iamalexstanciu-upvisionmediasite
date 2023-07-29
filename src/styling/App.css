@@ -5,4 +5,7 @@
   font-family: "Major Mono Display";
 }
 
-
+html,
+body {
+  background: #111;
+}
