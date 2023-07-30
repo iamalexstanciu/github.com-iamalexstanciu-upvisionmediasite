@@ -15,9 +15,9 @@ function Home() {
               "Your business, our priority.",
               "Unleash Your Digital Potential.",
             ]}
-            loop={5}
+            loop={200}
             cursor
-            cursorStyle="_"
+            cursorStyle="|"
             typeSpeed={200}
             deleteSpeed={50}
             delaySpeed={1000}
@@ -34,7 +34,7 @@ function Home() {
         </Link>
       </div>
       <div className="right-side-home">
-        <img src={HomeBannerImage} alt="home upvision media banner" />
+        <img className="imageHomePagePresentation" src={HomeBannerImage} alt="home upvision media banner" />
       </div>
     </div>
   );

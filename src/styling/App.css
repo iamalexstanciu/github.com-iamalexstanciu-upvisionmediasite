@@ -1,11 +1,21 @@
-
+:root {
+  --red: #FE0000;
+  --dark: #7D7463;
+  --light: #A8A196;
+  --creme: #F4E0B9;
+  --black: #000000;
+  --green: #41644A;
+  --darkGreen: #1A4D2E;
+  --orange: #FF9F29;
+}
 
 .App {
   text-align: center;
+  color: 4C3D3D;
   font-family: "Major Mono Display";
 }
 
 html,
 body {
-  background: #000000;
+  background: var(--red);
 }

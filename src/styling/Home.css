@@ -5,27 +5,28 @@
     justify-content: center;
     font-weight: 400;
     word-spacing: 4px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
+    width: 100%;
+    max-width: 100vw;
+    max-height: 100%;
+    height: 100%;
 }
 
 .left-side-home {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    color: rgb(133, 133, 133) !important;
-    text-shadow: 1px 1px 2px rgb(184, 187, 2);
+    color: var(--black);
+    text-shadow: 1px 1px 1px var(--dark);
     justify-content: center;
     justify-items: center;
-    height: 50%;
     font-family: monospace;
     max-height: 55%;
     align-items: center;
-    width: 55%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 50vw;
+    max-height: 90vh;
     position: relative;
-    top: 15%;
+    top: 20% ;
     left: 0%;
 
 }
@@ -33,15 +34,15 @@
 .h4TextHomepage {
     font-size: 20px;
     text-align: center;
-    
+
 }
 
 .contact-homepage {
-    background-color: gold;
-    border: 2px solid #303030;
+    background-color: A8A196;
+    border: 2px solid var(--black);
     border-radius: 30px;
-    box-shadow: #a0a0a0 4px 4px 0 0;
-    color: #422800;
+    box-shadow: var(--light) 4px 4px 0 0;
+    color: var(--dark);
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
@@ -59,33 +60,34 @@
 }
 
 .contact-homepage:hover {
-    background-color: #070705;
-    color: gold;
+    background-color: var(--black);
+    color: var(--light);
 }
 
 .contact-homepage:active {
-    box-shadow: #422800 2px 2px 0 0;
+    box-shadow: var(--dark) 2px 2px 0 0;
     transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-    .contact-homepage {
-        min-width: 120px;
-        padding: 0 25px;
-    }
 }
 
 
 .right-side-home {
-    max-width: 50%;
+    max-width: 60%;
     width: 35%;
+    height: 70%;
     justify-content: center;
     position: relative;
-    top: 10%;
+    top: 30%;
 }
 
 .right-side-home img {
-    width: 90%;
+    width: 100%;
+    -webkit-transition: opacity 2s linear;
+        -moz-transition: opacity 2s linear;
+        transition: opacity 2s linear;
+}
+
+.right-side-home img:hover {
+    opacity: 0.5;
 }
 
 @media (max-width: 768px) {
@@ -98,7 +100,6 @@
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            color: yellow !important;
             justify-content: center;
             justify-items: center;
             height: 50%;
@@ -109,21 +110,6 @@
             position: relative;
             top: 20%;
             left: 0%;
-    
-        }
-    
-        .left-side-home button {
-            background-color: rgba(85, 85, 85, 0.678);
-            text-decoration: none;
-            color: gold;
-            font-family: monospace;
-            border-radius: 5%;
-            border: none;
-            width: 40vw;
-            position: relative;
-            top: 70%;
-            height: 10vh;
-            font-size: 25px;
     
         }
     
