@@ -2,13 +2,33 @@ import React from "react";
 import "../styling/Home.css";
 import { Link } from "react-router-dom";
 import HomeBannerImage from "../assets/upvisionMediaHomePageBanner.png";
+import { Typewriter } from "react-simple-typewriter";
 
 function Home() {
   return (
     <div className="container-home">
       <div className="left-side-home">
-        <h1>Your business, our priority.</h1>
-        <h3>"Unleash Your Digital Potential. Welcome to upvisionMedia."</h3>
+        <h1 className="animatedTextHome">
+          <Typewriter
+            words={[
+              "Welcome to upvisionMedia.",
+              "Your business, our priority.",
+              "Unleash Your Digital Potential.",
+            ]}
+            loop={5}
+            cursor
+            cursorStyle="_"
+            typeSpeed={200}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </h1>
+        <h4 className="h4TextHomepage">
+          Ready to take your web presence to new heights?
+        </h4>
+        <h4 className="h4TextHomepage">
+          Collaborate with us for cutting-edge web solutions.
+        </h4>
         <Link to="/contact">
           <button className="contact-homepage">Let's Begin!</button>
         </Link>
