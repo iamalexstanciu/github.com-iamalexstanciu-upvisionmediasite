@@ -4,9 +4,10 @@
   --light: #A8A196;
   --creme: #F4E0B9;
   --black: #000000;
-  --green: #41644A;
+  --purple: #DAA6E2;
   --darkGreen: #1A4D2E;
   --orange: #FF9F29;
+  --lightGreen: #AEE2A6;
 }
 
 .App {
@@ -17,5 +18,5 @@
 
 html,
 body {
-  background: var(--red);
+  background: var(--purple);
 }

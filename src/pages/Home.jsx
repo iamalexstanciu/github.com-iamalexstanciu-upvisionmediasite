@@ -1,7 +1,7 @@
 import React from "react";
 import "../styling/Home.css";
 import { Link } from "react-router-dom";
-import HomeBannerImage from "../assets/upvisionMediaHomePageBanner.png";
+import HomeBannerImage from "../assets/upvisionMediaHomePageBanner2.png";
 import { Typewriter } from "react-simple-typewriter";
 
 function Home() {
