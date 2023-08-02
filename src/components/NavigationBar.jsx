@@ -31,7 +31,7 @@ function NavigationBar() {
         const navbarHeight = navbarElement.clientHeight;
         const smallLogoHeight = smallLogoElement.clientHeight;
 
-        if (window.scrollY > navbarHeight) {
+        if (window.scrollY > navbarHeight + 150) {
           setIsSticky(true);
           smallLogoContainer.style.paddingTop = `${smallLogoHeight}px`;
         } else {
@@ -79,16 +79,6 @@ function NavigationBar() {
           role="navigation">
           <div className="container">
             <div className="navbar-header">
-              <button
-                type="button"
-                className="navbar-toggle"
-                data-toggle="collapse"
-                data-target=".navbar-collapse">
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar" />
-                <span className="icon-bar" />
-                <span className="icon-bar" />
-              </button>
               <div className="small-logo-container">
                 <a className="small-logo" href="/home">
                   ↥ upVisionMedia
