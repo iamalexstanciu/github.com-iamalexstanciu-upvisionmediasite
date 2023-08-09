@@ -17,10 +17,12 @@ const AnimatedRoutes = withRouter(({ location }) => (
         exit: 400,
       }}
       classNames="page"
-      unmountOnExit>
+      unmountOnExit
+    >
       <Routes location={location}>
         <Route exact path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        
         <Route path="/services" element={<Services />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/contact" element={<Contact />} />

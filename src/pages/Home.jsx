@@ -30,11 +30,19 @@ function Home() {
           Collaborate with us for cutting-edge web solutions.
         </h4>
         <Link to="/contact">
-          <button className="contact-homepage">Let's Begin!</button>
+          <div className="container2">
+            <div className="neumor">
+              <p></p>
+            </div>
+          </div>
         </Link>
       </div>
       <div className="right-side-home">
-        <img className="imageHomePagePresentation" src={HomeBannerImage} alt="home upvision media banner" />
+        <img
+          className="imageHomePagePresentation"
+          src={HomeBannerImage}
+          alt="home upvision media banner"
+        />
       </div>
     </div>
   );
