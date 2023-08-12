@@ -3,6 +3,7 @@
   --dark: #393E46;
   --orange: #F96D00;
   --white: #F2F2F2;
+  --grey:#DBD8E3;
  
   
 }
@@ -15,5 +16,5 @@
 
 html,
 body {
-  background: var(--white);
+  background: var(--grey);
 }

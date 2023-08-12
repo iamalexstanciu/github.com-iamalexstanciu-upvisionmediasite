@@ -176,7 +176,7 @@
 
 .container .card .face.face1 {
     position: relative;
-    background: var(--black);
+    background: #07031A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +185,7 @@
 }
 
 .container .card:hover .face.face1 {
-    background: #DBD8E3;
+    background: var(--black);
     transform: translateY(0);
 }
 
