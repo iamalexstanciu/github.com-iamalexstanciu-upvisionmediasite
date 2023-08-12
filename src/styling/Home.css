@@ -22,52 +22,86 @@
     font-family: monospace;
     max-height: 55%;
     align-items: center;
-    width: 100%;
+    width: 80%;
     max-width: 50vw;
     max-height: 90vh;
     position: relative;
-    top: 20% ;
+    top: 25%;
     left: 0%;
 
 }
 
-.h4TextHomepage {
+.text-content {
+    position: relative;
+    flex: 1;
+    display: flex;
+    padding: 10%;
+    border-radius: 40px 40px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     text-align: center;
-
 }
 
-.contact-homepage {
-    background-color: A8A196;
-    border: 2px solid var(--black);
-    border-radius: 30px;
-    box-shadow: var(--light) 4px 4px 0 0;
-    color: var(--dark);
-    cursor: pointer;
+
+/* Design button homepage */
+
+
+.circle-button {
     display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
-    letter-spacing: 3px;
-    top: 50%;
     position: relative;
-    line-height: 50px;
+        top: -30%;
+        left: 25%;
+        transform: translate(100%, 0);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: var();
+    font-size: 14px;
     text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    line-height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.contact-homepage:hover {
-    background-color: var(--black);
-    color: var(--light);
+.circle-button:hover {
+    width: 200px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: var(--white);
+    font-size: 16px;
+    box-shadow: 5px 5px 2px 1px var(--orange);
 }
 
-.contact-homepage:active {
-    box-shadow: var(--dark) 2px 2px 0 0;
-    transform: translate(2px, 2px);
+.arrow {
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    width: 15px;
+    transform: rotate(30deg);
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transition: all 0.3s ease;
 }
+
+.circle-button:hover .arrow {
+    display: none;
+}
+
+.circle-button:hover::before {
+    content: "Let's Begin!";
+    display: block;
+    top: -25%;
+    left: 20%;
+    position: absolute;
+    font-size: 20px;
+    color: var(--black);
+}
+
+
 
 
 .right-side-home {
@@ -89,6 +123,7 @@
 .right-side-home img:hover {
     opacity: 0.5;
 }
+
 
 @media (max-width: 768px) {
 
@@ -120,58 +155,4 @@
     
 
 }
-.container2 {
-    width: 260px;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60px;
-    background: linear-gradient(145deg, #3e3e3e, #343434);
-    ;
-    box-shadow: 5px 5px 20px #282828,
-        -5px -5px 20px #4c4c4c;
-}
-.container2 .neumor {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #3e3e3e, #343434);
-    box-shadow: 5px 5px 20px #282828,
-        -5px -5px 20px #4c4c4c;
-}
-
-
-.container2 .neumor:hover {
-    box-shadow: inset 5px 5px 20px #282828,
-        inset -5px -5px 20px #4c4c4c;
-}
-
-.container2 .neumor p {
-    text-transform: uppercase;
-    color: var(--lightGreen);
-    text-shadow: 5px 5px 20px #282828,
-        -5px -5px 20px #4c4c4c;
-    font-size: 15px;
-    font-weight: 900;
-}
-
-.container2 .neumor p::after {
-    content: "HOVER ME!";
-}
-
-.container2 .neumor:hover p {
-    transform: rotate(360deg) scale(0.8);
-    transition: all 0.3s;
-}
-
-.container2 .neumor:hover p::after {
-    content: "CONTACT US!";
-}
-
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/compass/1.0.3/css3.min.css');
 

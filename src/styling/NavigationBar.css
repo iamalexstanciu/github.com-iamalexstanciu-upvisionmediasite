@@ -75,7 +75,7 @@
            Big Logo
   ********************************** */
 .big-logo-row {
-    background: #5B9A8B;
+    background: var(--orange);
 }
 
 .big-logo-container {

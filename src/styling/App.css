@@ -1,12 +1,12 @@
 :root {
-  --red: #FE0000;
+  --red: #CF0A0A;
   --dark: #7D7463;
   --light: #A8A196;
-  --creme: #F4E0B9;
+  --white: #EEEEEE;
   --black: #000000;
   --purple: #DAA6E2;
   --darkGreen: #1A4D2E;
-  --orange: #FF9F29;
+  --orange: #DC5F00;
   --lightGreen: #AEE2A6;
 }
 
@@ -18,5 +18,5 @@
 
 html,
 body {
-  background: #252B48;
+  background: var(--white);
 }
