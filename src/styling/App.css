@@ -1,13 +1,10 @@
 :root {
-  --red: #CF0A0A;
-  --dark: #7D7463;
-  --light: #A8A196;
-  --white: #EEEEEE;
-  --black: #000000;
-  --purple: #DAA6E2;
-  --darkGreen: #1A4D2E;
-  --orange: #DC5F00;
-  --lightGreen: #AEE2A6;
+ --black:#222831;
+  --dark: #393E46;
+  --orange: #F96D00;
+  --white: #F2F2F2;
+ 
+  
 }
 
 .App {

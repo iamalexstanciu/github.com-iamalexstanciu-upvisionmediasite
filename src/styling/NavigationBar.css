@@ -34,7 +34,7 @@
 }
 
 .navbar-inverse .navbar-nav>li>a {
-     color: var(--black);
+     color: var(--orange);
 }
 
 .navbar-inverse .navbar-nav>li>a:hover,
@@ -75,7 +75,7 @@
            Big Logo
   ********************************** */
 .big-logo-row {
-    background: var(--orange);
+    background: var(--black);
 }
 
 .big-logo-container {
@@ -85,7 +85,7 @@
 h1.big-logo {
     font-size: 4em;
     margin: 0;
-    color: var(--black);
+    color: var(--orange);
     padding: 0 0 var(--big-logo-padding) 0;
 }
 

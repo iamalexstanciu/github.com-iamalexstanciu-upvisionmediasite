@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import "../styling/NavigationBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import zIndex from "@mui/material/styles/zIndex";
-
+import { orange } from "@mui/material/colors";
+import Animation from "../pages/Cards";
 function NavigationBar() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -54,6 +55,7 @@ function NavigationBar() {
 
   return (
     <>
+    
       {isMobile ? (
         <div className={`mobile-navbar ${menuIsOpen ? "open" : ""}`}>
           <button
