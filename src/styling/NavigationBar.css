@@ -27,7 +27,6 @@
 .navbar-inverse .navbar-form {
     border-color: transparent;
 }
-
 @media (max-width: 767px) {
     .navbar-inverse .navbar-collapse {
         background: rgba(255, 255, 255, 0.75);

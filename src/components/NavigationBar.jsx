@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styling/NavigationBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import zIndex from "@mui/material/styles/zIndex";
 
 function NavigationBar() {
   const [isSticky, setIsSticky] = useState(false);
@@ -76,7 +77,7 @@ function NavigationBar() {
           className={`navbar navbar-inverse navbar-fixed-top ${
             isSticky ? "sticky" : ""
           }`}
-          role="navigation">
+          role="navigation" >
           <div className="container">
             <div className="navbar-header">
               <div className="small-logo-container">
