@@ -3,8 +3,9 @@
 
 
 .about-container{
-    display: grid;
-    grid-template-rows: 30% 70%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .header {
@@ -18,8 +19,6 @@
     color: var(--dark);
     font-family: 'Kegina', sans-serif;
 }
-
-
 
 .divider {
     background-color: var(--dark);
@@ -39,9 +38,14 @@ grid-template-columns: repeat(3, 1fr);
 }
 
 .first-card {
-background-color: aqua;
+background: rgba(239, 95, 0, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(239, 95, 0, 0.075);
 display: grid;
-width: 100%;
+max-width: fit-content;
+width: 80%;
+max-height: fit-content;
 height: 100%;
 position: relative;
 top: 15%;
@@ -56,6 +60,9 @@ justify-items: center;
 .first-card h4{
 
 font-family: 'Kegina', sans-serif;
+font-style: bold;
+font-weight: 900;
+color: var(--dark);
 
 }
 
@@ -67,15 +74,59 @@ p {
 }
 
 .hidden-message{
-    visibility: hidden;
+    
+    display: none;
 }
 
 .first-card:hover{
+
     .hidden-message{
-        visibility: visible;
+        position: relative;
+        top: 10%;
+        color: var(--dark);
+        display: block;
+        font-style: bold;
+        font-weight: 800;
     }
 
     .hide-when-hover{
-        visibility: hidden;
+        display: none;
     }
+}
+
+.first-card:hover{
+    
+    .profile-image {
+    scale: 1.5;
+    filter: opacity(0.5);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .team-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .first-card {
+            background: rgba(239, 95, 0, 0.15);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(239, 95, 0, 0.075);
+            display: grid;
+            max-width: fit-content;
+            width: 55%;
+            max-height: fit-content;
+            height: 100%;
+            margin: 5% 0 5% 0;
+            position: relative;
+            top: 15%;
+            left: 10%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+    
+        }
 }

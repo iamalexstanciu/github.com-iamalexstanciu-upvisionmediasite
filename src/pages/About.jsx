@@ -16,7 +16,40 @@ function About() {
       </div>
       <div className="team-cards">
         <div className="first-card">
-          <img src={Alex} style={{ width: "50%" }} alt="Alex" />
+          <img
+            className="profile-image"
+            src={Alex}
+            style={{ width: "50%" }}
+            alt="Alex"
+          />
+          <h4 className="hide-when-hover">Founder & CEO</h4>
+          <p className="hidden-message">Full Stack Developer </p>
+          <p className="hidden-message">
+            {" "}
+            [Passionate in Front-end development and huge FC Juventus fan!]
+          </p>
+        </div>
+        <div className="first-card">
+          <img
+            className="profile-image"
+            src={Alex}
+            style={{ width: "50%" }}
+            alt="Alex"
+          />
+          <h4 className="hide-when-hover">Founder & CEO</h4>
+          <p className="hidden-message">Full Stack Developer </p>
+          <p className="hidden-message">
+            {" "}
+            [Passionate in Front-end development and huge FC Juventus fan!]
+          </p>
+        </div>
+        <div className="first-card">
+          <img
+            className="profile-image"
+            src={Alex}
+            style={{ width: "50%" }}
+            alt="Alex"
+          />
           <h4 className="hide-when-hover">Founder & CEO</h4>
           <p className="hidden-message">Full Stack Developer </p>
           <p className="hidden-message">
