@@ -18,23 +18,31 @@
     font-size: 50px;
     color: var(--dark);
     font-family: 'Kegina', sans-serif;
+    max-width: 80%;
+
 }
 
 .divider {
     background-color: var(--dark);
     height: 1px;
-    width: 800px;
+    width: 70%;
+
 }
 
 .header p {
     font-size: 20px;
     color: var(--orange);
     font-family: 'Kegina', sans-serif;
+    max-width: 60%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
 }
 
 .team-cards {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
+margin-bottom: 10%;
 }
 
 .first-card {
@@ -54,7 +62,7 @@ justify-content: center;
 align-items: center;
 align-content: center;
 justify-items: center;
-
+transition: transform .2s;
 }
 
 .first-card h4{
@@ -97,13 +105,14 @@ p {
 .first-card:hover{
     
     .profile-image {
-    scale: 1.5;
+    transform: scale(1.5);
+    transition: all 150ms ease-in-out;
     filter: opacity(0.5);
     }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .team-cards {
         display: flex;
         flex-direction: column;
@@ -119,10 +128,7 @@ p {
             width: 55%;
             max-height: fit-content;
             height: 100%;
-            margin: 5% 0 5% 0;
             position: relative;
-            top: 15%;
-            left: 10%;
             justify-content: center;
             align-items: center;
             align-content: center;
