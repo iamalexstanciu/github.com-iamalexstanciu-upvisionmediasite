@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useRef, useEffect } from "react";
+import { useState} from "react";
 import "../styling/carousel.css";
 export default function CarouselTest(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
