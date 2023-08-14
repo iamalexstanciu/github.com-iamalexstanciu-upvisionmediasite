@@ -9,6 +9,7 @@
     max-width: 100vw;
     max-height: 100%;
     height: 100%;
+   
 }
 
 .left-side-home {
@@ -208,6 +209,7 @@
     color: #fff;
     text-align: center;
     font-size: 1.5em;
+    
 }
 
 .container .card .face.face2 {
