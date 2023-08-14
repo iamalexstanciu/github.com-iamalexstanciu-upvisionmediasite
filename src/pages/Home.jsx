@@ -1,7 +1,5 @@
 import React from "react";
 import "../styling/Home.css";
-import HomeBannerImage from "../assets/home.png";
-import { Typewriter } from "react-simple-typewriter";
 import Cards from "./Cards";
 function Home() {
   
