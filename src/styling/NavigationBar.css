@@ -142,12 +142,14 @@ h1.big-logo {
 @media (max-width: 768px) {
     .navbar-toggle {
         display: block;
-        width: 7% !important;
-        height: 2% !important;
-        color: rgb(0, 0, 0);
+        transform: rotate(90deg);
+        font-weight: 1000;
+        height: 2%;
+        font-size: 24px;
+        color: var(--orange);
         position: fixed;
-        top: 2%;
-        right: 2%;
+        top: 1.9%;
+        right: -3.5%;
     }
         .mobile-navbar:not(.open) .menu-items {
             display: none;
@@ -161,11 +163,13 @@ h1.big-logo {
             justify-content: center;
             align-content: center;
            margin: 0;
+           background-color: var(--black);
            padding: 0;
             justify-items: center;
+            border: none;
         }
         .menu-items-links a {
-            color: #000000;
+            color: var(--grey);
             align-items: center;
             align-content: center;
         }
