@@ -22,29 +22,19 @@ function About() {
             style={{ width: "50%" }}
             alt="Alex"
           />
+
           <h4 className="hide-when-hover">Founder & CEO</h4>
           <div className="hidden-message">
-            <p>Full Stack Developer </p>
+            <p> Full Stack Developer </p>
             <p>
               {" "}
-              [Passionate in Front-end development and huge FC Juventus fan!]
+              Passionate in Front-end development and huge FC Juventus fan!
             </p>
-          </div>
-        </div>
-        <div className="first-card">
-          <img
-            className="profile-image"
-            src={Alex}
-            style={{ width: "50%" }}
-            alt="Alex"
-          />
-          <h4 className="hide-when-hover">Founder & CEO</h4>
-          <div className="hidden-message">
-            <p>Full Stack Developer </p>
-            <p>
-              {" "}
-              [Passionate in Front-end development and huge FC Juventus fan!]
-            </p>
+            <div className="socialmedia-connections">
+              <a href="https://www.instagram.com/alex.stanciu/">Instagram</a>
+              <a href="https://twitter.com/AlexStanciu_">Twitter</a>
+              <a href="https://www.linkedin.com/in/iamalexstanciu/">LinkedIn</a>
+            </div>
           </div>
         </div>
         <div className="first-card">
@@ -60,8 +50,35 @@ function About() {
             <p>Full Stack Developer </p>
             <p>
               {" "}
-              [Passionate in Front-end development and huge FC Juventus fan!]
+              Passionate in Front-end development and huge FC Juventus fan!
             </p>
+            <div className="socialmedia-connections">
+              <a href="https://www.instagram.com/alex.stanciu/">Instagram</a>
+              <a href="https://twitter.com/AlexStanciu_">Twitter</a>
+              <a href="https://www.linkedin.com/in/iamalexstanciu/">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div className="first-card">
+          <img
+            className="profile-image"
+            src={Alex}
+            style={{ width: "50%" }}
+            alt="Alex"
+          />
+
+          <h4 className="hide-when-hover">Founder & CEO</h4>
+          <div className="hidden-message">
+            <p>Full Stack Developer </p>
+            <p>
+              {" "}
+              Passionate in Front-end development and huge FC Juventus fan!
+            </p>
+            <div className="socialmedia-connections">
+              <a href="https://www.instagram.com/alex.stanciu/">Instagram</a>
+              <a href="https://twitter.com/AlexStanciu_">Twitter</a>
+              <a href="https://www.linkedin.com/in/iamalexstanciu/">LinkedIn</a>
+            </div>
           </div>
         </div>
       </div>
