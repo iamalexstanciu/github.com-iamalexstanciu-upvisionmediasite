@@ -1,5 +1,6 @@
 import React from "react";
 import Alex from "../assets/alex.png";
+import Profile from "../assets/profile.png";
 import "../styling/About.css";
 
 function About() {
@@ -18,18 +19,16 @@ function About() {
         <div className="first-card">
           <img
             className="profile-image"
-            src={Alex}
-            style={{ width: "50%" }}
+            src={Profile}
+            style={{ width: "45%" }}
             alt="Alex"
           />
 
-          <h4 className="hide-when-hover">Founder & CEO</h4>
+          <h4 className="hide-when-hover">Iancu Constantin</h4>
+          <h5 className="hide-when-hover">Founder & CEO</h5>
           <div className="hidden-message">
             <p> Full Stack Developer </p>
-            <p>
-              {" "}
-              Passionate in Front-end development and huge FC Juventus fan!
-            </p>
+            <p> Description</p>
             <div className="socialmedia-connections">
               <a href="https://www.instagram.com/alex.stanciu/">Instagram</a>
               <a href="https://twitter.com/AlexStanciu_">Twitter</a>
@@ -41,11 +40,12 @@ function About() {
           <img
             className="profile-image"
             src={Alex}
-            style={{ width: "50%" }}
+            style={{ width: "45%" }}
             alt="Alex"
           />
 
-          <h4 className="hide-when-hover">Founder & CEO</h4>
+          <h4 className="hide-when-hover">Alexandru Stanciu</h4>
+          <h5 className="hide-when-hover">Founder & CEO</h5>
           <div className="hidden-message">
             <p>Full Stack Developer </p>
             <p>
@@ -62,18 +62,16 @@ function About() {
         <div className="first-card">
           <img
             className="profile-image"
-            src={Alex}
-            style={{ width: "50%" }}
+            src={Profile}
+            style={{ width: "45%" }}
             alt="Alex"
           />
 
-          <h4 className="hide-when-hover">Founder & CEO</h4>
+          <h4 className="hide-when-hover">Razvan Tache</h4>
+          <h5 className="hide-when-hover">Founder & CEO</h5>
           <div className="hidden-message">
             <p>Full Stack Developer </p>
-            <p>
-              {" "}
-              Passionate in Front-end development and huge FC Juventus fan!
-            </p>
+            <p> Description</p>
             <div className="socialmedia-connections">
               <a href="https://www.instagram.com/alex.stanciu/">Instagram</a>
               <a href="https://twitter.com/AlexStanciu_">Twitter</a>
