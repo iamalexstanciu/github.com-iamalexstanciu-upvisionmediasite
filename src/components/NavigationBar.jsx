@@ -1,14 +1,33 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../styling/NavigationBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import zIndex from "@mui/material/styles/zIndex";
-import { orange } from "@mui/material/colors";
-import Animation from "../pages/Cards";
+
+
 function NavigationBar() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+const location = useLocation();
+  const [playAnimation, setPlayAnimation] = useState(false);
+  // useEffect(() => {
+  //   if (!localStorage.getItem("logoAnimationPlayed")) {
+  //     setPlayAnimation(true);
+  //   }
+  // }, []);
+  // useEffect(() => {
+  //   if (playAnimation) {
+  //     localStorage.setItem("logoAnimationPlayed", "true");
+  //   }
+  // }, [playAnimation]);
+
+  useEffect(() => {
+    if (location.pathname === "/home" || location.pathname === "/") {
+      setPlayAnimation(true);
+    } else {
+      setPlayAnimation(false);
+    }
+  }, [location]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -115,7 +134,8 @@ function NavigationBar() {
               className="col-xs-12 big-logo-container"
               style={{ zIndex: "1" }}>
               <Link className="bigLogo-link" to="/home">
-                <h1 className="big-logo" href="/home">
+               <h1 className={`big-logo ${playAnimation ? 'animate' : ''}`} href="/home">
+
                   ↧ upVisionMedia
                 </h1>
               </Link>
