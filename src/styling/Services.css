@@ -70,6 +70,7 @@ top: -40%;
 left: -16%;
 border-radius: 5%;
 animation: 2s ease-in 0s 1 slideInLeft;
+padding: 1% 2% 1% 2%;
 }
 
 
@@ -91,6 +92,7 @@ font-size: 14px;
 left: -16%;
 border-radius: 5%;
 animation: 2s ease-in 0s 1 slideInLeft;
+padding: 1% 2% 1% 2%;
 }
 
 .third-stats {
