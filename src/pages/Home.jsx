@@ -12,6 +12,14 @@ function Home() {
   return (
     <>
       <CarouselTest images={images} />
+      <div className="call_to_action" id="neon">
+        <h1 class="neon">
+          {" "}
+          Transform your vision into reality.
+          <br />
+          Contact our web experts today!
+        </h1>
+      </div>
     </>
   );
 }
