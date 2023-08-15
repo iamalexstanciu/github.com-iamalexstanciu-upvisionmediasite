@@ -64,20 +64,13 @@ width: fit-content;
 height: fit-content;
 font-size: 14px;
 position: relative;
+top: -40%;
 left: -16%;
 border-radius: 5%;
 animation: 2s ease-in 0s 1 slideInLeft;
 }
 
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-    }
 
-    100% {
-        transform: translateX(0);
-    }
-}
 
 .second-stats {
 display: flex;
@@ -115,9 +108,20 @@ height: fit-content;
 font-size: 14px;
 position: relative;
 left: 16%;
+top: 40%;
 font-size: 16px;
 border-radius: 5%;
 animation: 2s ease-in 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .second-column-page1 {
@@ -157,8 +161,9 @@ max-height: 80%;
 
 .button-scroll {
 font-family: 'Kegina', sans-serif;
-position: absolute;
-bottom: -25%;
+position: fixed;
+bottom: 0%;
+left: 47%;
 border: none;
 color: var(--dark);
 font-weight: 800;

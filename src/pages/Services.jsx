@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Element, scroller } from "react-scroll";
 import "../styling/Services.css";
 
 function Services() {
-  const scrollToPage = (page) => {
-    scroller.scrollTo(page, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
+  const [currentPage, setCurrentPage] = useState("page1");
+
+  const scrollToNextPage = () => {
+    if (currentPage === "page1") {
+      scroller.scrollTo("page2", {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
+      setCurrentPage("page2");
+    } else if (currentPage === "page2") {
+      scroller.scrollTo("page3", {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
+      setCurrentPage("page3");
+    }
   };
 
   return (
@@ -56,12 +68,16 @@ function Services() {
               </div>
             </div>
           </div>
+          <button className="button-scroll" onClick={scrollToNextPage}>
+            ⇓ See More ⇓
+          </button>
         </div>
-        <button className="button-scroll" onClick={() => scrollToPage("page2")}>
+      </Element>
+      <Element name="page2" className="page page2">
+        <button className="button-scroll" onClick={scrollToNextPage}>
           ⇓ See More ⇓
         </button>
       </Element>
-      <Element name="page2" className="page page2"></Element>
       <Element name="page3" className="page page3">
         Page 3 content
       </Element>
