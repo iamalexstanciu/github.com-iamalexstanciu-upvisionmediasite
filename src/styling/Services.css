@@ -63,7 +63,17 @@ font-size: 14px;
 position: relative;
 left: -16%;
 border-radius: 5%;
+animation: 2s ease-in 0s 1 slideInLeft;
+}
 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .second-stats {
@@ -82,7 +92,7 @@ height: fit-content;
 font-size: 14px;
 left: -16%;
 border-radius: 5%;
-
+animation: 2s ease-in 0s 1 slideInLeft;
 }
 
 .third-stats {
@@ -104,6 +114,7 @@ position: relative;
 left: 16%;
 font-size: 16px;
 border-radius: 5%;
+animation: 2s ease-in 0s 1 slideInLeft;
 }
 
 .second-column-page1 {
@@ -149,5 +160,24 @@ color: var(--dark);
 font-weight: 800;
 font-size: 22px;
 background-color: rgba(240, 248, 255, 0);
-border-top: 2px solid var(--orange);
+border-bottom: 2px solid var(--orange);
+-webkit-animation: bounce 5s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
+
+    30% {
+        transform: scale(1, 0.8) translate(0px, 10px);
+    }
+
+    75% {
+        transform: scale(1, 1.1) translate(0px, -25px);
+    }
+
+    100% {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
 }
