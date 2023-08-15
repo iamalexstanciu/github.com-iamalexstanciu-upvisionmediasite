@@ -80,7 +80,7 @@ function NavigationBar() {
             isSticky ? "sticky" : ""
           }`}
           role="navigation" >
-          <div className="container">
+          <div className="container-navbar">
             <div className="navbar-header">
               <div className="small-logo-container">
                 <a className="small-logo" href="/home">
