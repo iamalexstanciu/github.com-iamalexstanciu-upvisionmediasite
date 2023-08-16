@@ -74,13 +74,13 @@ const location = useLocation();
 
   return (
     <>
-    
       {isMobile ? (
         <div className={`mobile-navbar ${menuIsOpen ? "open" : ""}`}>
           <button
             className="navbar-toggle"
             style={{ zIndex: "10" }}
-            onClick={openMenu}>
+            onClick={openMenu}
+          >
             {" "}
             |||
           </button>
@@ -98,7 +98,8 @@ const location = useLocation();
           className={`navbar navbar-inverse navbar-fixed-top ${
             isSticky ? "sticky" : ""
           }`}
-          role="navigation" >
+          role="navigation"
+        >
           <div className="container-navbar">
             <div className="navbar-header">
               <div className="small-logo-container">
@@ -127,22 +128,37 @@ const location = useLocation();
         </div>
       )}
 
-      <div className="container-fluid big-logo-row">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-xs-12 big-logo-container"
-              style={{ zIndex: "1" }}>
-              <Link className="bigLogo-link" to="/home">
-               <h1 className={`big-logo ${playAnimation ? 'animate' : ''}`} href="/home">
-
-                  ↧ upVisionMedia
-                </h1>
-              </Link>
+      {location.pathname === "/home" || location.pathname === "/" ? (
+        <div className="container-fluid big-logo-row">
+          <div className="container">
+            <div className="row">
+              <div
+                className="col-xs-12 big-logo-container"
+                style={{ zIndex: "1" }}
+              >
+                <Link className="bigLogo-link" to="/home">
+                  <h1
+                    className={`big-logo ${playAnimation ? "animate" : ""}`}
+                    href="/home"
+                  >
+                    ↧ upVisionMedia
+                  </h1>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <div className="container">
+          <div className="smallLogo">
+            <Link to="/home">
+              <h1 style={{color:"var(--dark)", fontSize:"40px"}}>
+                ↥ upVisionMedia
+              </h1>
+            </Link>
+          </div>
+        </div>
+      )}
     </>
   );
 }
