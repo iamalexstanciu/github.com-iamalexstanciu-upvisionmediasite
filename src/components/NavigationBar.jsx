@@ -3,12 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import "../styling/NavigationBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 function NavigationBar() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-const location = useLocation();
+  const location = useLocation();
   const [playAnimation, setPlayAnimation] = useState(false);
   // useEffect(() => {
   //   if (!localStorage.getItem("logoAnimationPlayed")) {
@@ -79,8 +78,7 @@ const location = useLocation();
           <button
             className="navbar-toggle"
             style={{ zIndex: "10" }}
-            onClick={openMenu}
-          >
+            onClick={openMenu}>
             {" "}
             |||
           </button>
@@ -98,9 +96,10 @@ const location = useLocation();
           className={`navbar navbar-inverse navbar-fixed-top ${
             isSticky ? "sticky" : ""
           }`}
-          role="navigation"
-        >
-          <div className="container-navbar">
+          role="navigation">
+          <div
+            className="container-navbar"
+            style={{ background: "var(--black)", margin:'5%' }}>
             <div className="navbar-header">
               <div className="small-logo-container">
                 <a className="small-logo" href="/home">
@@ -130,33 +129,41 @@ const location = useLocation();
 
       {location.pathname === "/home" || location.pathname === "/" ? (
         <div className="container-fluid big-logo-row">
-          <div className="container">
-            <div className="row">
-              <div
-                className="col-xs-12 big-logo-container"
-                style={{ zIndex: "1" }}
-              >
-                <Link className="bigLogo-link" to="/home">
-                  <h1
-                    className={`big-logo ${playAnimation ? "animate" : ""}`}
-                    href="/home"
-                  >
-                    ↧ upVisionMedia
-                  </h1>
-                </Link>
-              </div>
+          <div className="row">
+            <div
+              className="col-xs-12 big-logo-container"
+              style={{
+                zIndex: "1",
+                display: "flex",
+                justifyContent: "center",
+              }}>
+              <Link className="bigLogo-link" to="/home">
+                <h1
+                  className={`big-logo ${playAnimation ? "animate" : ""}`}
+                  href="/home">
+                  ↧ upVisionMedia
+                </h1>
+              </Link>
             </div>
           </div>
         </div>
       ) : (
-        <div className="container">
-          <div className="smallLogo">
-            <Link to="/home">
-              <h1 style={{color:"var(--dark)", fontSize:"40px"}}>
-                ↥ upVisionMedia
-              </h1>
-            </Link>
-          </div>
+        <div
+          className="smallLogo"
+          style={{
+            zIndex: "1",
+            display: "flex",
+            justifyContent: "left",
+            position: "relative",
+            left: "10%",
+            width: "25%",
+            margin: "0",
+          }}>
+          <Link to="/home">
+            <h1 style={{ color: "var(--dark)", textDecoration: "none" }}>
+              ↥ upVisionMedia
+            </h1>
+          </Link>
         </div>
       )}
     </>

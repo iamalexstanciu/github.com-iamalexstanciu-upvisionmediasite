@@ -24,6 +24,15 @@
 
 
 
+
+
+.smallLogoOtherPages {
+    color: var(--dark);
+    text-decoration: none;
+    margin: 0;
+}
+
+
 .navbar-inverse .navbar-toggle {
     border: 1px solid var(--dark);
     border-color: rgba(255, 255, 255, 0.7);

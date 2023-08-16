@@ -287,25 +287,5 @@ font-weight: 800;
 font-size: 22px;
 background-color: rgba(240, 248, 255, 0);
 border-bottom: 2px solid var(--orange);
--webkit-animation: bounce 5s infinite;
-animation: bounce 5s infinite;
 z-index: 100000;
-}
-
-@keyframes bounce {
-    0% {
-        transform: scale(1, 1) translate(0px, 0px);
-    }
-
-    30% {
-        transform: scale(1, 0.8) translate(0px, 10px);
-    }
-
-    75% {
-        transform: scale(1, 1.1) translate(0px, -25px);
-    }
-
-    100% {
-        transform: scale(1, 1) translate(0px, 0px);
-    }
 }
