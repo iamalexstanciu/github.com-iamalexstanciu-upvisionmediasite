@@ -220,6 +220,35 @@ overflow-y: auto;
 }
 
 
+.page2-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: center;
+        align-items: center;
+        justify-items: center;
+}
+
+.seo-explanation,
+.landing-explanation,
+.mobile-explanation
+
+{
+    max-width: fit-content;
+    width: 95%;
+    background-color: rgba(250, 235, 215, 0.664);
+
+    
+}
+
+.page2-left h3 {
+    font-size: 20px;
+}
+
+.page2-left p{
+    font-size: 14px;
+}
+
 
 
 /* Page 3 */

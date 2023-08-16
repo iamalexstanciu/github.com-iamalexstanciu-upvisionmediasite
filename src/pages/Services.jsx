@@ -80,7 +80,45 @@ function Services() {
       <Element name="page2" className="page page2">
         <div className="page2-container">
           <div className="page2-left">
-            <p>Some text</p>
+            <div className="seo-explanation">
+              <h3>What is SEO and why is so important?</h3>
+              <p>
+                SEO stands for Search Engine Optimization. It is the practice of
+                optimizing a website, its content, and its overall online
+                presence to improve its visibility in search engine results
+                pages (SERPs). The ultimate goal of SEO is to increase organic
+                (non-paid) traffic to a website by ranking higher in search
+                engines like Google, Bing, and others. SEO boosts website
+                visibility on search engines, driving organic traffic. Higher
+                visibility means more potential customers, increased
+                credibility, and better chances of achieving business goals and
+                success.
+              </p>
+            </div>
+            <div className="landing-explanation">
+              <h3>
+                What is a Landing Page and why is so important for your
+                business?
+              </h3>
+              <p>
+                A landing page is a single web page designed to capture and
+                convert visitors into potential customers or leads. It serves as
+                a focused entry point for a specific marketing campaign or
+                offer, guiding users toward a desired action, such as making a
+                purchase, signing up, or downloading content. A well-designed
+                landing page optimizes user experience, aligns with the
+                campaign's message, and encourages conversions, ultimately
+                boosting a business's chances of achieving its marketing goals.
+              </p>
+            </div>
+            <div className="mobile-explanation">
+              <h3>
+                Why is extremely important to have a website mobile responsive?
+              </h3>
+              <p>
+                Mobile responsiveness is vital as it ensures your website adapts seamlessly to all screen sizes, from smartphones to tablets and beyond. It's like tailoring a single outfit to fit everyone perfectly, enhancing user experience and accessibility. A responsive site guarantees stunning visuals, effortless navigation, and optimal functionality, captivating visitors and boosting engagement. Just as a chameleon blends seamlessly into diverse environments, your website flexibly harmonizes with any device, amplifying reach, and leaving an indelible digital impression.
+            </p>
+            </div>
           </div>
           <div className="page2-right">
             <img
