@@ -40,10 +40,10 @@ export default function CarouselTest(props) {
       />
 
       <button className="prev-button" onClick={goToPrevSlide}>
-        ↧
+        ⇩
       </button>
-      <button className="next-button" onClick={goToNextSlide} >
-        ↥
+      <button className="next-button" onClick={goToNextSlide}>
+        ⇧
       </button>
     </div>
   );
