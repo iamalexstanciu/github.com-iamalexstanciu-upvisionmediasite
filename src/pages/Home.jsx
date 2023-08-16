@@ -1,6 +1,5 @@
 import React from "react";
 import "../styling/Home.css";
-import Cards from "./Cards";
 import CarouselTest from "../components/CarouselTest";
 function Home() {
   const images = [
