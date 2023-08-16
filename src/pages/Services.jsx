@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { Element, scroller } from "react-scroll";
+import WebDevelopment from "../assets/services2.jpg";
+import WebDevelopment1 from "../assets/services3.jpg";
+import WebDevelopment2 from "../assets/services4.jpg";
+import WebDevelopment3 from "../assets/services5.jpg";
 import "../styling/Services.css";
 
 function Services() {
@@ -74,13 +78,38 @@ function Services() {
         </div>
       </Element>
       <Element name="page2" className="page page2">
+        <div className="page2-container">
+          <div className="page2-left">
+            <p>Some text</p>
+          </div>
+          <div className="page2-right">
+            <img
+              src={WebDevelopment}
+              className="image1-services"
+              alt="services 2 page"
+            />
+            <img
+              src={WebDevelopment1}
+              className="image2-services"
+              alt="services 2 page"
+            />
+            <img
+              src={WebDevelopment2}
+              className="image3-services"
+              alt="services 2 page"
+            />
+            <img
+              src={WebDevelopment3}
+              className="image4-services"
+              alt="services 2 page"
+            />
+          </div>
+        </div>
         <button className="button-scroll" onClick={scrollToNextPage}>
           ⇓ See More ⇓
         </button>
       </Element>
-      <Element name="page3" className="page page3">
-        Page 3 content
-      </Element>
+      <Element name="page3" className="page page3"></Element>
     </div>
   );
 }
