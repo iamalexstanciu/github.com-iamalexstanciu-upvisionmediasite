@@ -214,10 +214,7 @@ h1.big-logo {
         transform: translateY(0);
     }
 }
-.small-logo.animate {
-    animation: fadeIn 3.5s forwards, slideUp 3.5s forwards;
-    animation-delay: 0.2s;
-}
+
 
 .big-logo.animate {
     animation: fadeIn 3.2s forwards, slideUp 3.2s forwards;
