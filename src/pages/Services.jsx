@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Element, scroller } from "react-scroll";
 import WebDevelopment from "../assets/services2.jpg";
 import WebDevelopment1 from "../assets/services3.jpg";
 import WebDevelopment2 from "../assets/services4.jpg";
 import WebDevelopment3 from "../assets/services5.jpg";
 import "../styling/Services.css";
+import json from "../data/reviews.json";
 
 function Services() {
   const [currentPage, setCurrentPage] = useState("page1");
+  const [currentReview, setCurrentReview] = useState(json[0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+ useEffect(() => {
+   const interval = setInterval(() => {
+     setCurrentIndex((prevIndex) => (prevIndex + 1) % json.length);
+   }, 5000);
+
+   return () => {
+     clearInterval(interval);
+   };
+ }, [json.length]);
+
+ useEffect(() => {
+   setCurrentReview(json[currentIndex]);
+ }, [currentIndex, json]);
 
   const scrollToNextPage = () => {
     if (currentPage === "page1") {
@@ -116,8 +133,17 @@ function Services() {
                 Why is extremely important to have a website mobile responsive?
               </h3>
               <p>
-                Mobile responsiveness is vital as it ensures your website adapts seamlessly to all screen sizes, from smartphones to tablets and beyond. It's like tailoring a single outfit to fit everyone perfectly, enhancing user experience and accessibility. A responsive site guarantees stunning visuals, effortless navigation, and optimal functionality, captivating visitors and boosting engagement. Just as a chameleon blends seamlessly into diverse environments, your website flexibly harmonizes with any device, amplifying reach, and leaving an indelible digital impression.
-            </p>
+                Mobile responsiveness is vital as it ensures your website adapts
+                seamlessly to all screen sizes, from smartphones to tablets and
+                beyond. It's like tailoring a single outfit to fit everyone
+                perfectly, enhancing user experience and accessibility. A
+                responsive site guarantees stunning visuals, effortless
+                navigation, and optimal functionality, captivating visitors and
+                boosting engagement. Just as a chameleon blends seamlessly into
+                diverse environments, your website flexibly harmonizes with any
+                device, amplifying reach, and leaving an indelible digital
+                impression.
+              </p>
             </div>
           </div>
           <div className="page2-right">
@@ -147,7 +173,23 @@ function Services() {
           ⇓ See More ⇓
         </button>
       </Element>
-      <Element name="page3" className="page page3"></Element>
+      <Element name="page3" className="page page3">
+        <div className="page3-container">
+          <div className="reviews-container">
+            <div className="reviews">
+              <div className="reviews-map">
+          <h5>Leaved in date: {currentReview.date}</h5>
+          <h4>Rating: {currentReview.stars}</h4>
+          <h3>Customer: {currentReview.name}</h3>
+          <p>Review: {currentReview.review}</p>
+              </div>
+              </div>
+            <div className="reviews-description">
+              <h4>What people think about us!</h4>
+            </div>
+          </div>
+        </div>
+      </Element>
     </div>
   );
 }

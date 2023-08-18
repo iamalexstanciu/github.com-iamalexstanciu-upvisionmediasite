@@ -1,0 +1,29 @@
+
+[
+    {
+  "date": "2023/05/22",
+  "stars": 4,
+  "name": "Michael Jordan",
+  "review": "Very good service, i liked the journey with this company to build my first web page."
+    },
+      {
+  "date": "2022/12/01",
+  "stars": 5,
+  "name": "Virgil McEnny",
+  "review": "Very good service."
+    },
+      {
+  "date": "2023/02/20",
+  "stars": 4.5,
+  "name": "Enzo Milleni",
+  "review": "Servizio ottimo, comunicazione e professionalita."
+    },
+      {
+  "date": "2021/03/12",
+  "stars": 5,
+  "name": "Pierre Jorg",
+  "review": "It was a pleasure to work with them."
+    }
+
+
+]

@@ -254,8 +254,34 @@ overflow-y: auto;
 /* Page 3 */
 
 .page3 {
-background-color: var(--orange);
+background-color: var(--white);
 
+
+}
+
+.page3-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    max-width: 80%;
+}
+
+.reviews-container {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 400px;
+    width: 1200px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.reviews {
+    background-color: aqua;
+    max-width: 70%;
+    max-height: 50%;
+    width: 65%;
 
 }
 
