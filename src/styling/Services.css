@@ -162,6 +162,17 @@ overflow-y: auto;
     flex-direction: row;
   
 }
+.image-service-card {
+    flex: 0 0 auto;
+    /* Let the image take its natural width */
+}
+
+.image-service-card img {
+    width: 200%;
+    /* Make the image take up 100% of the container's width */
+    height: 170%;
+    /* Maintain aspect ratio */
+}
 
 
 .card-services-description {
@@ -173,6 +184,7 @@ overflow-y: auto;
         overflow: hidden;
         border-radius: 20px;
         margin: 1%;
+    box-shadow: .5rem .5rem #05060fa2;
     }
 
 
@@ -188,7 +200,7 @@ overflow-y: auto;
         /* edit the width to fit card */
         width: 100%;
         padding: 20px;
-        background: #f2f2f2;
+        background: var(--grey);
         border-top-left-radius: 20px;
         /* edit here to change the height of the content box */
         transform: translateY(150px);
@@ -204,7 +216,7 @@ content: '';
     height: 100px;
     transform: rotate(-175deg);
     border-radius: 50%;
-    box-shadow: inset 48px 48px #f2f2f2;
+    box-shadow: inset 48px 48px var(--grey);
 }
 
 .card_title {
