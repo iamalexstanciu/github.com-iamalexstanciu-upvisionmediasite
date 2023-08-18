@@ -4,6 +4,7 @@ import WebDevelopment from "../assets/services2.jpg";
 import WebDevelopment1 from "../assets/services3.jpg";
 import WebDevelopment2 from "../assets/services4.jpg";
 import WebDevelopment3 from "../assets/services5.jpg";
+import ImageReview from "../assets/3d.png"
 import "../styling/Services.css";
 import json from "../data/reviews.json";
 
@@ -174,18 +175,24 @@ function Services() {
         </button>
       </Element>
       <Element name="page3" className="page page3">
+        
         <div className="page3-container">
+          
           <div className="reviews-container">
             <div className="reviews">
               <div className="reviews-map">
-          <h5>Leaved in date: {currentReview.date}</h5>
-          <h4>Rating: {currentReview.stars}</h4>
-          <h3>Customer: {currentReview.name}</h3>
-          <p>Review: {currentReview.review}</p>
+                <p>Leaved in date: {currentReview.date}</p>
+                <p>Rating: {currentReview.stars}</p>
+                <h2>Customer: {currentReview.name}</h2>
+                <p>Review: {currentReview.review}</p>
               </div>
-              </div>
+            </div>
             <div className="reviews-description">
-              <h4>What people think about us!</h4>
+              <h4>
+                This is what customers who have worked with us think of our
+                work.
+              </h4>
+              
             </div>
           </div>
         </div>

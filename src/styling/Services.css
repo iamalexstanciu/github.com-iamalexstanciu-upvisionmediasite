@@ -267,25 +267,43 @@ background-color: var(--white);
 }
 
 .reviews-container {
-    background-color: antiquewhite;
+    background-color: rgba(197, 197, 197, 0.479);
     display: grid;
     grid-template-columns: repeat(2, 50%);
     height: 400px;
     width: 1200px;
+    padding: 5%;
+    border-radius: 2%;
+    box-shadow: black 0 0 15px 1px;
     justify-content: center;
     justify-items: center;
     align-content: center;
+    background-image: url("../assets/3d.png");
+        background-repeat: no-repeat;
+        background-position: 35%;
+        background-size: 80%;
 }
 
-.reviews {
-    background-color: aqua;
-    max-width: 70%;
-    max-height: 50%;
-    width: 65%;
-
+.reviews-map {
+    background-color: rgba(0, 0, 0, 0.555);
+    max-width: fit-content;
+    max-height: fit-content;
+    color: var(--white);
+    font-weight: 600;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
 }
 
+.reviews-description {
+    font-family: 'The Abstrack', sans-serif;
+}
 
+.reviews-description img {
+    max-width: 55%;
+}
 
 /* Container Stats */
 
