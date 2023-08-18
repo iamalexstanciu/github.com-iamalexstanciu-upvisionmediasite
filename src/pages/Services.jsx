@@ -97,10 +97,17 @@ function Services() {
       </Element>
       <Element name="page2" className="page page2">
         <div className="page2-container">
-          <div className="page2-left">
-            <div className="seo-explanation">
-              <h3>What is SEO and why is so important?</h3>
-              <p>
+          <article class="card-services-description">
+            <div className="image-service-card">
+              <img src={WebDevelopment3} alt="" />
+            </div>
+            <div class="card_content">
+              <span class="card_title">
+                {" "}
+                What is SEO and why is so important?
+              </span>
+              <p class="card_description">
+                {" "}
                 SEO stands for Search Engine Optimization. It is the practice of
                 optimizing a website, its content, and its overall online
                 presence to improve its visibility in search engine results
@@ -113,12 +120,19 @@ function Services() {
                 success.
               </p>
             </div>
-            <div className="landing-explanation">
-              <h3>
+          </article>
+          <article class="card-services-description">
+            <div className="image-service-card">
+              <img src={WebDevelopment2} alt="" />
+            </div>
+            <div class="card_content">
+              <span class="card_title">
+                {" "}
                 What is a Landing Page and why is so important for your
                 business?
-              </h3>
-              <p>
+              </span>
+              <p class="card_description">
+                {" "}
                 A landing page is a single web page designed to capture and
                 convert visitors into potential customers or leads. It serves as
                 a focused entry point for a specific marketing campaign or
@@ -129,11 +143,19 @@ function Services() {
                 boosting a business's chances of achieving its marketing goals.
               </p>
             </div>
-            <div className="mobile-explanation">
-              <h3>
+          </article>
+
+          <article class="card-services-description">
+            <div className="image-service-card">
+              <img src={WebDevelopment1} alt="" />
+            </div>
+            <div class="card_content">
+              <span class="card_title">
+                {" "}
                 Why is extremely important to have a website mobile responsive?
-              </h3>
-              <p>
+              </span>
+              <p class="card_description">
+                {" "}
                 Mobile responsiveness is vital as it ensures your website adapts
                 seamlessly to all screen sizes, from smartphones to tablets and
                 beyond. It's like tailoring a single outfit to fit everyone
@@ -146,29 +168,7 @@ function Services() {
                 impression.
               </p>
             </div>
-          </div>
-          <div className="page2-right">
-            <img
-              src={WebDevelopment}
-              className="image1-services"
-              alt="services 2 page"
-            />
-            <img
-              src={WebDevelopment1}
-              className="image2-services"
-              alt="services 2 page"
-            />
-            <img
-              src={WebDevelopment2}
-              className="image3-services"
-              alt="services 2 page"
-            />
-            <img
-              src={WebDevelopment3}
-              className="image4-services"
-              alt="services 2 page"
-            />
-          </div>
+          </article>
         </div>
         <button className="button-scroll" onClick={scrollToNextPage}>
           ⇓ See More ⇓
