@@ -99,7 +99,9 @@ function NavigationBar() {
           role="navigation">
           <div
             className="container-navbar"
-            style={{ background: "var(--black)", margin:'5%' }}>
+              // style={{ background: "var(--black)", margin: '0%' }}
+            
+            >
             <div className="navbar-header">
               <div className="small-logo-container">
                 <a className="small-logo" href="/home">
