@@ -295,7 +295,6 @@ background-color: var(--white);
         border-radius: 8px;
     max-width: fit-content;
     max-height: fit-content;
-    color: var(--dark);
     font-weight: 600;
     padding: 10%;
     display: flex;
@@ -382,8 +381,21 @@ z-index: 100000;
     .reviews-container {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        max-height: fit-content;
+        width: fit-content;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        height: 80%;
+    
     }
 
+    .reviews-map{
+        max-width: fit-content;
+        height: fit-content;
+    }
+
+    .reviews-title {
+        align-content: center;
+        text-align: center;
+    }
 }
