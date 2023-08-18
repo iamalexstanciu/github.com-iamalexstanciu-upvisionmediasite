@@ -267,7 +267,11 @@ background-color: var(--white);
 }
 
 .reviews-container {
-    background-color: rgba(197, 197, 197, 0.479);
+    border-radius: 10px;
+        backdrop-filter: blur(30px);
+        background-color: rgba(65, 65, 65, 0.308);
+        border: 1px solid rgba(255, 255, 255, 0.089);
+        cursor: pointer;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     height: 400px;
@@ -285,10 +289,13 @@ background-color: var(--white);
 }
 
 .reviews-map {
-    background-color: rgba(0, 0, 0, 0.555);
+    background: rgba(255, 255, 255, .05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
     max-width: fit-content;
     max-height: fit-content;
-    color: var(--white);
+    color: var(--dark);
     font-weight: 600;
     padding: 10%;
     display: flex;
@@ -299,6 +306,15 @@ background-color: var(--white);
 
 .reviews-description {
     font-family: 'The Abstrack', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.reviews-title {
+    font-size: 45px;
 }
 
 .reviews-description img {
@@ -362,4 +378,12 @@ z-index: 100000;
     .page2-right {
         display: none;
     }
+
+    .reviews-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: fit-content;
+    }
+
 }

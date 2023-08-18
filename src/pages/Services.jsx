@@ -175,10 +175,14 @@ function Services() {
         </button>
       </Element>
       <Element name="page3" className="page page3">
-        
         <div className="page3-container">
-          
           <div className="reviews-container">
+            <div className="reviews-description">
+              <h4 className="reviews-title">
+                This is what customers who have worked with us think of our
+                work.
+              </h4>
+            </div>
             <div className="reviews">
               <div className="reviews-map">
                 <p>Leaved in date: {currentReview.date}</p>
@@ -186,13 +190,6 @@ function Services() {
                 <h2>Customer: {currentReview.name}</h2>
                 <p>Review: {currentReview.review}</p>
               </div>
-            </div>
-            <div className="reviews-description">
-              <h4>
-                This is what customers who have worked with us think of our
-                work.
-              </h4>
-              
             </div>
           </div>
         </div>
