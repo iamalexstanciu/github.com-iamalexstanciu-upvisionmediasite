@@ -1,0 +1,93 @@
+ /* Page 2 */
+
+ .page2 {
+     background-color: var(--grey);
+     overflow-y: auto;
+ }
+
+ .page2-container {
+     display: flex;
+     flex-direction: row;
+
+ }
+
+ .image-service-card {
+     flex: 0 0 auto;
+     /* Let the image take its natural width */
+ }
+
+ .image-service-card img {
+     width: 200%;
+     /* Make the image take up 100% of the container's width */
+     height: 170%;
+     /* Maintain aspect ratio */
+ }
+
+
+ .card-services-description {
+     position: relative;
+     width: 500px;
+     height: 500px;
+     color: #2e2d31;
+     background: #131313;
+     overflow: hidden;
+     border-radius: 20px;
+     margin: 1%;
+     box-shadow: .5rem .5rem #05060fa2;
+ }
+
+
+ .card_title {
+     font-weight: bold;
+     font-size: 35px;
+ }
+
+ .card_content {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     /* edit the width to fit card */
+     width: 100%;
+     z-index: 1;
+     height: 70%;
+     padding: 20px;
+     align-items: center;
+     text-align: center;
+     background: var(--grey);
+     border-top-left-radius: 20px;
+     /* edit here to change the height of the content box */
+     transform: translateY(150px);
+     transition: transform .25s;
+ }
+
+
+ .card_title {
+     color: var(--orange);
+     line-height: 15px;
+ }
+
+ .card_subtitle {
+     display: block;
+     font-size: 12px;
+     margin-bottom: 10px;
+ }
+
+ .card_description {
+     font-size: 14px;
+     opacity: 0;
+     transition: opacity .5s;
+ }
+
+ .card-services-description:hover .card_content {
+     transform: translateY(0);
+ }
+
+ .card-services-description:hover .card_description {
+     opacity: 1;
+     transition-delay: .25s;
+ }
+
+ .image-service-card {
+     width: 50%;
+     height: 50%;
+ }
