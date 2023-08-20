@@ -199,7 +199,11 @@ overflow-y: auto;
         bottom: 0;
         /* edit the width to fit card */
         width: 100%;
+        z-index: 1;
+        height: 70%;
         padding: 20px;
+        align-items: center;
+        text-align: center;
         background: var(--grey);
         border-top-left-radius: 20px;
         /* edit here to change the height of the content box */
@@ -207,17 +211,6 @@ overflow-y: auto;
         transition: transform .25s;
 }
 
-.card_content::before {
-content: '';
-    position: absolute;
-    top: -47px;
-    right: -45px;
-    width: 100px;
-    height: 100px;
-    transform: rotate(-175deg);
-    border-radius: 50%;
-    box-shadow: inset 48px 48px var(--grey);
-}
 
 .card_title {
     color:var(--orange);
