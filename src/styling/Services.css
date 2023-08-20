@@ -31,19 +31,6 @@ scroll-snap-align: start;
 
 
 
-/* Container Stats */
-
-.statistics-online-presence {
-display: grid;
-justify-items: center;
-position: relative;
-top: 5%;
-gap: 5%;
-grid-template-rows: repeat(5, 20%) ;
-position: relative;
-right: 0;
-max-height: 100%;
-}
 
 
 .button-scroll {

@@ -19,14 +19,14 @@
  .image-service-card img {
      width: 200%;
      /* Make the image take up 100% of the container's width */
-     height: 170%;
+     height: 120%;
      /* Maintain aspect ratio */
  }
 
 
  .card-services-description {
      position: relative;
-     width: 500px;
+     width: 90%;
      height: 500px;
      color: #2e2d31;
      background: #131313;
