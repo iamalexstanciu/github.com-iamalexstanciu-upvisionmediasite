@@ -9,7 +9,7 @@ function ContentPage1() {
       </h2>
       <div className="card-container-services-page1">
         <div class="card-services-page1">
-          <div class="card__content">
+          <div class="card__content-title">
             Increased Visibility
             <div>
               <p className="card_content-p">
@@ -24,7 +24,7 @@ function ContentPage1() {
           </div>
         </div>
         <div class="card-services-page1">
-          <div class="card__content">
+          <div class="card__content-title">
             Increased Brand Awareness
             <div>
               <p className="card_content-p">
@@ -38,7 +38,7 @@ function ContentPage1() {
           </div>
         </div>
         <div class="card-services-page1">
-          <div class="card__content">
+          <div class="card__content-title">
             Increased Trust
             <div>
               <p className="card_content-p">
