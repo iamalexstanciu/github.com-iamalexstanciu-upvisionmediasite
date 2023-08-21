@@ -3,12 +3,12 @@
 .page2 {
 background-color: var(--grey);
 overflow-y: auto;
+width: 100vw;
 }
 
 .page2-container {
 display: grid;
 grid-template-rows: repeat(2, 1fr);
-
 }
 
 .page2-container-right {
@@ -71,10 +71,10 @@ justify-content: center;
 align-items: center;
 align-content: center;
 font-family: 'Kegina';
-    font-style: normal;
-    font-weight: 700;
-    padding-left: 7%;
-background-color: rgba(0, 0, 0, 0.596);
+font-style: normal;
+font-weight: 700;
+padding-left: 7%;
+background-color: rgba(2, 1, 9, 0.596);
 position: relative;
 color: white;
 top: 75%;
@@ -83,21 +83,21 @@ border-radius: 5px;
 }
 
 .card1 {
-    background: url("../assets/seo-card-back.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+background: url("../assets/seo-card-back.jpg");
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 .card2 {
-    background: url("../assets/landing-page-card.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+background: url("../assets/landing-page-card.jpg");
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 .card3 {
-    background: url("../assets/mobile-responsive-card.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+background: url("../assets/mobile-responsive-card.jpg");
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 
@@ -117,6 +117,7 @@ border-radius: 15px;
 transition: all 0.4s;
 font-size: 0px;
 transform: rotate(90deg) scale(-1);
+
 }
 
 .card-content-page2:hover .second-content {
