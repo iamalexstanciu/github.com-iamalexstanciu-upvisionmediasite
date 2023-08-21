@@ -168,8 +168,10 @@ function NavigationBar() {
                 justifyContent: "center",
               }}
             >
+              <div class="center">
+                <div id="cloud"></div>
+              </div>
               <Link className="bigLogo-link" to="/home">
-              
                 <h1
                   className={`big-logo ${playAnimation ? "animate" : ""}`}
                   href="/home"
