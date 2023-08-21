@@ -3,6 +3,9 @@
 
 body {
     overflow-y: scroll;
+    background-image: url("../assets/back-services.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 /* SmoothScrollComponent.css */
@@ -12,6 +15,9 @@ display: flex;
 flex-direction: column;
 overflow-y: hidden;
 scroll-snap-type: y mandatory;
+background-image: url("../assets/back-services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page {

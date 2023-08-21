@@ -1,7 +1,6 @@
 /* Page 2 */
 
 .page2 {
-background-color: var(--grey);
 overflow-y: auto;
 width: 100vw;
 }
