@@ -2,10 +2,10 @@
 @import url('https://fonts.cdnfonts.com/css/the-abstrack');
 
 body {
-    overflow-y: scroll;
-    background-image: url("../assets/back-services.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+overflow-y: scroll;
+background-image: url("../assets/back-services.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 /* SmoothScrollComponent.css */
@@ -16,8 +16,8 @@ flex-direction: column;
 overflow-y: hidden;
 scroll-snap-type: y mandatory;
 background-image: url("../assets/back-services.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .page {
@@ -34,112 +34,112 @@ scroll-snap-align: start;
 
 
 :root {
-    --strokeWidth: 4px;
-    --strokeColor: var(--dark);
-    --timing: 2.6s;
-    --easing: cubic-bezier(0.77, 0, 0.175, 1);
+--strokeWidth: 4px;
+--strokeColor: var(--dark);
+--timing: 2.6s;
+--easing: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 .scroll-down-dude:before,
 .scroll-down-dude:after {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 12px;
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    transform: rotate(45deg);
-    border-bottom: var(--strokeWidth) solid var(--strokeColor);
-    border-right: var(--strokeWidth) solid var(--strokeColor);
+content: '';
+display: block;
+width: 12px;
+height: 12px;
+position: fixed;
+bottom: 5%;
+left: 50%;
+transform: rotate(45deg);
+border-bottom: var(--strokeWidth) solid var(--strokeColor);
+border-right: var(--strokeWidth) solid var(--strokeColor);
 }
 
 .scroll-down-dude:before {
-    animation: down-arrow-before var(--timing) var(--easing) infinite;
+animation: down-arrow-before var(--timing) var(--easing) infinite;
 }
 
 .scroll-down-dude:after {
-    animation: down-arrow-after var(--timing) var(--easing) infinite;
+animation: down-arrow-after var(--timing) var(--easing) infinite;
 }
 
 @keyframes down-arrow-before {
-    50% {
-        transform: rotate(45deg) translate(70%, 70%);
-    }
+50% {
+transform: rotate(45deg) translate(70%, 70%);
+}
 
-    100% {
-        transform: rotate(45deg) translate(70%, 70%);
-    }
+100% {
+transform: rotate(45deg) translate(70%, 70%);
+}
 }
 
 @keyframes down-arrow-after {
-    50% {
-        transform: rotate(45deg) translate(110%, 110%);
-        opacity: 0;
-    }
+50% {
+transform: rotate(45deg) translate(110%, 110%);
+opacity: 0;
+}
 
-    51% {
-        transform: rotate(45deg) translate(-130%, -130%);
-    }
+51% {
+transform: rotate(45deg) translate(-130%, -130%);
+}
 
-    100% {
-        transform: rotate(45deg) translate(-70%, -70%);
-        opacity: 1;
-    }
+100% {
+transform: rotate(45deg) translate(-70%, -70%);
+opacity: 1;
+}
 }
 
 @media (max-width: 1200px) {
-    .page1-image {
-        display: none;
-    }
+.page1-image {
+display: none;
+}
 
-    .page1-container {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: -15%;
-        left: 10%;
-    }
+.page1-container {
+display: flex;
+flex-direction: column;
+position: relative;
+top: -15%;
+left: 10%;
+}
 
-    .page2-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+.page2-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
 
-    }
+}
 
-    .page2-left {
-        display: grid;
-        gap: 5%;
-    }
+.page2-left {
+display: grid;
+gap: 5%;
+}
 
-    .page2-right {
-        display: none;
-    }
+.page2-right {
+display: none;
+}
 
-    .reviews-container {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        height: 80%;
+.reviews-container {
+display: flex;
+flex-direction: column;
+width: fit-content;
+justify-content: center;
+justify-items: center;
+align-items: center;
+height: 80%;
 
-    }
+}
 
-    .reviews-map {
-        max-width: fit-content;
-        height: fit-content;
-    }
+.reviews-map {
+max-width: fit-content;
+height: fit-content;
+}
 
-    .reviews-title {
-        align-content: center;
-        text-align: center;
-    }
+.reviews-title {
+align-content: center;
+text-align: center;
+}
 }
