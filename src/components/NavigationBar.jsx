@@ -2,13 +2,30 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styling/NavigationBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import {
+  IoHomeOutline,
+  IoPersonOutline,
+  IoChatbubbleOutline,
+  IoCameraOutline,
+  IoInformationCircleOutline,
+  IoMailOutline,
+  IoSettingsOutline,
+   IoBuildOutline,
+  IoAlbums,
+} from "react-icons/io5";
 function NavigationBar() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const location = useLocation();
   const [playAnimation, setPlayAnimation] = useState(false);
+    const navItems = [
+      { icon: <IoHomeOutline />, color: "#f44336" },
+      { icon: <IoPersonOutline />, color: "#ffa117" },
+      { icon: <IoChatbubbleOutline />, color: "#0fc70f" },
+      { icon: <IoCameraOutline />, color: "#2196f3" },
+      { icon: <IoSettingsOutline />, color: "#b145e9" },
+    ];
   // useEffect(() => {
   //   if (!localStorage.getItem("logoAnimationPlayed")) {
   //     setPlayAnimation(true);
@@ -78,7 +95,8 @@ function NavigationBar() {
           <button
             className="navbar-toggle"
             style={{ zIndex: "10" }}
-            onClick={openMenu}>
+            onClick={openMenu}
+          >
             {" "}
             |||
           </button>
@@ -96,34 +114,44 @@ function NavigationBar() {
           className={`navbar navbar-inverse navbar-fixed-top ${
             isSticky ? "sticky" : ""
           }`}
-          role="navigation">
+          role="navigation"
+        >
           <div
             className="container-navbar"
-              // style={{ background: "var(--black)", margin: '0%' }}
-            
-            >
+            // style={{ background: "var(--black)", margin: '0%' }}
+          >
             <div className="navbar-header">
               <div className="small-logo-container">
                 <a className="small-logo" href="/home">
                   ↥ upVisionMedia
                 </a>
               </div>
-            </div>
-            <div className="navbar-collapse collapse">
-              <ul className="nav navbar-nav navbar-right">
-                <li className="active">
-                  <a href="/services">services</a>
-                </li>
-                <li>
-                  <a href="/clients">clients</a>
-                </li>
-                <li>
-                  <a href="/contact">contact</a>
-                </li>
-                <li>
-                  <a href="/about">about us</a>
-                </li>
-              </ul>
+              <div className="navbar-collapse collapse">
+                <ul className="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="/services">
+                      <IoBuildOutline /> services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/clients">
+                      <IoPersonOutline />
+                      clients
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/contact">
+                      <IoMailOutline />
+                      contact
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about">
+                      <IoInformationCircleOutline /> about us
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -138,11 +166,14 @@ function NavigationBar() {
                 zIndex: "1",
                 display: "flex",
                 justifyContent: "center",
-              }}>
+              }}
+            >
               <Link className="bigLogo-link" to="/home">
+              
                 <h1
                   className={`big-logo ${playAnimation ? "animate" : ""}`}
-                  href="/home">
+                  href="/home"
+                >
                   ↧ upVisionMedia
                 </h1>
               </Link>
@@ -160,7 +191,8 @@ function NavigationBar() {
             left: "10%",
             width: "25%",
             margin: "0",
-          }}>
+          }}
+        >
           <Link to="/home">
             <h1 style={{ color: "var(--dark)", textDecoration: "none" }}>
               ↥ upVisionMedia
