@@ -1,11 +1,5 @@
 /* Page 3 */
 
-.page3 {
-    background-color: var(--white);
-
-
-}
-
 .page3-container {
     display: flex;
     flex-direction: column;

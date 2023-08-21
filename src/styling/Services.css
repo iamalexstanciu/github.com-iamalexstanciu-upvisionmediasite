@@ -3,6 +3,9 @@
 
 body {
     overflow-y: scroll;
+    background-image: url("../assets/back-services.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 /* SmoothScrollComponent.css */
@@ -12,6 +15,9 @@ display: flex;
 flex-direction: column;
 overflow-y: hidden;
 scroll-snap-type: y mandatory;
+background-image: url("../assets/back-services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page {
@@ -27,26 +33,65 @@ scroll-snap-align: start;
 }
 
 
-
-
-
-
-
-
-.button-scroll {
-font-family: 'Kegina', sans-serif;
-position: fixed;
-bottom: 0%;
-left: 47%;
-border: none;
-color: var(--orange);
-font-weight: 800;
-font-size: 22px;
-background-color: rgba(240, 248, 255, 0);
-border-bottom: 2px solid var(--orange);
-z-index: 100000;
+:root {
+    --strokeWidth: 4px;
+    --strokeColor: var(--dark);
+    --timing: 2.6s;
+    --easing: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+
+* {
+    box-sizing: border-box;
+}
+
+.scroll-down-dude:before,
+.scroll-down-dude:after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: rotate(45deg);
+    border-bottom: var(--strokeWidth) solid var(--strokeColor);
+    border-right: var(--strokeWidth) solid var(--strokeColor);
+}
+
+.scroll-down-dude:before {
+    animation: down-arrow-before var(--timing) var(--easing) infinite;
+}
+
+.scroll-down-dude:after {
+    animation: down-arrow-after var(--timing) var(--easing) infinite;
+}
+
+@keyframes down-arrow-before {
+    50% {
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+}
+
+@keyframes down-arrow-after {
+    50% {
+        transform: rotate(45deg) translate(110%, 110%);
+        opacity: 0;
+    }
+
+    51% {
+        transform: rotate(45deg) translate(-130%, -130%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(-70%, -70%);
+        opacity: 1;
+    }
+}
 
 @media (max-width: 1200px) {
     .page1-image {
@@ -65,13 +110,14 @@ z-index: 100000;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
     }
 
     .page2-left {
         display: grid;
         gap: 5%;
     }
+
     .page2-right {
         display: none;
     }
@@ -84,10 +130,10 @@ z-index: 100000;
         justify-items: center;
         align-items: center;
         height: 80%;
-    
+
     }
 
-    .reviews-map{
+    .reviews-map {
         max-width: fit-content;
         height: fit-content;
     }
@@ -97,5 +143,3 @@ z-index: 100000;
         text-align: center;
     }
 }
-
-

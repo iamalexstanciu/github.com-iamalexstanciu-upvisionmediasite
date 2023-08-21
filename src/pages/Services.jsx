@@ -30,15 +30,10 @@ function Services() {
     <div className="smooth-scroll-container">
       <Element name="page1" className="page page1">
         <ContentPage1 />
-        <button className="button-scroll" onClick={scrollToNextPage}>
-          ⇓ See More ⇓
-        </button>
+        <div class="scroll-down-dude" onClick={scrollToNextPage}></div>
       </Element>
       <Element name="page2" className="page page2">
         <ContentPage2 />
-        <button className="button-scroll" onClick={scrollToNextPage}>
-          ⇓ See More ⇓
-        </button>
       </Element>
       <Element name="page3" className="page page3">
         <ContentPage3 />
