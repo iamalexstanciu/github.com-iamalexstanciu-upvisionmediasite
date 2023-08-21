@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styling/Page2.css";
-import GifPage2 from "../../assets/gif-page2.gif"
+import GifPage2 from "../../assets/gif-page2.gif";
 
 function ContentPage2() {
   return (
@@ -9,11 +9,11 @@ function ContentPage2() {
         <img className="gif-page2" src={GifPage2} alt="" />
       </div>
       <div className="page2-container-right">
-        <div class="card-content-page2">
-          <div class="first-content">
+        <div className="card1 card-content-page2">
+          <div className=" first-content">
             <span>What is SEO and why is so important?</span>
           </div>
-          <div class="second-content">
+          <div className="second-content">
             <span>
               {" "}
               SEO stands for Search Engine Optimization. It is the practice of
@@ -28,14 +28,14 @@ function ContentPage2() {
             </span>
           </div>
         </div>
-        <div class="card-content-page2">
-          <div class="first-content">
+        <div className="card2 card-content-page2">
+          <div className=" first-content">
             <span>
               {" "}
               What is a Landing Page and why is so important for your business?
             </span>
           </div>
-          <div class="second-content">
+          <div className="second-content">
             <span>
               {" "}
               A landing page is a single web page designed to capture and
@@ -49,14 +49,14 @@ function ContentPage2() {
             </span>
           </div>
         </div>
-        <div class="card-content-page2">
-          <div class="first-content">
+        <div className="card3 card-content-page2">
+          <div className=" first-content">
             <span>
               {" "}
-              Why is extremely important to have a website mobile responsive?
+              Why is important to have a website mobile responsive?
             </span>
           </div>
-          <div class="second-content">
+          <div className="card3 second-content">
             <span>
               {" "}
               Mobile responsiveness is vital as it ensures your website adapts
