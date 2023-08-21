@@ -13,7 +13,7 @@ function ContentPage2() {
           <div className=" first-content">
             <span>What is SEO and why is so important?</span>
           </div>
-          <div className="second-content">
+          <div className="card-content-1 second-content">
             <span>
               {" "}
               SEO stands for Search Engine Optimization. It is the practice of
@@ -35,7 +35,7 @@ function ContentPage2() {
               What is a Landing Page and why is so important for your business?
             </span>
           </div>
-          <div className="second-content">
+          <div className="card-content-2 second-content">
             <span>
               {" "}
               A landing page is a single web page designed to capture and
@@ -51,12 +51,9 @@ function ContentPage2() {
         </div>
         <div className="card3 card-content-page2">
           <div className=" first-content">
-            <span>
-              {" "}
-              Why is important to have a website mobile responsive?
-            </span>
+            <span> Why is important to have a website mobile responsive?</span>
           </div>
-          <div className="card3 second-content">
+          <div className="card-content-3 second-content">
             <span>
               {" "}
               Mobile responsiveness is vital as it ensures your website adapts

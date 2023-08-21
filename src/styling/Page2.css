@@ -1,5 +1,8 @@
 /* Page 2 */
 
+@import url('https://fonts.cdnfonts.com/css/kegina');
+@import url('https://fonts.cdnfonts.com/css/the-abstrack');
+
 .page2 {
 overflow-y: auto;
 width: 100vw;
@@ -46,8 +49,10 @@ overflow: hidden;
 color: black;
 transition: all 0.4s;
 border-radius: 10px;
-font-size: 1.2rem;
-margin: 0 5% 0 5%;
+font-size: 1.3rem;
+margin: 0 3.5% 0 3.5%;
+font-family: 'Kegina';
+
 }
 
 .card-content-page2:hover {
@@ -58,7 +63,7 @@ border: 1px solid black;
 transform: scale(1.05);
 transform: scale(1.2);
 box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-background: rgb(93, 93, 93);
+background: rgb(255, 255, 255);
 }
 
 .first-content {
@@ -97,6 +102,18 @@ background-repeat: no-repeat;
 background: url("../assets/mobile-responsive-card.jpg");
 background-size: cover;
 background-repeat: no-repeat;
+}
+
+.card-content-1,
+.card-content-2,
+.card-content-3
+{
+background: white;
+border-radius: 10px;
+transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+filter: grayscale(1);
+text-align: center;
+color: var(--black);
 }
 
 
