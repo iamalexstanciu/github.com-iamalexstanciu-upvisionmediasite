@@ -1,351 +1,216 @@
-/* *********************************
-           Variables
-  ********************************** */
+/* Figma Styles of your File */
 :root {
-    --navbar-height: 50px;
-    --big-logo-padding: 10px;
-    --small-logo-padding: 2px;
-    font-family: "Major Mono Display";
+  /* Colors */
+
+  /* Fonts */
+  --h-2: 500 72px "Rubik", sans-serif;
+  --h-1: 500 96px "Rubik", sans-serif;
+
+  /* Effects */
 }
-
-/* *********************************
-   Some Style Overrides on Bootstrap
-  ********************************** */
-.navbar-inverse {
-    background: rgba(0, 0, 0, 0);
-    border-bottom: none;
+.frame-3,
+.frame-3 * {
+  box-sizing: border-box;
 }
-
-.container-navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: relative;
-     gap: 50px;
-    top: 10px;
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 201px;
+  align-items: center;
+  justify-content: center;
+  width: 1476.25px;
+  position: relative;
 }
-
-
-
-
-
-.smallLogoOtherPages {
-    color: var(--dark);
-    text-decoration: none;
-    margin: 0;
+.frame-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 55.5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
 }
-
-
-.navbar-inverse .navbar-toggle {
-    border: 1px solid var(--dark);
-    border-color: rgba(255, 255, 255, 0.7);
+. {
+  color: #ffffff;
+  text-align: left;
+  font: 500 18px "Rubik", sans-serif;
+  position: relative;
 }
-
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-    border-color: transparent;
+.frame-4 {
+  flex-shrink: 0;
+  width: 299px;
+  height: 43px;
+  position: relative;
 }
-@media (max-width: 767px) {
-    .navbar-inverse .navbar-collapse {
-        background: rgba(255, 255, 255, 0.75);
-    }
-}
-
-.navbar-inverse .navbar-nav>li>a {
-     color: var(--black);
-    background-image: linear-gradient(45deg, var(--white), var(--orange)); 
-    
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: all 0.3s;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover{
-    background-image: linear-gradient(45deg, var(--orange), var(--white));
-    color: var(--dark);
-    background-color: var(--dark);
-     
-     box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
-     
-}
-.navbar-inverse .navbar-nav>li>a:hover svg {
-         fill: white;
-   animation: slide-in-top 0.3s both;
-  
-    transition: all 0.3s;
-
-}
-
-
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus{
-    background-color: var(--orange);
-    color: var(--dark);
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-}
-
-
-.navbar-inverse .navbar-nav>.active>a:hover{
-color: var(--grey);
-background-color: var(--dark);
-
-}
-
-/* *********************************
-           Toolbar Logo
-  ********************************** */
-.small-logo-container {
-    padding-top: var(--navbar-height);
-    height: var(--navbar-height);
-    overflow: hidden;
-    position: absolute;
-    text-decoration: none !important;
-}
-
-.small-logo {
-    color: var(--dark);
-    font-size: 2.5em;
-    padding-bottom: var(--small-logo-padding);
-    transition: padding-bottom 0.2s ease-in-out;
-    text-decoration: none !important; 
-}
-
-.small-logo-container.sticky .small-logo {
-    padding-bottom: 0;
-}
-
-.small-logo:hover {
-    text-decoration: none !important;
-     color: var(--black);
-}
-
-/* *********************************
-           Big Logo
-  ********************************** */
-.big-logo-row {
-    background: var(--black);
-}
-
-.big-logo-container {
-    padding-top: 3%;
-}
-
-h1.big-logo {
-    font-size: 4em;
-    margin: 0;
-    color: var(--orange);
-    padding: 0 0 var(--big-logo-padding) 0;
-}
-
-.bigLogo-link,
-.bigLogo-link:hover
-{
-    text-decoration: none !important;
-    color: var(--black);
-}
-
-@media (min-width: 300px) {
-    h1.big-logo {
-        font-size: 2.5em;
-    }
-}
-
-@media (min-width: 400px) {
-    h1.big-logo {
-        font-size: 3em;
-    }
-}
-
-@media (min-width: 440px) {
-    h1.big-logo {
-        font-size: 4.5em;
-    }
-}
-
-@media (min-width: 500px) {
-    h1.big-logo {
-        font-size: 5.5em;
-    }
-}
-
-@media (min-width: 630px) {
-    h1.big-logo {
-        font-size: 6em;
-    }
-}
-
-@media (min-width: 768px) {
-    h1.big-logo {
-        font-size: 8em;
-        padding-bottom: calc(var(--big-logo-padding) * 2);
-    }
-}
-
-@media (min-width: 1200px) {
-    h1.big-logo {
-        font-size: 9em;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .navbar-toggle {
-        display: block;
-        transform: rotate(90deg);
-        font-weight: 1000;
-        height: 2%;
-        font-size: 24px;
-        color: var(--orange);
-        position: fixed;
-        top: 1.9%;
-        right: -3.5%;
-    }
-        .mobile-navbar:not(.open) .menu-items {
-            display: none;
-        }
-        .menu-items-links{
-            text-decoration: none;
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            gap: 5%;
-            justify-content: center;
-            align-content: center;
-           margin: 0;
-           background-color: var(--black);
-           padding: 0;
-            justify-items: center;
-            border: none;
-        }
-        .menu-items-links a {
-            color: var(--grey);
-            align-items: center;
-            align-content: center;
-        }
-
-}
-/* Animation keyframes */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(50px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.big-logo.animate {
-    animation: fadeIn 3.2s forwards, slideUp 3.2s forwards;
-    animation-delay: 0.2s;
-}
-
-.cloud {
-	width: 350px; height: 120px;
-	
-	background: #f2f9fe;
-	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	
-	position: relative;
-	margin: 120px auto 20px;
-}
-
-.cloud:after, .cloud:before {
-	content: '';
-	position: absolute;
-	background: #f2f9fe;
-	z-index: -1
-}
-
-.cloud:after {
-	width: 100px; height: 100px;
-	top: -50px; left: 50px;
-	
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-}
-
-.cloud:before {
-	width: 180px; height: 180px;
-	top: -90px; right: 50px;
-	border-radius: 200px;
-	-webkit-border-radius: 200px;
-	-moz-border-radius: 200px;
-}
-
-.center {
+.group-1 {
   position: absolute;
-  top:70%;
-  left:15%;
-  transform: translate(-50%,-50%);
+  inset: 0;
 }
-
-#cloud {
-  background: rgba(255, 255, 255);
-  width: 300px; 
-  height: 100px;
-  border-radius: 150px;	
-  box-shadow: 10px 10px rgba(0,0,0,0.2);
-  animation: move 3s infinite;
-}
-
-#cloud:after {
-  content: '';
-  background: rgba(255, 255, 255);
+.digital {
+  color: #ffffff;
+  text-align: left;
+  font: 900 18px/136.1% "Avenir", sans-serif;
   position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  top: -50px;
-  left: 50px;
+  left: 124.12px;
+  top: 0.5px;
 }
-
-#cloud:before {
-  content: '';
-  background: rgba(255, 255, 255);
+.studio {
+  color: #ffffff;
+  text-align: left;
+  font: 900 18px/136.1% "Avenir", sans-serif;
   position: absolute;
-  width: 170px;
-  height: 150px;
-  border-radius: 50%;
-  top: -90px;
-  right: 40px;
+  left: 124.12px;
+  top: 19.5px;
+}
+.group-12 {
+  position: absolute;
+  left: 82.12px;
+  top: 4.5px;
+  overflow: visible;
+}
+.frame-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+._996-509-567894 {
+  color: #ffffff;
+  text-align: left;
+  font: 500 18px "Rubik", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+.s {
+  flex-shrink: 0;
+  width: 176px;
+  height: 44px;
+  position: static;
+}
+.rectangle-s {
+  background: #ffffff;
+  border-radius: 41px;
+  border-style: solid;
+  border-color: #ff6333;
+  border-width: 1px;
+  width: 176px;
+  height: 44px;
+  position: absolute;
+  left: 189px;
+  top: 0px;
+}
+.d {
+  color: #ff6333;
+  text-align: left;
+  font: 500 16px "Rubik", sans-serif;
+  position: absolute;
+  left: 210px;
+  top: 12px;
+  width: 135px;
+}
+.hero,
+.hero * {
+  box-sizing: border-box;
+}
+.hero {
+  background: #1a191a;
+  flex-shrink: 0;
+  width: 1914.05px;
+  height: 980px;
+  position: relative;
+  overflow: hidden;
+}
+._04-fragment-of-saturn {
+  position: absolute;
+  left: -353px;
+  top: 47px;
+  overflow: visible;
+}
+.simple-solutions-for-complex-problems {
+  color: #ffffff;
+  text-align: left;
+  font: var(--h-1, 500 96px "Rubik", sans-serif);
+  position: absolute;
+  left: 213px;
+  top: 249px;
+  width: 814px;
+  height: 388px;
+}
+.group-8 {
+  position: absolute;
+  inset: 0;
+}
+._001-facebook {
+  position: absolute;
+  left: 212.78px;
+  top: 804.61px;
+  overflow: visible;
+}
+._003-twitter {
+  position: absolute;
+  left: 262.69px;
+  top: 805.52px;
+  overflow: visible;
+}
+._004-instagram {
+  position: absolute;
+  left: 324.63px;
+  top: 803.71px;
+  overflow: visible;
+}
+.header {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-1 {
+  background: #ffffff;
+  width: 1916px;
+  height: 83px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 201px;
+  align-items: center;
+  justify-content: center;
+  width: 1476.25px;
+  position: absolute;
+  left: 220px;
+  top: 19px;
+}
+.frame-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 55.5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
 }
 
-@keyframes move {
-  0% {
-    transform: translatex(0);
-  }
-  50% {
-    transform: translatex(-40px);
-  }
+.frame-4 {
+  flex-shrink: 0;
+  width: 299px;
+  height: 43px;
+  position: relative;
 }
+.group-1 {
+  position: absolute;
+  inset: 0;
+}
+.digital {
+  color: #ffffff;
+  text-align: left;
+  font: 900 18px/136.1% "Avenir", sans-serif;
+  position: absolute;
+  left: 124.12px;
+  top: 0.5px;
+}
+
+

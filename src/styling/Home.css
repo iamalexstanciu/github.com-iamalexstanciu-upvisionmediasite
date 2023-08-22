@@ -1,227 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+/* Figma Styles of your File */
+:root {
+  /* Colors */
 
-.container-home{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    font-weight: 400;
-    word-spacing: 4px;
-    width: 100%;
-    max-width: 100vw;
-    max-height: 100%;
-    height: 100%;
-   
+  /* Fonts */
+  --h-2: 500 72px "Rubik", sans-serif;
+  --h-1: 500 96px "Rubik", sans-serif;
+
+  /* Effects */
 }
-
-.left-side-home {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    color: var(--black);
-    text-shadow: 1px 1px 1px var(--dark);
-    justify-content: center;
-    justify-items: center;
-    font-family: monospace;
-    max-height: 55%;
-    align-items: center;
-    width: 80%;
-    max-width: 50vw;
-    max-height: 90vh;
-    position: relative;
-    top: 25%;
-    left: 0%;
-
-}
-
-.text-content {
-    position: relative;
-    flex: 1;
-    display: flex;
-    padding: 10%;
-    border-radius: 40px 40px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    text-align: center;
-}
-
-
-/* Design button homepage */
-
-
-.circle-button {
-    display: inline-block;
-    position: relative;
-        top: -30%;
-        left: 25%;
-        transform: translate(100%, 0);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: var(--orange);
-    color: var();
-    font-size: 14px;
-    text-align: center;
-    line-height: 100px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.circle-button:hover {
-    width: 200px;
-    height: 70px;
-    border-radius: 5px;
-    background-color: var(--white);
-    font-size: 16px;
-    box-shadow: 5px 5px 2px 1px var(--orange);
-}
-
-.arrow {
-    position: absolute;
-    top: 45%;
-    left: 38%;
-    width: 15px;
-    transform: rotate(30deg);
-    height: 15px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
-    transition: all 0.3s ease;
-}
-
-.circle-button:hover .arrow {
-    display: none;
-}
-
-.circle-button:hover::before {
-    content: "Let's Begin!";
-    display: block;
-    top: -25%;
-    left: 20%;
-    position: absolute;
-    font-size: 20px;
-    color: var(--black);
-}
-
-
-
-
-.right-side-home {
-    max-width: 60%;
-    width: 35%;
-    height: 70%;
-    justify-content: center;
-    position: relative;
-    top: 30%;
-}
-
-.right-side-home img {
-    width: 100%;
-    -webkit-transition: opacity 2s linear;
-        -moz-transition: opacity 2s linear;
-        transition: opacity 2s linear;
-}
-
-.right-side-home img:hover {
-    opacity: 0.5;
-}
-
-
-@media (max-width: 768px) {
-
-.container-home {
-    height: 90vh;
-}
-
-    .left-side-home {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            justify-items: center;
-            height: 50%;
-            font-family: monospace;
-            max-height: 55%;
-            align-items: center;
-            width: 55%;
-            position: relative;
-            top: 20%;
-            left: 0%;
-    
-        }
-    
-    
-        .right-side-home {
-            display: none;
-        }
-    
-
-}
-
-.neon{
-    font-family: "Lucida Sans Typewriter";
-     font-size: 2.5em;
-     color: var(--dark);
-   
-}
-.call_to_action{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* === removing default button style ===*/
-.buttonpma {
-  margin: 0;
-  height: 140%;
-  background: transparent;
-  padding: 20px;
-  border: none;
-  animation: r1 3s ease-in-out infinite;
- /*linear*/
-  border: 6px #393E46 solid;
-  border-radius: 14px;
-}
-
-/* button styling */
-.buttonpma {
-  --border-right: 6px;
-  --text-stroke-color:#393E46;
-  --animation-color: #F96D00;
-  --fs-size: 2em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
- 
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-/* this is the text, when you hover on button */
-.hover-text {
-  position: absolute;
+.hero,
+.hero * {
   box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
+}
+.hero {
+  background: #1a191a;
+  flex-shrink: 0;
+  width: 1914.05px;
+  height: 980px;
+  position: relative;
   overflow: hidden;
-  transition: 1.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-  animation: r2 2s ease-in-out infinite;
 }
-/* hover */
-.buttonpma:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 70px var(--animation-color))
+._04-fragment-of-saturn {
+  position: absolute;
+  left: -353px;
+  top: 47px;
+  overflow: visible;
+}
+.simple-solutions-for-complex-problems {
+  color: #ffffff;
+  text-align: left;
+  font: var(--h-1, 500 96px "Rubik", sans-serif);
+  position: absolute;
+  left: 213px;
+  top: 249px;
+  width: 814px;
+  height: 388px;
+}
+.group-8 {
+  position: absolute;
+  inset: 0;
+}
+._001-facebook {
+  position: absolute;
+  left: 212.78px;
+  top: 804.61px;
+  overflow: visible;
+}
+._003-twitter {
+  position: absolute;
+  left: 262.69px;
+  top: 805.52px;
+  overflow: visible;
+}
+._004-instagram {
+  position: absolute;
+  left: 324.63px;
+  top: 803.71px;
+  overflow: visible;
+}
+.header {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-1 {
+  background: #ffffff;
+  width: 1916px;
+  height: 83px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 201px;
+  align-items: center;
+  justify-content: center;
+  width: 1476.25px;
+  position: absolute;
+  left: 220px;
+  top: 19px;
+}
+.frame-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 55.5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+. {
+  color: #ffffff;
+  text-align: left;
+  font: 500 18px "Rubik", sans-serif;
+  position: relative;
+}
+.frame-4 {
+  flex-shrink: 0;
+  width: 299px;
+  height: 43px;
+  position: relative;
+}
+.group-1 {
+  position: absolute;
+  inset: 0;
+}
+.digital {
+  color: #ffffff;
+  text-align: left;
+  font: 900 18px/136.1% "Avenir", sans-serif;
+  position: absolute;
+  left: 124.12px;
+  top: 0.5px;
+}
+.studio {
+  color: #ffffff;
+  text-align: left;
+  font: 900 18px/136.1% "Avenir", sans-serif;
+  position: absolute;
+  left: 124.12px;
+  top: 19.5px;
+}
+.group-12 {
+  position: absolute;
+  left: 82.12px;
+  top: 4.5px;
+  overflow: visible;
+}
+.frame-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+._996-509-567894 {
+  color: #ffffff;
+  text-align: left;
+  font: 500 18px "Rubik", sans-serif;
+  text-transform: uppercase;
+  position: relative;
 }
 
-
-@keyframes r2 {
-  50% {
-    transform: rotateX(-65deg);
-  }
-}

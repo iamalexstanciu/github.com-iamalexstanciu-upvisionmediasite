@@ -1,17 +1,7 @@
-import React from "react";
-  
-  import "../styling/Contact.css";
+import React from 'react'
 
-import  PagesTest  from "./PagesTest";
-  function Contact() {
-  
-
-    return (
-      <div className="contact-container">
-        <PagesTest/>
-       
-      </div>
-    );
-  }
-
-  export default Contact;
+export default function Contact() {
+  return (
+    <div>Contact</div>
+  )
+}
