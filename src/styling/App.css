@@ -4,7 +4,9 @@
   --orange: #F96D00;
   --white: #F2F2F2;
   --grey:#DBD8E3;
- 
+  /* Fonts */
+    --h-2: 500 72px "Rubik", sans-serif;
+    --h-1: 500 96px "Rubik", sans-serif;
   
 }
 
