@@ -1,145 +1,44 @@
-@import url('https://fonts.cdnfonts.com/css/kegina');
-@import url('https://fonts.cdnfonts.com/css/the-abstrack');
-
-body {
-overflow-y: scroll;
-background-image: url("../assets/back-services.jpg");
-background-repeat: no-repeat;
-background-size: cover;
+.hero {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 }
 
-/* SmoothScrollComponent.css */
-.smooth-scroll-container {
-max-width: 100%;
-display: flex;
-flex-direction: column;
-overflow-y: hidden;
-scroll-snap-type: y mandatory;
-background-image: url("../assets/back-services.jpg");
-background-repeat: no-repeat;
-background-size: cover;
+.hero {
+    background: #1a191a;
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-.page {
-max-width: 100vw;
-height: 100vh;
-overflow-y: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 2rem;
-scroll-snap-align: start;
+.services-right-side
+{
+    color: #ffffff;
+    text-align: right;
+    font: 32px "Rubik", sans-serif;
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    text-align: left;
+}
 
+.services-right-side li {
+    list-style-type: none;
 }
 
 
-:root {
---strokeWidth: 4px;
---strokeColor: var(--dark);
---timing: 2.6s;
---easing: cubic-bezier(0.77, 0, 0.175, 1);
+.title-right-side {
+    font-size: 40px;
+    text-align: center;
 }
 
 
-* {
-box-sizing: border-box;
-}
-
-.scroll-down-dude:before,
-.scroll-down-dude:after {
-content: '';
-display: block;
-width: 12px;
-height: 12px;
-position: fixed;
-bottom: 5%;
-left: 50%;
-transform: rotate(45deg);
-border-bottom: var(--strokeWidth) solid var(--strokeColor);
-border-right: var(--strokeWidth) solid var(--strokeColor);
-}
-
-.scroll-down-dude:before {
-animation: down-arrow-before var(--timing) var(--easing) infinite;
-}
-
-.scroll-down-dude:after {
-animation: down-arrow-after var(--timing) var(--easing) infinite;
-}
-
-@keyframes down-arrow-before {
-50% {
-transform: rotate(45deg) translate(70%, 70%);
-}
-
-100% {
-transform: rotate(45deg) translate(70%, 70%);
-}
-}
-
-@keyframes down-arrow-after {
-50% {
-transform: rotate(45deg) translate(110%, 110%);
-opacity: 0;
-}
-
-51% {
-transform: rotate(45deg) translate(-130%, -130%);
-}
-
-100% {
-transform: rotate(45deg) translate(-70%, -70%);
-opacity: 1;
-}
-}
-
-@media (max-width: 1200px) {
-.page1-image {
-display: none;
-}
-
-.page1-container {
-display: flex;
-flex-direction: column;
-position: relative;
-top: -15%;
-left: 10%;
-}
-
-.page2-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-}
-
-.page2-left {
-display: grid;
-gap: 5%;
-}
-
-.page2-right {
-display: none;
-}
-
-.reviews-container {
-display: flex;
-flex-direction: column;
-width: fit-content;
-justify-content: center;
-justify-items: center;
-align-items: center;
-height: 80%;
-
-}
-
-.reviews-map {
-max-width: fit-content;
-height: fit-content;
-}
-
-.reviews-title {
-align-content: center;
-text-align: center;
-}
+.services-image {
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    border-radius: 5%;
 }
