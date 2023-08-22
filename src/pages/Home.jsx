@@ -2,9 +2,9 @@ import React from 'react'
 import NavigationBar from '../components/NavigationBar';
 export default function Home() {
   return (
-    <div>
-      <NavigationBar/>
+    <>
       <div class="hero">
+        <NavigationBar />
         <svg
           class="_04-fragment-of-saturn"
           width="960"
@@ -164,6 +164,6 @@ export default function Home() {
           </svg>
         </div>
       </div>
-    </div>
+    </>
   );
 }

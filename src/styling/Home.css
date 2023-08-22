@@ -19,6 +19,7 @@
   height: 980px;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 ._04-fragment-of-saturn {
   position: absolute;
@@ -90,12 +91,7 @@
   flex-shrink: 0;
   position: relative;
 }
-. {
-  color: #ffffff;
-  text-align: left;
-  font: 500 18px "Rubik", sans-serif;
-  position: relative;
-}
+
 .frame-4 {
   flex-shrink: 0;
   width: 299px;
