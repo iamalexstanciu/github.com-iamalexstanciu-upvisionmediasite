@@ -1,10 +1,10 @@
 import React from 'react'
 import NavigationBar from '../components/NavigationBar';
+import Cards from './Cards';
 export default function Home() {
   return (
     <>
       <div class="hero">
-        <NavigationBar />
         <svg
           class="_04-fragment-of-saturn"
           width="960"
@@ -103,7 +103,7 @@ export default function Home() {
         </svg>
 
         <div class="simple-solutions-for-complex-problems">
-          Simple solutions for complex problems
+          Transform your vision into reality.
         </div>
         <div class="group-8">
           <svg
@@ -163,7 +163,10 @@ export default function Home() {
             />
           </svg>
         </div>
+
+        <NavigationBar />
       </div>
+   
     </>
   );
 }
