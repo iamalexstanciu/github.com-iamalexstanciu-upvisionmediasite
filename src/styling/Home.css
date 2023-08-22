@@ -1,13 +1,3 @@
-/* Figma Styles of your File */
-:root {
-  /* Colors */
-
-  /* Fonts */
-  --h-2: 500 72px "Rubik", sans-serif;
-  --h-1: 500 96px "Rubik", sans-serif;
-
-  /* Effects */
-}
 .hero,
 .hero * {
   box-sizing: border-box;
@@ -19,7 +9,6 @@
   height: 980px;
   position: relative;
   overflow: hidden;
-  z-index: 0;
 }
 ._04-fragment-of-saturn {
   position: absolute;
@@ -71,73 +60,3 @@
   left: 0px;
   top: 0px;
 }
-.frame-3 {
-  display: flex;
-  flex-direction: row;
-  gap: 201px;
-  align-items: center;
-  justify-content: center;
-  width: 1476.25px;
-  position: absolute;
-  left: 220px;
-  top: 19px;
-}
-.frame-1 {
-  display: flex;
-  flex-direction: row;
-  gap: 55.5px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.frame-4 {
-  flex-shrink: 0;
-  width: 299px;
-  height: 43px;
-  position: relative;
-}
-.group-1 {
-  position: absolute;
-  inset: 0;
-}
-.digital {
-  color: #ffffff;
-  text-align: left;
-  font: 900 18px/136.1% "Avenir", sans-serif;
-  position: absolute;
-  left: 124.12px;
-  top: 0.5px;
-}
-.studio {
-  color: #ffffff;
-  text-align: left;
-  font: 900 18px/136.1% "Avenir", sans-serif;
-  position: absolute;
-  left: 124.12px;
-  top: 19.5px;
-}
-.group-12 {
-  position: absolute;
-  left: 82.12px;
-  top: 4.5px;
-  overflow: visible;
-}
-.frame-2 {
-  display: flex;
-  flex-direction: row;
-  gap: 37px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-._996-509-567894 {
-  color: #ffffff;
-  text-align: left;
-  font: 500 18px "Rubik", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-}
-
