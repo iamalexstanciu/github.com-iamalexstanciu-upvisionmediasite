@@ -253,7 +253,7 @@ function CursorCore({
       borderRadius: "50%",
       width: innerSize,
       height: innerSize,
-      pointerEvents: "none",
+      pointerEvents: "auto",
       backgroundColor: `rgba(${color}, 1)`,
       ...(innerStyle && innerStyle),
       transition: "opacity 0.15s ease-in-out, transform 0.25s ease-in-out",
@@ -263,7 +263,7 @@ function CursorCore({
       display: "block",
       position: "fixed",
       borderRadius: "50%",
-      pointerEvents: "none",
+      pointerEvents: "auto",
       width: outerSize,
       height: outerSize,
       backgroundColor: `rgba(${color}, ${outerAlpha})`,
@@ -274,7 +274,7 @@ function CursorCore({
   };
 
   // Hide / Show global cursor
-  document.body.style.cursor = "none";
+  document.body.style.cursor = "auto";
 
   return (
     <React.Fragment>

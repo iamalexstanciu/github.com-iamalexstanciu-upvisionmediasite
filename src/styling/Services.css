@@ -1,39 +1,123 @@
 .hero {
-    background: #1a191a;
-    flex-shrink: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
+background: #1a191a;
+width: 100vw;
+height: 100vh;
+display: grid;
+grid-template-rows: 10% 90%;
 }
 
-
-.services-right-side
-{
-    color: #ffffff;
-    text-align: right;
-    font: 32px "Rubik", sans-serif;
-    position: absolute;
-    right: 5%;
-    top: 20%;
-    text-align: left;
+.container-content-services {
+display: grid;
+grid-template-columns: repeat(2, 50%);
 }
 
-.services-right-side li {
-    list-style-type: none;
-}
-
-
-.title-right-side {
-    font-size: 40px;
-    text-align: center;
+.services-right-side{
+color: #ffffff;
+display: flex;
+flex-direction: column;
+max-height: 10%;
+font: 32px "Rubik", sans-serif;
+position: relative;
+justify-items: center;
+align-content: center;
+top: 3%;
+text-align: center;
 }
 
 
 .services-image {
-    width: 40%;
-    height: 70%;
-    position: absolute;
-    left: 5%;
-    top: 0%;
-    border-radius: 5%;
+width: 40%;
+height: 90%;
+position: absolute;
+left: 5%;
+top: 0%;
+border-radius: 5%;
+}
+
+.slogan-down-services {
+position: relative;
+top: 5%;
+left: 25%;
+background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+background-size: cover;
+color: transparent;
+-moz-background-clip: text;
+-webkit-background-clip: text;
+text-transform: uppercase;
+font-size: 20px;
+margin: 10px 0;
+}
+
+.card-description-service {
+max-width: 60%;
+height: fit-content;
+transition: all 0.2s;
+position: relative;
+cursor: pointer;
+}
+
+.card-inner {
+width: fit-content;
+height: fit-content;
+padding: 5%;
+font-size: 16px;
+background: rgba(255, 255, 255, .05);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(10px);
+border-radius: 8px;
+}
+
+.card-description-service:hover {
+transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+width: 100px;
+height: 100px;
+background: radial-gradient(#5f5f5f, #28014d);
+border-radius: 10%;
+position: absolute;
+animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.card1-services {
+position: relative;
+left: -20%;
+
+}
+
+.card2-services {
+position: relative;
+right: -25%;
+top: 80%;
+}
+
+.card3-services {
+position: relative;
+right: 20%;
+top: 100%;
+}
+
+.circle:nth-child(1) {
+top: -25px;
+left: -25px;
+}
+
+.circle:nth-child(2) {
+bottom: -25px;
+right: -25px;
+animation-name: move-down1;
+}
+
+
+@keyframes move-up6 {
+to {
+transform: translateY(-10px);
+}
+}
+
+@keyframes move-down1 {
+to {
+transform: translateY(10px);
+}
 }
