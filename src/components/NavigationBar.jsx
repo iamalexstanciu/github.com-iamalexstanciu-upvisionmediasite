@@ -2,6 +2,7 @@
 
 import React from 'react'
 import "../styling/NavigationBar.css"
+import LogoUpvision from "../assets/logo-upvision.png"
 
 export default function NavigationBar() {
   return (
@@ -13,7 +14,8 @@ export default function NavigationBar() {
         <div class="">Portfolio</div>
       </div>
       <div class="frame-4">
-        <div class="group-1">
+        <div class="group-1" >
+          <img className='image-logo-navbar' src={LogoUpvision} alt='logo'/>
           <div class="studio">Media</div>
           <div class="digital">upVision</div>
         </div>

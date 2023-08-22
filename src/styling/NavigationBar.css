@@ -7,6 +7,15 @@
     --h-1: 500 96px "Rubik", sans-serif;
 
     /* Effects */
+
+  .image-logo-navbar{
+    align-items: center;
+    height: 7rem;
+    position: relative;
+    top: -25%;
+    left: 20%;
+}
+
     }
     .frame-3,
     .frame-3 * {
@@ -40,6 +49,8 @@
     .group-1 {
     position: absolute;
     inset: 0;
+    display: flex;
+    flex-direction: row;
     }
     .digital {
     color: #ffffff;
