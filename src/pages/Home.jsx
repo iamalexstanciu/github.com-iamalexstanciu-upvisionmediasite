@@ -103,8 +103,9 @@ export default function Home() {
         </svg>
 
         <div class="simple-solutions-for-complex-problems">
-          Transform your vision into reality.
+          <p>Transform your vision into reality.</p>
         </div>
+
         <div class="group-8">
           <svg
             class="_001-facebook"
@@ -148,6 +149,7 @@ export default function Home() {
               d="M7.49836 0.708496H15.74C19.5325 0.708496 22.6079 3.49176 22.6079 6.92392V14.3824C22.6079 17.8146 19.5325 20.5978 15.74 20.5978H7.49836C3.70586 20.5978 0.630371 17.8146 0.630371 14.3824V6.92392C0.630371 3.49176 3.70586 0.708496 7.49836 0.708496ZM15.74 18.7332C18.391 18.7332 20.5475 16.7816 20.5475 14.3824V6.92396C20.5475 4.52482 18.391 2.57318 15.74 2.57318H7.49836C4.84732 2.57318 2.69077 4.52482 2.69077 6.92396V14.3824C2.69077 16.7816 4.84732 18.7332 7.49836 18.7332H15.74Z"
               fill="white"
             />
+
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
@@ -162,12 +164,11 @@ export default function Home() {
               fill="white"
             />
           </svg>
+         
         </div>
 
         <NavigationBar />
-        
       </div>
-     
     </>
   );
 }

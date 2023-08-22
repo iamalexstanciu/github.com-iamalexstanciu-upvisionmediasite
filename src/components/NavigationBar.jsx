@@ -7,23 +7,24 @@ import LogoUpvision from "../assets/logo-upvision.png"
 export default function NavigationBar() {
   return (
     <div class="frame-3">
+      <div class="frame-4">
+        <div class="group-1">
+          <img className="image-logo-navbar" src={LogoUpvision} alt="logo" />
+          <div class="studio">Media</div>
+          <div class="digital">upVision</div>
+        </div>
+      </div>
       <div class="frame-1">
         <div class="">Services</div>
         <div class="">About Us</div>
         <div class="">Clients</div>
         <div class="">Portfolio</div>
       </div>
-      <div class="frame-4">
-        <div class="group-1" >
-          <img className='image-logo-navbar' src={LogoUpvision} alt='logo'/>
-          <div class="studio">Media</div>
-          <div class="digital">upVision</div>
-        </div>
-      </div>
+
       <div class="frame-2">
-        <div class="_996-509-567894">0756080093</div>
+       
         <div class="s">
-          <button class="sparkle-button" >
+          <button class="sparkle-button">
             <span class="spark"></span>
 
             <span class="backdrop"></span>
