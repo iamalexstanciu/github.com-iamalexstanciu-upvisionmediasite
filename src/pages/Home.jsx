@@ -165,8 +165,9 @@ export default function Home() {
         </div>
 
         <NavigationBar />
+        
       </div>
-   
+     
     </>
   );
 }
