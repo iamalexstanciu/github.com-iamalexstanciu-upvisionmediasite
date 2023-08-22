@@ -4,9 +4,14 @@ import "../../styling/Page1.css";
 function ContentPage1() {
   return (
     <div className="page1-container">
-      <h2 className="title-page1-services">
-        Unveil your business potential with captivating online presence!
-      </h2>
+      <div class="title-page1">
+        <h1 className="h1-title-page1">
+          Future is now!
+          <span>
+            Unveil your business potential with captivating online presence!
+          </span>
+        </h1>
+      </div>
       <div className="card-container-services-page1">
         <div class="card-services-page1">
           <div class="card__content-title">
