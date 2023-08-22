@@ -20,6 +20,7 @@ const ScrollToTop = withRouter(_ScrollToTop);
 export default function App() {
   return (
     <Router>
+      <NavigationBar />
       <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
@@ -31,7 +32,6 @@ export default function App() {
         />
       </div>
       <ScrollToTop>
-        <NavigationBar />
         <AppRoutes />
       </ScrollToTop>
     </Router>
