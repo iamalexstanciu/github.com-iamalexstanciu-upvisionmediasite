@@ -18,7 +18,7 @@
     text-align: right;
     font: 32px "Rubik", sans-serif;
     position: absolute;
-    right: 5%;
+    right: 15%;
     top: 20%;
     text-align: left;
 }
@@ -34,11 +34,11 @@
 }
 
 
-.services-gif {
-    width: 60%;
-    height: 45%;
+.services-image {
+    width: 40%;
+    height: 70%;
     position: absolute;
     left: 5%;
-    top: 10%;
+    top: 0%;
     border-radius: 5%;
 }
