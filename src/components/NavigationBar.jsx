@@ -19,13 +19,13 @@ export default function NavigationBar() {
       </div>
       <div className="frame-1">
         <Link
-          to="services-section"
+          to="/services"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
-          onClick={scrollToTop}> 
-          Services 
+          onClick={scrollToTop}>
+          Services
         </Link>
         <div className="">About Us</div>
         <div className="">Clients</div>

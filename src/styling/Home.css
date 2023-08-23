@@ -25,28 +25,7 @@
   width: 814px;
   height: 388px;
 }
-/* .group-8 {
-  position: absolute;
-  bottom: 50%;
-}
-._001-facebook {
-  position: absolute;
-  left: 212.78px;
-  top: 804.61px;
-  overflow: visible;
-}
-._003-twitter {
-  position: absolute;
-  left: 262.69px;
-  top: 805.52px;
-  overflow: visible;
-}
-._004-instagram {
-  position: absolute;
-  left: 324.63px;
-  top: 30%;
-  overflow: visible;
-} */
+
 .header {
   position: absolute;
   inset: 0;
