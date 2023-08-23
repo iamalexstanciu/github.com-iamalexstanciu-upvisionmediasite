@@ -7,6 +7,11 @@ import AppRoutes from "./js/routes";
 import AnimatedCursor from "./js/CustomCursor";
 import "./styling/App.css";
 import NavigationBar from "./components/NavigationBar";
+import Services from "./pages/Services";
+import About from "./pages/About";
+import Clients from "./pages/Clients";
+import Reviews from "./pages/Reviews";
+import Contact from "./pages/Contact";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -33,6 +38,12 @@ export default function App() {
       </div>
       <ScrollToTop>
         <AppRoutes />
+        <Services />
+        <About />
+        <Clients />
+        <Reviews />
+        <Contact />
+        <Footer />
       </ScrollToTop>
     </Router>
   );
