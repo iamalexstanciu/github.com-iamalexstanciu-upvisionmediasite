@@ -22,21 +22,23 @@ export default function Services() {
             <div class="card-inner">
               Embark on a transformative digital voyage with our cutting-edge
               web development agency. Our journey begins by crafting captivating
-              landing pages that captivate your audience's attention and leave a
-              lasting impression. Through meticulous design and strategic
-              content placement, we ensure your brand's unique story takes
-              center stage.
-            </div>
+              <ins className="orange">landing pages</ins> that captivate your
+              audience's attention and leave a lasting impression.{" "}
+              
+                Through meticulous design and strategic content placement, we
+                ensure your brand's unique story takes center stage.
+                          </div>
           </div>
           <div class="card2-services card-description-service">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="card-inner">
-              Navigating the modern online landscape requires adaptability,
-              which is why we meticulously tailor your website's mobile
-              responsiveness. Whether on a smartphone, tablet, or desktop, your
-              site will seamlessly adapt, delivering an exceptional user
-              experience that transcends devices.
+                Navigating the modern online landscape requires adaptability,
+          
+              which is why we meticulously tailor your website's{" "}
+              <ins className="orange">mobile responsiveness.</ins> Whether on a
+              smartphone, tablet, or desktop, your site will seamlessly adapt,
+              delivering an exceptional user experience that transcends devices.
             </div>
           </div>
           <div class="card3-services card-description-service">
@@ -44,11 +46,12 @@ export default function Services() {
             <div class="circle"></div>
             <div class="card-inner">
               But our journey doesn't end there. We understand the importance of
-              visibility in the vast digital expanse. Our SEO expertise ensures
-              your website's prominence, employing industry-leading strategies
-              to elevate your search engine rankings. By optimizing keywords,
-              enhancing site speed, and refining metadata, we pave the path for
-              your business to shine amidst the competition.
+              visibility in the vast digital expanse. Our{" "}
+              <ins className="orange">SEO</ins> expertise ensures your website's
+              prominence, employing industry-leading strategies to elevate your
+              search engine rankings. By optimizing keywords, enhancing site
+              speed, and refining metadata, we pave the path for your business
+              to shine amidst the competition.
             </div>
           </div>
         </div>
