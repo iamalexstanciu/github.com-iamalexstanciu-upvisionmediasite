@@ -4,37 +4,42 @@ import LogoUpvision from "../assets/logo-upvision.png";
 import { Link } from "react-scroll";
 
 export default function NavigationBar() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div class="frame-3">
-      <div class="frame-4">
-        <div class="group-1">
+    <div className="frame-3">
+      <div className="frame-4">
+        <div className="group-1">
           <img className="image-logo-navbar" src={LogoUpvision} alt="logo" />
-          <div class="studio">Media</div>
-          <div class="digital">upVision</div>
+          <div className="studio">Media</div>
+          <div className="digital">upVision</div>
         </div>
       </div>
-      <div class="frame-1">
+      <div className="frame-1">
         <Link
-          to="services"
+          to="services-section"
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}>
-          Services
+          duration={500}
+          onClick={scrollToTop}> 
+          Services 
         </Link>
-        <div class="">About Us</div>
-        <div class="">Clients</div>
-        <div class="">Portfolio</div>
+        <div className="">About Us</div>
+        <div className="">Clients</div>
+        <div className="">Portfolio</div>
       </div>
 
-      <div class="frame-2">
-        <div class="s">
-          <button class="sparkle-button">
-            <span class="spark"></span>
+      <div className="frame-2">
+        <div className="s">
+          <button className="sparkle-button">
+            <span className="spark"></span>
 
-            <span class="backdrop"></span>
+            <span className="backdrop"></span>
             <svg
-              class="sparkle"
+              className="sparkle"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -57,12 +62,12 @@ export default function NavigationBar() {
                 stroke-linecap="round"
                 stroke-linejoin="round"></path>
             </svg>
-            <span class="text">Contact Us</span>
+            <span className="text">Contact Us</span>
           </button>
-          <div class="bodydrop"></div>
-          <span aria-hidden="true" class="particle-pen">
+          <div className="bodydrop"></div>
+          <span aria-hidden="true" className="particle-pen">
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +79,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +91,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +103,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +115,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +127,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +139,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +151,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +163,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -170,7 +175,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +187,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -194,7 +199,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +211,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +223,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -230,7 +235,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +247,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -254,7 +259,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -266,7 +271,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +283,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -290,7 +295,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"></path>
             </svg>
             <svg
-              class="particle"
+              className="particle"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
