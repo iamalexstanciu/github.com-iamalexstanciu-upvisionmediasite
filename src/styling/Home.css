@@ -1,9 +1,9 @@
 .home-section,
 .home-section * {
   box-sizing: border-box;
+  background: #1a191a;
 }
 .home-section {
-  background: #1a191a;
   flex-shrink: 0;
   width: 100vw;
   height: 100vh;
@@ -13,7 +13,6 @@
 ._04-fragment-of-saturn {
   position: absolute;
   left: -353px;
-  top: 47px;
   overflow: visible;
 }
 .simple-solutions-for-complex-problems {
@@ -26,9 +25,9 @@
   width: 814px;
   height: 388px;
 }
-.group-8 {
+/* .group-8 {
   position: absolute;
-  
+  bottom: 50%;
 }
 ._001-facebook {
   position: absolute;
@@ -47,7 +46,7 @@
   left: 324.63px;
   top: 30%;
   overflow: visible;
-}
+} */
 .header {
   position: absolute;
   inset: 0;

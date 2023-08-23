@@ -105,7 +105,7 @@ export default function Home() {
         <div class="simple-solutions-for-complex-problems">
           <p>Transform your vision into reality.</p>
         </div>
-
+{/* 
         <div class="group-8">
           <svg
             class="_001-facebook"
@@ -165,7 +165,7 @@ export default function Home() {
             />
           </svg>
          
-        </div>
+        </div> */}
 
         <NavigationBar />
       </div>

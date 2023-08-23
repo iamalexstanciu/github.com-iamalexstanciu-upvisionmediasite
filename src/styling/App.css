@@ -7,6 +7,7 @@
   /* Fonts */
     --h-2: 500 72px "Rubik", sans-serif;
     --h-1: 500 96px "Rubik", sans-serif;
+    background: #1a191a;
   
 }
 
@@ -18,7 +19,7 @@
 
 html,
 body {
-  background: var(--grey);
+  background: #1a191a;
 }
 
 
@@ -26,4 +27,5 @@ body {
 .section {
   min-height: 100vh;
   padding: 10px 0;
+  background: #1a191a;
 }
