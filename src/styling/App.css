@@ -20,3 +20,10 @@ html,
 body {
   background: var(--grey);
 }
+
+
+/* src/styling/App.css or your preferred CSS file */
+.section {
+  min-height: 100vh;
+  padding: 10px 0;
+}

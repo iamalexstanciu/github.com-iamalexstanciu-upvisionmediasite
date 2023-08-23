@@ -1,31 +1,20 @@
-import React, { useEffect } from "react";
+// src/App.js
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
-import withRouter from "./js/routing";
-import AppRoutes from "./js/routes";
-
 import AnimatedCursor from "./js/CustomCursor";
 import "./styling/App.css";
-import NavigationBar from "./components/NavigationBar";
+import Footer from "./components/Footer";
+import Section from "./components/Section";
+import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Clients from "./pages/Clients";
 import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
 
-function _ScrollToTop(props) {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return props.children;
-}
-const ScrollToTop = withRouter(_ScrollToTop);
-
 export default function App() {
   return (
-    <Router>
-      <NavigationBar />
+    <div>
       <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
@@ -36,15 +25,25 @@ export default function App() {
           outerScale={5}
         />
       </div>
-      <ScrollToTop>
-        <AppRoutes />
+      <Section id="home">
+        <Home />
+      </Section>
+      <Section id="services">
         <Services />
+      </Section>
+      <Section id="about">
         <About />
+      </Section>
+      <Section id="clients">
         <Clients />
+      </Section>
+      <Section id="reviews">
         <Reviews />
+      </Section>
+      <Section id="contact">
         <Contact />
-        <Footer />
-      </ScrollToTop>
-    </Router>
+      </Section>
+      <Footer />
+    </div>
   );
 }

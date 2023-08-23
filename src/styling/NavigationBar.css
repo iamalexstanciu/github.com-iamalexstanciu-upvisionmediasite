@@ -395,7 +395,7 @@
 
 .particle-pen {
   position: absolute;
-  width: 200%;
+  width: fit-content;
   aspect-ratio: 1;
   top: 50%;
   left: 50%;

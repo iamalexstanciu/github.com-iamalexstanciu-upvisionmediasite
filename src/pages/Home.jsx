@@ -4,7 +4,7 @@ import NavigationBar from '../components/NavigationBar';
 export default function Home() {
   return (
     <>
-      <div class="hero">
+      <div class="home-section">
         <svg
           class="_04-fragment-of-saturn"
           width="960"

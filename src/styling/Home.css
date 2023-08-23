@@ -1,12 +1,12 @@
-.hero,
-.hero * {
+.home-section,
+.home-section * {
   box-sizing: border-box;
 }
-.hero {
+.home-section {
   background: #1a191a;
   flex-shrink: 0;
-  width: 1914.05px;
-  height: 980px;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -28,7 +28,7 @@
 }
 .group-8 {
   position: absolute;
-  inset: 0;
+  
 }
 ._001-facebook {
   position: absolute;
@@ -45,7 +45,7 @@
 ._004-instagram {
   position: absolute;
   left: 324.63px;
-  top: 803.71px;
+  top: 30%;
   overflow: visible;
 }
 .header {

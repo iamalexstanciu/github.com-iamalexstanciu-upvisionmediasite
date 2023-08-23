@@ -1,4 +1,4 @@
-.hero {
+.services-section {
 background: #1a191a;
 width: 100vw;
 height: 100vh;
@@ -29,13 +29,12 @@ text-align: center;
 width: 40%;
 height: 90%;
 position: absolute;
-left: 0%;
-top: 10%;
 border-radius: 5%;
 }
 
 .slogan-down-services {
 position: relative;
+width: 70%;
 top: 5%;
 left: 25%;
 background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
