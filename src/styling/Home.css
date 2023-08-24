@@ -1,35 +1,66 @@
-.home-section,
-.home-section * {
+.hero,
+.hero * {
   box-sizing: border-box;
-  background: #1a191a;
 }
-.home-section {
+
+.hero {
+  background: #1a191a;
   flex-shrink: 0;
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
+
 ._04-fragment-of-saturn {
   position: absolute;
-  left: -353px;
+  left: -25%;
+  top: 5%;
   overflow: visible;
 }
+
 .simple-solutions-for-complex-problems {
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
   text-align: left;
   font: var(--h-1, 500 96px "Rubik", sans-serif);
   position: absolute;
-  left: 213px;
-  top: 249px;
+  left: 10%;
+  top: 25%;
   width: 814px;
   height: 388px;
+}
+
+.group-8 {
+  position: absolute;
+  inset: 0;
+}
+
+._001-facebook {
+  position: absolute;
+  left: 10%;
+  top: 80%;
+  overflow: visible;
+}
+
+._003-twitter {
+  position: absolute;
+  left: 12.5%;
+    top: 80%;
+  overflow: visible;
+}
+
+._004-instagram {
+  position: absolute;
+  left: 15%;
+  top: 79.8%;
+  overflow: visible;
 }
 
 .header {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-1 {
   background: #ffffff;
   width: 1916px;
@@ -38,17 +69,7 @@
   left: 0px;
   top: 0px;
 }
-.frame-3 {
-  display: flex;
-  flex-direction: row;
-  gap: 201px;
-  align-items: center;
-  justify-content: center;
-  width: 1476.25px;
-  position: absolute;
-  left: 220px;
-  top: 19px;
-}
+
 .frame-1 {
   display: flex;
   flex-direction: row;
@@ -59,3 +80,94 @@
   position: relative;
 }
 
+.button-homepage {
+  color: #ffffff;
+  text-align: left;
+  font: 500 18px "Rubik", sans-serif;
+  position: relative;
+}
+
+.frame-4 {
+  flex-shrink: 0;
+  width: 299px;
+  height: 43px;
+  position: relative;
+}
+
+.group-1 {
+  position: absolute;
+  inset: 0;
+}
+
+.digital {
+  color: #ffffff;
+  text-align: left;
+  font: 900 18px/136.1% "Avenir", sans-serif;
+  position: absolute;
+  left: 124.12px;
+  top: 0.5px;
+}
+
+.studio {
+  color: #ffffff;
+  text-align: left;
+  font: 900 18px/136.1% "Avenir", sans-serif;
+  position: absolute;
+  left: 124.12px;
+  top: 19.5px;
+}
+
+.group-12 {
+  position: absolute;
+  left: 82.12px;
+  top: 4.5px;
+  overflow: visible;
+}
+
+.frame-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.phone-number {
+  color: #ffffff;
+  text-align: left;
+  font: 500 18px "Rubik", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.two-home {
+  flex-shrink: 0;
+  width: 176px;
+  height: 44px;
+  position: static;
+}
+
+.rectangle-2 {
+  background: #ffffff;
+  border-radius: 41px;
+  border-style: solid;
+  border-color: #ff6333;
+  border-width: 1px;
+  width: 176px;
+  height: 44px;
+  position: absolute;
+  left: 189px;
+  top: 0px;
+}
+
+.three-home {
+  color: #ff6333;
+  text-align: left;
+  font: 500 16px "Rubik", sans-serif;
+  position: absolute;
+  left: 210px;
+  top: 12px;
+  width: 135px;
+}

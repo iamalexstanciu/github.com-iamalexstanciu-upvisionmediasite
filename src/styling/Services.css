@@ -1,9 +1,15 @@
+.services-section,
+.services-section * {
+    box-sizing: border-box;
+    background: #1a191a;
+}
+
 .services-section {
-background: #1a191a;
 width: 100vw;
 height: 100vh;
 display: grid;
 grid-template-rows: 10% 90%;
+overflow: hidden;
 }
 
 .container-content-services {

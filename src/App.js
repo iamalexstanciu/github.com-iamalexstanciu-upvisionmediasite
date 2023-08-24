@@ -14,54 +14,34 @@ import NavigationBar from "./components/NavigationBar";
 
 export default function App() {
   return (
-    <div>
-
+    <>
       <NavigationBar />
 
-      <div className="section-container">
-      
-        <Element name="home">
-          <Home />
-        </Element>
-      </div>
+      <Element name="home">
+        <Home />
+      </Element>
 
-      <div className="section-container">
-        {" "}
-   
-        <Element name="services">
-          <Services />
-        </Element>
-      </div>
+      <Element name="services">
+        <Services />
+      </Element>
 
-      <div className="section-container">
-     
-        <Element name="about">
-          <About />
-        </Element>
-      </div>
+      <Element name="about">
+        <About />
+      </Element>
 
-      <div className="section-container">
-     
-        <Element name="clients">
-          <Clients />
-        </Element>
-      </div>
+      <Element name="clients">
+        <Clients />
+      </Element>
 
-      <div className="section-container">
-      
-        <Element name="reviews">
-          <Reviews />
-        </Element>
-      </div>
+      <Element name="reviews">
+        <Reviews />
+      </Element>
 
-      <div className="section-container">
-      
-        <Element name="contact">
-          <Contact />
-        </Element>
-      </div>
+      <Element name="contact">
+        <Contact />
+      </Element>
 
       <Footer />
-    </div>
+    </>
   );
 }
