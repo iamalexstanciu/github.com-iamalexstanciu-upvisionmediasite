@@ -32,7 +32,7 @@ text-align: center;
 
 
 .orange {
-background: #ff8504bb;
+background: #b21409bb;
 height: auto;
 border-radius: .2em;
 padding: 0.5%;
@@ -94,8 +94,7 @@ transform: scale(1.04) rotate(1deg);
 .square {
 width: 100px;
 height: 100px;
-background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-background-size: 880%;
+background-color: rgba(12, 170, 167, 0.547);
 filter: opacity(0.5);
 background-repeat: no-repeat;
 color: transparent;
