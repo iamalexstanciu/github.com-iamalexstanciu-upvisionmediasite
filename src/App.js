@@ -19,8 +19,7 @@ export default function App() {
       <NavigationBar />
 
       <div className="section-container">
-        {" "}
-        {/* Add a container */}
+      
         <Element name="home">
           <Home />
         </Element>
@@ -28,39 +27,35 @@ export default function App() {
 
       <div className="section-container">
         {" "}
-        {/* Add a container */}
+   
         <Element name="services">
           <Services />
         </Element>
       </div>
 
       <div className="section-container">
-        {" "}
-        {/* Add a container */}
+     
         <Element name="about">
           <About />
         </Element>
       </div>
 
       <div className="section-container">
-        {" "}
-        {/* Add a container */}
+     
         <Element name="clients">
           <Clients />
         </Element>
       </div>
 
       <div className="section-container">
-        {" "}
-        {/* Add a container */}
+      
         <Element name="reviews">
           <Reviews />
         </Element>
       </div>
 
       <div className="section-container">
-        {" "}
-        {/* Add a container */}
+      
         <Element name="contact">
           <Contact />
         </Element>

@@ -5,7 +5,7 @@ import ProfileImage from "../assets/profile.png";
 
 export default function About() {
   return (
-    <div className="about-section">
+    <div className="about-section" id="aboutUs">
       <div class="meet-our-team">Meet our team</div>
       <div class="description">
         Our team consists of highly qualified specialists with international

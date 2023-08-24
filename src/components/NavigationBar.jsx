@@ -24,9 +24,30 @@ export default function NavigationBar() {
         >
           Services
         </div>
-        <div className="">About Us</div>
-        <div className="">Clients</div>
-        <div className="">Portfolio</div>
+        <div
+          className=""
+          onClick={() => {
+            UseScroll("aboutUs");
+          }}
+        >
+          About Us
+        </div>
+        <div
+          className=""
+          onClick={() => {
+            UseScroll("clients");
+          }}
+        >
+          Clients
+        </div>
+        <div
+          className=""
+          onClick={() => {
+            UseScroll("review");
+          }}
+        >
+          Portfolio
+        </div>
       </div>
 
       <div className="frame-2">
@@ -63,7 +84,7 @@ export default function NavigationBar() {
                 stroke-linejoin="round"
               ></path>
             </svg>
-            <span className="text">Contact Us</span>
+            <span className="text" onClick={()=>{UseScroll("contact");}}>Contact Us</span>
           </button>
           <div className="bodydrop"></div>
           <span aria-hidden="true" className="particle-pen">

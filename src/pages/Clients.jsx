@@ -7,7 +7,7 @@ import CoverProject2 from "../assets/portfolio2.jpg"
 
 function Clients() {
   return (
-    <div className="clients-section">
+    <div className="clients-section" id='clients'>
       <div className="fire-image">🔥</div>
       <div className="our-cases">Our cases</div>
       <div className="description-clients">

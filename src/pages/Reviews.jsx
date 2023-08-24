@@ -4,7 +4,7 @@ import ReviewImage from "../assets/portfolio.jpg"
 
 function Reviews() {
   return (
-    <div className="reviews-section">
+    <div className="reviews-section" id='review'>
       <div className="quote">“</div>
       <div className="our-clients-speak">Our clients speak</div>
       <div className="description">
