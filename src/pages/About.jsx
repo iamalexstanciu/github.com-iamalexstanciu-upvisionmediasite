@@ -26,7 +26,7 @@ export default function About() {
                 <img
                   className="profile-image-inside-card"
                   src={Razvan}
-                  alt="profile image"
+                  alt="profile"
                 />
               </span>
             </div>
@@ -77,7 +77,7 @@ export default function About() {
                 <img
                   className="profile-image-inside-card"
                   src={Alex}
-                  alt="profile image"
+                  alt="profile"
                 />
               </span>
             </div>
