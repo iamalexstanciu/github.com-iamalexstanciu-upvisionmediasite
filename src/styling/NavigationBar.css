@@ -30,6 +30,7 @@ color: #ffffff;
 text-align: left;
 font: 500 18px "Rubik", sans-serif;
 position: relative;
+z-index: 10000;
 }
 
 .frame-4 {
@@ -111,6 +112,7 @@ text-align: center;
 height: 170%;
 position: relative;
 right: -35%;
+z-index: 10000;
 top: 3%;
 }
 

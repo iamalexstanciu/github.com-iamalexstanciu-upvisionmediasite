@@ -1,3 +1,126 @@
-.footer-container{
+.footer,
+.footer * {
+    box-sizing: border-box;
+}
+
+.footer {
     background: #1a191a;
+        flex-shrink: 0;
+        width: 100vw;
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+        border-top: 1.2px solid rgba(255, 255, 255, 0.548);
+}
+
+.social {
+    width: 100vw;
+    height: 40%;
+    position: static;
+}
+
+
+.slogan-footer {
+    color: #e3edff;
+    text-align: left;
+    font: 500 17px/161.5% "Rubik", sans-serif;
+    opacity: 0.5;
+    position: absolute;
+    left: 378px;
+    top: calc(50% - 136.55px);
+    width: 290px;
+    height: 53px;
+}
+
+.links {
+    padding: 3px 0px 3px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 147px;
+    top: 190px;
+    overflow: hidden;
+}
+
+.buttons-footer {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'LT Binary Neue Round', sans-serif;
+        font-size: 16px;
+    position: relative;
+}
+
+.group-8 {
+    width: 178.24px;
+    height: 29.27px;
+    position: static;
+}
+
+._001-facebook {
+    position: absolute;
+    left: 147px;
+    top: 272.33px;
+    overflow: visible;
+}
+
+._003-twitter {
+    position: absolute;
+    left: 213.48px;
+    top: 273.66px;
+    overflow: visible;
+}
+
+._004-instagram {
+    position: absolute;
+    left: 295.97px;
+    top: 271px;
+    overflow: visible;
+}
+
+.group-82 {
+    width: 183.62px;
+    height: 49.78px;
+    position: static;
+}
+
+.digital {
+    color: #ffffff;
+    text-align: left;
+    font: 400 24px "Avenir", sans-serif;
+    position: absolute;
+    left: 202.88px;
+    top: 79px;
+    width: 125.07px;
+    height: 23.95px;
+}
+
+.studio {
+    color: #ffffff;
+    text-align: left;
+    font: 400 24px "Avenir", sans-serif;
+    position: absolute;
+    left: 202.88px;
+    top: 104.28px;
+    width: 127.73px;
+    height: 23.95px;
+}
+
+.a-white-1 {
+    width: 43.91px;
+    height: 43.12px;
+    position: absolute;
+    left: 147px;
+    top: 85.65px;
+}
+
+.label {
+    color: #909090;
+    text-align: left;
+    font: 400 16px/20px "Rubik", sans-serif;
+    position: absolute;
+    left: 147px;
+    top: 327px;
 }

@@ -16,6 +16,16 @@ export default function App() {
   return (
     <>
       <NavigationBar />
+       <div className="cursor__dot">
+        <AnimatedCursor
+          innerSize={15}
+          outerSize={15}
+          color="255,255,255"
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
+      </div>
 
       <Element name="home">
         <Home />
@@ -40,8 +50,9 @@ export default function App() {
       <Element name="contact">
         <Contact />
       </Element>
-
-      <Footer />
+      <Element name="footer">
+        <Footer />
+      </Element>
     </>
   );
 }
