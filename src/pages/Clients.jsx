@@ -11,8 +11,8 @@ function Clients() {
       <div className="fire-image">🔥</div>
       <div className="our-cases">Our cases</div>
       <div className="description-clients">
-        Наша команда состоит из высококлассных специалистов с международным
-        опытом работы в сфере Web-разработки, мобильной разработки,
+        These are some examples of projects in which we have put all our
+        professionalism and passion.
       </div>
       <div className="two">
         <div className="frame-37">
