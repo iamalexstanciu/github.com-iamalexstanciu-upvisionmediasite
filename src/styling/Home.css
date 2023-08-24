@@ -1,9 +1,9 @@
-.hero,
-.hero * {
+.homepage,
+.homepage * {
   box-sizing: border-box;
 }
 
-.hero {
+.homepage {
   background: #1a191a;
   flex-shrink: 0;
   width: 100vw;
@@ -54,120 +54,4 @@
   left: 15%;
   top: 79.8%;
   overflow: visible;
-}
-
-.header {
-  position: absolute;
-  inset: 0;
-}
-
-.rectangle-1 {
-  background: #ffffff;
-  width: 1916px;
-  height: 83px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.frame-1 {
-  display: flex;
-  flex-direction: row;
-  gap: 55.5px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.button-homepage {
-  color: #ffffff;
-  text-align: left;
-  font: 500 18px "Rubik", sans-serif;
-  position: relative;
-}
-
-.frame-4 {
-  flex-shrink: 0;
-  width: 299px;
-  height: 43px;
-  position: relative;
-}
-
-.group-1 {
-  position: absolute;
-  inset: 0;
-}
-
-.digital {
-  color: #ffffff;
-  text-align: left;
-  font: 900 18px/136.1% "Avenir", sans-serif;
-  position: absolute;
-  left: 124.12px;
-  top: 0.5px;
-}
-
-.studio {
-  color: #ffffff;
-  text-align: left;
-  font: 900 18px/136.1% "Avenir", sans-serif;
-  position: absolute;
-  left: 124.12px;
-  top: 19.5px;
-}
-
-.group-12 {
-  position: absolute;
-  left: 82.12px;
-  top: 4.5px;
-  overflow: visible;
-}
-
-.frame-2 {
-  display: flex;
-  flex-direction: row;
-  gap: 37px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.phone-number {
-  color: #ffffff;
-  text-align: left;
-  font: 500 18px "Rubik", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.two-home {
-  flex-shrink: 0;
-  width: 176px;
-  height: 44px;
-  position: static;
-}
-
-.rectangle-2 {
-  background: #ffffff;
-  border-radius: 41px;
-  border-style: solid;
-  border-color: #ff6333;
-  border-width: 1px;
-  width: 176px;
-  height: 44px;
-  position: absolute;
-  left: 189px;
-  top: 0px;
-}
-
-.three-home {
-  color: #ff6333;
-  text-align: left;
-  font: 500 16px "Rubik", sans-serif;
-  position: absolute;
-  left: 210px;
-  top: 12px;
-  width: 135px;
 }

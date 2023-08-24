@@ -3,9 +3,9 @@ import "../styling/Home.css"
 
 export default function Home() {
   return (
-    <div class="hero">
+    <div className="homepage">
       <svg
-        class="_04-fragment-of-saturn"
+        className="_04-fragment-of-saturn"
         width="960"
         height="720"
         viewBox="0 0 960 720"
@@ -96,12 +96,12 @@ export default function Home() {
         </defs>
       </svg>
 
-      <div class="simple-solutions-for-complex-problems">
+      <div className="simple-solutions-for-complex-problems">
         Transform your vision into reality.
       </div>
-      <div class="group-8">
+      <div className="group-8">
         <svg
-          class="_001-facebook"
+          className="_001-facebook"
           width="11"
           height="19"
           viewBox="0 0 11 19"
@@ -114,7 +114,7 @@ export default function Home() {
         </svg>
 
         <svg
-          class="_003-twitter"
+          className="_003-twitter"
           width="23"
           height="17"
           viewBox="0 0 23 17"
@@ -127,7 +127,7 @@ export default function Home() {
         </svg>
 
         <svg
-          class="_004-instagram"
+          className="_004-instagram"
           width="23"
           height="21"
           viewBox="0 0 23 21"
