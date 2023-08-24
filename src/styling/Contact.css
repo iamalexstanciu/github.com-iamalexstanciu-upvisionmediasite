@@ -1,59 +1,68 @@
-.contact-form {
-    background-color: black;
-    padding: 5% 5% 5% 5%;
-    max-width: 80vw;
-    width: 50vw;
-    max-height: 80vh;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+.contact-section,
+.contact-section * {
+    box-sizing: border-box;
+}
+
+.contact-section {
+    background: #1a191a;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    left: 10%;
-    align-items: center;
+    overflow: hidden;
+}
+
+.let-s-talk {
+    color: #ffffff;
+    text-align: left;
+    font: var(--h-2, 500 72px "Rubik", sans-serif);
+    position: absolute;
+    left: 14%;
+    top: 10%;
+}
+
+.description {
+    color: #ffffff;
+    text-align: left;
+    font: 400 18px/27px "Rubik", sans-serif;
+    position: absolute;
+    left: 14%;
+    top: 25%;
+    width: 922px;
+}
+
+
+.form-container {
+    background-color: 1a191a;
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 38%;
+    left: 14%;
+    color: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
+        border: none;
 }
 
 .contact-form input,
-.contact-form input::placeholder,
-.contact-form textarea
-{
-    color: black;
-    font-size: 14px;
-    font-family: monospace;
-    word-spacing: 4px;
-    border: none;
-}
-
-.submitButton {
-    color: gold;
-    background-color: rgb(134, 134, 134);
-    width: 25%;
-    height: 20%;
-    position: relative;
-    top: 15%;
-    padding: 15px 25px;
-        font-size: 24px;
-        text-align: center;
-        cursor: pointer;
-        outline: none;
-        color: #fff;
-        background-color: #505050;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999999c0;
-}
-
-.submitButton:hover {
-    background-color: #646464
-}
-
-.submitButton:active {
-    background-color: #dbc501;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
 .contact-form textarea {
-    height: 100px;
+    background-color: rgba(255, 166, 0, 0.637) ;
 }
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder
+{
+    color: #ffffff;
+}
+
+.contact-form button {
+    background-color: orange;
+    color: black;
+    font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
+}
