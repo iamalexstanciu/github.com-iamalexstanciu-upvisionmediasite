@@ -22,6 +22,9 @@ body {
   background: #1a191a;
 }
 
+.section-container {
+  padding: 350px 0; /* Adjust the spacing as needed */
+}
 
 /* src/styling/App.css or your preferred CSS file */
 .section {

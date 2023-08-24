@@ -110,7 +110,7 @@ export default function Home() {
           TO DO WITH BUTTONS SOCIAL MEDIA
         </div>
 
-        <NavigationBar />
+       
       </div>
     </>
   );

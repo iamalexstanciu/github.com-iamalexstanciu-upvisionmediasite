@@ -4,7 +4,7 @@ import ServicesImage from "../assets/services-image.png";
 
 export default function Services() {
   return (
-    <div className="services-section">
+    <div className="services-section" id="services">
       <h5 className="slogan-down-services">
         Your destination: a website that's not just visited, but experienced.
       </h5>
