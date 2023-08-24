@@ -18,7 +18,7 @@ export default function Services() {
         </div>
         <div className="services-right-side">
           <div class="card1-services card-description-service">
-            <div class="circle"></div>
+            <div class="square"></div>
             <div class="card-inner">
               Embark on a transformative digital voyage with our cutting-edge
               web development agency. Our journey begins by crafting captivating
@@ -30,8 +30,8 @@ export default function Services() {
                           </div>
           </div>
           <div class="card2-services card-description-service">
-            <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="square"></div>
+            <div class="square"></div>
             <div class="card-inner">
                 Navigating the modern online landscape requires adaptability,
           
@@ -42,8 +42,8 @@ export default function Services() {
             </div>
           </div>
           <div class="card3-services card-description-service">
-            <div class="circle" style={{ display: "none" }}></div>
-            <div class="circle"></div>
+            <div class="square" style={{ display: "none" }}></div>
+            <div class="square"></div>
             <div class="card-inner">
               But our journey doesn't end there. We understand the importance of
               visibility in the vast digital expanse. Our{" "}
