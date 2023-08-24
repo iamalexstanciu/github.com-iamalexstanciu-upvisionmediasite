@@ -61,15 +61,13 @@ export default function NavigationBar() {
         <p className="city-date">Bucharest</p>
         <p>{currentDateTime}</p>
       </div>
-      <div className="frame-2">
-        <div
-          className="contact-navbar"
-          onClick={() => {
-            UseScroll("contact");
-          }}>
-          Contact Us
-        </div>
-      </div>
+      <button
+        className="button-contact-navbar"
+        onClick={() => {
+          UseScroll("contact");
+        }}>
+        <span class="button-content">Contact Us </span>
+      </button>
     </div>
   );
 }
