@@ -1,5 +1,5 @@
-const useScroll = (sectionId) => {
- let section = document.querySelector(sectionId);
+export default function UseScroll(sectionId) {
+  const section = document.getElementById(sectionId);
 
   if (section) {
     section.scrollIntoView({
@@ -12,6 +12,4 @@ const useScroll = (sectionId) => {
   } else {
     console.log("Section " + sectionId + " not found.");
   }
-};
-
-export default useScroll;
+}

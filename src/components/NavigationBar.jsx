@@ -2,31 +2,13 @@ import React, { useState } from "react";
 import "../styling/NavigationBar.css";
 import LogoUpvision from "../assets/logo-upvision.png";
 import { Link } from "react-scroll";
+import UseScroll from "../data/UseScroll";
 export default function NavigationBar() {
  
-function UseScroll(sectionId) {
-  let section = document.getElementById(sectionId);
 
-  if (section) {
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
-
-    console.log(sectionId + " is scrolled to.");
-  } else {
-    console.log("Section " + sectionId + " not found.");
-  }
-};
-  const test = (e) => {
-    e.preventDefault();
-    UseScroll("services");
-   
-  }
+  
   return (
     <div className="frame-3">
-      <button onClick={test}>Services</button>
       <div className="frame-4">
         <div className="group-1">
           <img className="image-logo-navbar" src={LogoUpvision} alt="logo" />
@@ -35,6 +17,13 @@ function UseScroll(sectionId) {
         </div>
       </div>
       <div className="frame-1">
+        <div
+          onClick={() => {
+            UseScroll("services");
+          }}
+        >
+          Services
+        </div>
         <div className="">About Us</div>
         <div className="">Clients</div>
         <div className="">Portfolio</div>
