@@ -4,7 +4,7 @@ import ReviewImage from "../assets/portfolio.jpg"
 
 function Reviews() {
   return (
-    <div className="reviews-section" id='review'>
+    <div className="reviews-section" id="review">
       <div className="quote">“</div>
       <div className="our-clients-speak">Our clients speak</div>
       <div className="description">
@@ -16,14 +16,13 @@ function Reviews() {
       <h3 className="description2">TextLab CEO</h3>
       <h4 className="description3">Henry Paddington</h4>
       <p className="description4">
-        Наша команда состоит из высококлассных специалистов с международным
-        опытом работы в сфере Web-разработки, мобильной разработки, Product
-        менеджмента и дизайна. <br />
-        Мы предоставляем премиум сервис по доступным ценам и всегда нацелены на
-        успех наших клиентов. <br />
-        Наша команда состоит из высококлассных специалистов с международным
-        опытом работы в сфере Web-разработки, мобильной разработки, Product
-        менеджмента и дизайна.
+        Outstanding experience with the client web development agency! Their
+        team showcased exceptional skill in translating our vision into a
+        dynamic website. From responsive design to seamless functionality, they
+        exceeded our expectations. Effective communication throughout the
+        project and a commitment to deadlines made the collaboration smooth.
+        Highly recommend their services for anyone seeking top-notch web
+        development solutions.
       </p>
       <img className="review-image" src={ReviewImage} />
       <div className="frame-42">

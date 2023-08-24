@@ -87,3 +87,10 @@
     right: 3%;
     top: 85%;
 }
+
+.footer-fragment-of-saturn {
+    position: absolute;
+    left: 25%;
+    top: -10%;
+    overflow: visible;
+}
