@@ -6,11 +6,10 @@
 .clients-section {
     background: #1a191a;
     flex-shrink: 0;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    border: solid white 4px;
 }
 
 
