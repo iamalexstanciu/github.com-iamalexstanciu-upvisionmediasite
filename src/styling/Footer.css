@@ -19,19 +19,6 @@
     position: static;
 }
 
-
-.slogan-footer {
-    color: #e3edff;
-    text-align: left;
-    font: 500 17px/161.5% "Rubik", sans-serif;
-    opacity: 0.5;
-    position: absolute;
-    left: 378px;
-    top: calc(50% - 136.55px);
-    width: 290px;
-    height: 53px;
-}
-
 .links {
     padding: 3px 0px 3px 0px;
     display: flex;
@@ -51,76 +38,52 @@
     font-family: 'LT Binary Neue Round', sans-serif;
         font-size: 16px;
     position: relative;
+    z-index: 100000;
 }
 
-.group-8 {
-    width: 178.24px;
-    height: 29.27px;
-    position: static;
-}
-
-._001-facebook {
-    position: absolute;
-    left: 147px;
-    top: 272.33px;
-    overflow: visible;
-}
-
-._003-twitter {
-    position: absolute;
-    left: 213.48px;
-    top: 273.66px;
-    overflow: visible;
-}
-
-._004-instagram {
-    position: absolute;
-    left: 295.97px;
-    top: 271px;
-    overflow: visible;
-}
 
 .group-82 {
-    width: 183.62px;
-    height: 49.78px;
-    position: static;
+    width: 40%;
+    height: 50%;
+    position: relative;
+    top: -20%;
+    left: 15%;
+    display: flex;
+    flex-direction: row;
 }
 
-.digital {
+.logo-footer-text-up {
     color: #ffffff;
     text-align: left;
-    font: 400 24px "Avenir", sans-serif;
-    position: absolute;
-    left: 202.88px;
-    top: 79px;
-    width: 125.07px;
-    height: 23.95px;
+    font: 600 22px/136.1% 'LT Binary Neue Round', sans-serif;
 }
 
-.studio {
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -5%;
+    align-items: flex-start;
+}
+
+.logo-footer-text-down {
     color: #ffffff;
     text-align: left;
-    font: 400 24px "Avenir", sans-serif;
-    position: absolute;
-    left: 202.88px;
-    top: 104.28px;
-    width: 127.73px;
-    height: 23.95px;
+    font: 600 22px/136.1% 'LT Binary Neue Round', sans-serif;
 }
 
-.a-white-1 {
-    width: 43.91px;
-    height: 43.12px;
-    position: absolute;
-    left: 147px;
-    top: 85.65px;
+.logo-footer {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    top: -15%;
 }
 
 .label {
     color: #909090;
     text-align: left;
-    font: 400 16px/20px "Rubik", sans-serif;
+    font: 500 16px/20px "Rubik", sans-serif;
     position: absolute;
-    left: 147px;
-    top: 327px;
+    right: 3%;
+    top: 85%;
 }

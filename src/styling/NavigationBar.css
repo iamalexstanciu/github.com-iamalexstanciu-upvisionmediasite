@@ -8,17 +8,16 @@ box-sizing: border-box;
 .frame-3 {
 display: flex;
 flex-direction: row;
-gap: 201px;
 align-items: center;
-justify-content: center;
-width: 1476.25px;
+justify-content: space-around;
+width: 100vw;
 position: relative;
 }
 
 .frame-1 {
 display: flex;
 flex-direction: row;
-gap: 55.5px;
+gap: 25%;
 align-items: flex-start;
 justify-content: flex-start;
 flex-shrink: 0;
@@ -64,30 +63,7 @@ left: 124.12px;
 top: 19.5px;
 }
 
-.group-12 {
-position: absolute;
-left: 82.12px;
-top: 4.5px;
-overflow: visible;
-}
 
-.frame-2 {
-display: flex;
-flex-direction: row;
-gap: 37px;
-align-items: center;
-justify-content: center;
-flex-shrink: 0;
-position: relative;
-}
-
-.phone-number{
-color: #ffffff;
-text-align: left;
-font: 500 16px "Rubik", sans-serif;
-text-transform: uppercase;
-position: relative;
-}
 
 .two-navbar {
 flex-shrink: 0;
@@ -107,7 +83,7 @@ border-radius: 5%;
 border-style: solid;
 border-color: #ff6333;
 border-width: 0.5px;
-width: 60%;
+width: 100%;
 text-align: center;
 height: 170%;
 position: relative;

@@ -43,7 +43,7 @@ export default function NavigationBar() {
         </div>
       </div>
       <div className="frame-2">
-        <div className="phone-number">+40 722 567894</div>
+
         <div
           className="contact-navbar"
           onClick={() => {

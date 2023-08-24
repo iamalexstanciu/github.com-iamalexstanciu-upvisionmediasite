@@ -3,7 +3,7 @@ import "../styling/Home.css"
 
 export default function Home() {
   return (
-    <div className="homepage">
+    <div className="homepage" id="home">
       <svg
         className="_04-fragment-of-saturn"
         width="960"
