@@ -52,7 +52,7 @@ export default function NavigationBar() {
       </div>
       <div className="frame-4">
         <div className="group-1">
-          <div className="digital">upvision</div>
+          <div className="digital">upVision</div>
           <div className="studio">Media</div>
           <img src={Logo} alt="" className="logo-navbar" />
         </div>
