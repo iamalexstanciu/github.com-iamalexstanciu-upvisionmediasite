@@ -14,11 +14,11 @@ overflow: hidden;
 
 
 .our-cases {
-color: #ffffff;
+color: #f08c51;
 text-align: left;
-font: var(--h-2, 500 72px "Rubik", sans-serif);
+font: 500 60px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
-left: 5%;
+left: 10%;
 top: 5%;
 }
 
@@ -29,11 +29,11 @@ inset: 0;
 }
 
 .description-clients {
-color: #ffffff;
+color: #f8dfd1;
 text-align: left;
-font: 400 18px/27px "Rubik", sans-serif;
+font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
-left: 5%;
+left: 10%;
 top: 20%;
 width: 671px;
 }
