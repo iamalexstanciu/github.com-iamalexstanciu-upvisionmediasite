@@ -1,14 +1,12 @@
-import React from 'react'
-import "../styling/Clients.css"
-import CoverProject from "../assets/portfolio.jpg"
-import CoverProject1 from "../assets/portfolio1.jpg"
-import CoverProject2 from "../assets/portfolio2.jpg"
-
+import React from "react";
+import "../styling/Clients.css";
+import CoverProject from "../assets/portfolio.jpg";
+import CoverProject1 from "../assets/portfolio1.jpg";
+import CoverProject2 from "../assets/portfolio2.jpg";
 
 function Clients() {
   return (
-    <div className="clients-section" id='clients'>
-      <div className="fire-image">🔥</div>
+    <div className="clients-section" id="clients">
       <div className="our-cases">Our cases</div>
       <div className="description-clients">
         These are some examples of projects in which we have put all our
@@ -37,35 +35,65 @@ function Clients() {
           </div>
         </div>
       </div>
-      <div className="projects">
-        <div className="project-1">
-          <img className="project-cover" src={CoverProject} />
-          <div className="project-details">
-            <h2 className="project-title">Project Title</h2>
-            <h4 className="project-tags">Android, IoT</h4>
+      <div className="projects-container">
+        <div class="card-project">
+          <div class="card1 card-img"></div>
+          <div class="card-body">
+            <span class="bg"></span>
+            <span class="bg"></span>
+            <span class="bg"></span>
+            <div class="card-content">
+              <h2 class="title">Website Name</h2>
+              <p class="para">
+                A project description to tell user what we've done for this
+                client.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="project-2">
-          <img className="project-cover" src={CoverProject1} />
-
-          <div className="project-details2">
-            <h2 className="project-title">Project Title</h2>
-            <h4 className="project-tags">Android, IoT</h4>
+        <div class="card-project">
+          <div class="card2 card-img"></div>
+          <div class="card-body">
+            <span class="bg"></span>
+            <span class="bg"></span>
+            <span class="bg"></span>
+            <div class="card-content">
+              <h2 class="title">Website Name</h2>
+              <p class="para">
+                A project description to tell user what we've done for this
+                client.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="project-3">
-          <img className="project-cover" src={CoverProject2} />
-
-          <div className="project-details3">
-            <h2 className="project-title">Project Title</h2>
-            <h4 className="project-tags">Android, IoT</h4>
+        <div class="card-project">
+          <div class="card3 card-img"></div>
+          <div class="card-body">
+            <span class="bg"></span>
+            <span class="bg"></span>
+            <span class="bg"></span>
+            <div class="card-content">
+              <h2 class="title">Website Name</h2>
+              <p class="para">
+                A project description to tell user what we've done for this
+                client.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="project-4">
-          <img className="project-cover" src={CoverProject} />
-          <div className="project-details4">
-            <h2 className="project-title">Project Title</h2>
-            <h4 className="project-tags">Android, IoT</h4>
+        <div class="card-project">
+          <div class="card4 card-img"></div>
+          <div class="card-body">
+            <span class="bg"></span>
+            <span class="bg"></span>
+            <span class="bg"></span>
+            <div class="card-content">
+              <h2 class="title">Website Name</h2>
+              <p class="para">
+                A project description to tell user what we've done for this
+                client.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -73,4 +101,4 @@ function Clients() {
   );
 }
 
-export default Clients
+export default Clients;
