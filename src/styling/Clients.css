@@ -23,11 +23,6 @@ top: 5%;
 }
 
 
-.two {
-position: absolute;
-inset: 0;
-}
-
 .description-clients {
 color: #f8dfd1;
 text-align: left;
@@ -36,48 +31,6 @@ position: absolute;
 left: 10%;
 top: 20%;
 width: 671px;
-}
-
-.frame-37 {
-background: #ffffff;
-border-radius: 41px;
-border-style: solid;
-border-color: #ff6333;
-border-width: 1px;
-padding: 10px 21px 10px 21px;
-display: flex;
-flex-direction: column;
-gap: 5%;
-align-items: flex-start;
-justify-content: flex-start;
-position: absolute;
-right: 5%;
-top: 8%;
-}
-
-.frame-36 {
-display: flex;
-flex-direction: row;
-gap: 11px;
-align-items: center;
-justify-content: center;
-flex-shrink: 0;
-position: relative;
-}
-
-.show-all {
-color: #ff6333;
-text-align: left;
-font: 500 16px "Rubik", sans-serif;
-position: relative;
-}
-
-
-.group {
-position: absolute;
-left: 0px;
-top: -5px;
-overflow: visible;
 }
 
 
