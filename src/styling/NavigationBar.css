@@ -82,16 +82,17 @@ position: static;
   padding: 0 2rem;
   left: 4%;
   border-radius: 2rem;
-  background: #c97106;
+  background: #eea956;
   background-size: 400%;
   font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
-  color: #fff;
+  color: #080808;
   border: none;
   z-index: 100000;
 }
 
 .button-contact-navbar:hover::before {
   transform: scaleX(1);
+  color: #ffffff;
 }
 
 .button-content {
@@ -111,8 +112,8 @@ position: static;
   border-radius: inherit;
   background: linear-gradient(
     82.3deg,
-    rgb(40, 19, 147) 10.8%,
-    rgb(31, 18, 214) 94.3%
+    rgb(209, 50, 50) 10.8%,
+    rgb(255, 1, 1) 94.3%
   );
   transition: all 0.475s;
 }
