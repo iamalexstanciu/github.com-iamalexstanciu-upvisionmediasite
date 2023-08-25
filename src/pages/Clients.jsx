@@ -14,7 +14,9 @@ function Clients() {
       </div>
       <div className="projects-container">
         <div class="card-project">
-          <div class="card1 card-img"></div>
+          <div class="card1 card-img">
+            <p className="title-front">Hover to see more</p>
+          </div>
           <div class="card-body">
             <span class="bg"></span>
             <span class="bg"></span>
@@ -29,7 +31,9 @@ function Clients() {
           </div>
         </div>
         <div class="card-project">
-          <div class="card2 card-img"></div>
+          <div class="card2 card-img">
+            <p className="title-front">Hover to see more</p>
+          </div>
           <div class="card-body">
             <span class="bg"></span>
             <span class="bg"></span>
@@ -44,7 +48,9 @@ function Clients() {
           </div>
         </div>
         <div class="card-project">
-          <div class="card3 card-img"></div>
+          <div class="card3 card-img">
+            <p className="title-front">Hover to see more</p>
+          </div>
           <div class="card-body">
             <span class="bg"></span>
             <span class="bg"></span>
@@ -59,7 +65,9 @@ function Clients() {
           </div>
         </div>
         <div class="card-project">
-          <div class="card4 card-img"></div>
+          <div class="card4 card-img">
+            <p className="title-front">Hover to see more</p>
+          </div>
           <div class="card-body">
             <span class="bg"></span>
             <span class="bg"></span>

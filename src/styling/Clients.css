@@ -151,6 +151,17 @@ width: 671px;
     text-align: center;
 }
 
+.title-front {
+    font-size: 30px;
+    position: relative;
+    top: 75%;
+    color: #f3aa66;
+    text-align: center;
+    background-color: #292929b7;
+
+}
+
+
 .para {
     font-size: 16px;
     padding-top: 20px;
