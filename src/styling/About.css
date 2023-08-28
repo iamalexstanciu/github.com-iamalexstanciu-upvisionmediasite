@@ -22,7 +22,7 @@ left: 13.8%;
 }
 
 .description-about {
-color: #e4e4e4;
+color: #d1d1d1;
 font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
 left: 14%;
@@ -61,50 +61,34 @@ perspective: 1000px;
 z-index: 10000;
 }
 
-.card-layout {
+.card-layout-about-about {
 height: 100%;
 border-radius: 50px;
-background: #1a191a;
+background: #2b2a2b;
 transition: all 0.5s ease-in-out;
 transform-style: preserve-3d;
-box-shadow: rgba(253, 155, 7, 0.158) 40px 50px 25px -40px, rgba(236, 137, 7, 0.116) 0px 25px 25px -5px;
+box-shadow: rgba(2, 8, 3, 0.295) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
 }
 
-.glass {
-transform-style: preserve-3d;
-position: absolute;
-inset: 8px;
-border-radius: 55px;
-border-top-right-radius: 100%;
-background: #000000be;
--webkit-backdrop-filter: blur(5px);
-backdrop-filter: blur(5px);
-transform: translate3d(0px, 0px, 25px);
-border-left: 1px solid rgb(207, 132, 70);
-border-bottom: 1px solid rgb(207, 132, 70);
-transition: all 0.5s ease-in-out;
-}
-
-.content {
+.content-services-card {
 position: relative;
-top: 48%;
+top: 18%;
 left: 10%;
 transform: translate3d(0, 0, 26px);
 }
 
-.content .title {
+.content-services-card .title {
 display: block;
 color: #ffffff;
-font-weight: 900;
-padding-top: 10px;
+position: relative;
+top: 40%;
 font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
 
 }
 
-.content .text {
-display: block;
+.text {
 color: #ffffff;
-font: 600 14px/136.1% 'LT Binary Neue Round', sans-serif;
+font: 600 14px/146.1% 'LT Binary Neue Round', sans-serif;
 }
 
 .bottom {
@@ -120,13 +104,6 @@ justify-content: space-between;
 transform: translate3d(0, 0, 26px);
 }
 
-.bottom .view-more {
-display: flex;
-align-items: center;
-width: 40%;
-justify-content: flex-end;
-transition: all 0.2s ease-in-out;
-}
 
 
 
@@ -182,12 +159,7 @@ background: #1a191a;
 fill: rgb(224, 131, 9);
 }
 
-.logo-card {
-position: absolute;
-right: 0;
-top: 0;
-transform-style: preserve-3d;
-}
+
 
 .logo-card .circle {
 display: block;
@@ -198,60 +170,43 @@ top: 0;
 right: 0;
 -webkit-backdrop-filter: blur(5px);
 backdrop-filter: blur(5px);
-background: #00000065;
+background: #47474765;
 transition: all 0.5s ease-in-out;
 }
 
 .logo-card .circle1 {
-width: 170px;
+width: 160px;
 transform: translate3d(0, 0, 20px);
 top: 8px;
 right: 8px;
 }
 
-.logo-card .circle2 {
-width: 140px;
-transform: translate3d(0, 0, 40px);
-top: 10px;
-right: 10px;
--webkit-backdrop-filter: blur(1px);
-backdrop-filter: blur(1px);
-transition-delay: 0.4s;
-}
-
-.logo-card .circle3 {
-width: 110px;
-transform: translate3d(0, 0, 60px);
-top: 17px;
-right: 17px;
-transition-delay: 0.8s;
-}
 
 
 
 
 
-.card-container-about:hover .card-layout {
+.card-container-about:hover .card-layout-about {
 transform: rotate3d(1, 1, 0, 30deg);
 }
 
-.card-container-about:hover .card-layout .bottom .social-buttons-container .social-button {
+.card-container-about:hover .card-layout-about .bottom .social-buttons-container .social-button {
 transform: translate3d(0, 0, 50px);
 }
 
-.card-container-about:hover .card-layout .logo-card .circle2 {
+.card-container-about:hover .card-layout-about .logo-card .circle2 {
 transform: translate3d(0, 0, 60px);
 }
 
-.card-container-about:hover .card-layout .logo-card .circle3 {
+.card-container-about:hover .card-layout-about .logo-card .circle3 {
 transform: translate3d(0, 0, 80px);
 }
 
-.card-container-about:hover .card-layout .logo-card .circle4 {
+.card-container-about:hover .card-layout-about .logo-card .circle4 {
 transform: translate3d(0, 0, 100px);
 }
 
-.card-container-about:hover .card-layout .logo-card .circle5 {
+.card-container-about:hover .card-layout-about .logo-card .circle5 {
 transform: translate3d(0, 0, 120px);
 }
 

@@ -18,11 +18,9 @@ export default function About() {
 
       <div class="cards-container">
         <div class="card-container-about">
-          <div class="card-layout">
+          <div class="card-layout-about">
             <div class="logo-card">
-              <span class="circle circle1"></span>
-              <span class="circle circle2"></span>
-              <span class="circle circle3">
+              <span class="circle circle1">
                 <img
                   className="profile-image-inside-card"
                   src={Razvan}
@@ -30,8 +28,7 @@ export default function About() {
                 />
               </span>
             </div>
-            <div class="glass"></div>
-            <div class="content">
+            <div class="content-services-card">
               <span class="title">Razvan Tache</span>
               <span class="text">
                 Full-Stack Developer
@@ -69,11 +66,10 @@ export default function About() {
           </div>
         </div>
         <div class="card-container-about">
-          <div class="card-layout">
+          <div class="card-layout-about">
             <div class="logo-card">
-              <span class="circle circle1"></span>
-              <span class="circle circle2"></span>
-              <span class="circle circle3">
+              <span class="circle circle1">
+                {" "}
                 <img
                   className="profile-image-inside-card"
                   src={Alex}
@@ -81,8 +77,7 @@ export default function About() {
                 />
               </span>
             </div>
-            <div class="glass"></div>
-            <div class="content">
+            <div class="content-services-card">
               <span class="title">Alexandru Stanciu</span>
               <span class="text">
                 Full-Stack Developer
@@ -120,11 +115,9 @@ export default function About() {
           </div>
         </div>
         <div class="card-container-about">
-          <div class="card-layout">
+          <div class="card-layout-about">
             <div class="logo-card">
-              <span class="circle circle1"></span>
-              <span class="circle circle2"></span>
-              <span class="circle circle3">
+              <span class="circle circle1">
                 <img
                   className="profile-image-inside-card"
                   src={ProfileImage}
@@ -132,8 +125,7 @@ export default function About() {
                 />
               </span>
             </div>
-            <div class="glass"></div>
-            <div class="content">
+            <div class="content-services-card">
               <span class="title">Constantin Iancu</span>
               <span class="text">
                 Full-Stack Developer

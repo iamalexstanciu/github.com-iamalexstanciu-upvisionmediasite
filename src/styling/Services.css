@@ -1,9 +1,9 @@
 .services-section,
 .services-section * {
-    box-sizing: border-box;
-    background: #1a191a;
-    position: relative;
-    top: 7%;
+box-sizing: border-box;
+background: #1a191a;
+position: relative;
+top: 7%;
 }
 
 .services-section {
@@ -28,7 +28,7 @@ font: 32px "Rubik", sans-serif;
 position: relative;
 justify-items: center;
 align-content: center;
-top: 3%;
+top: 20%;
 text-align: center;
 }
 
@@ -40,27 +40,21 @@ border-radius: .2em;
 padding: 0.5%;
 text-decoration: none;
 display: inline;
--webkit-box-decoration-break: clone;
--o-box-decoration-break: clone;
-box-decoration-break: clone;
-margin-left: .07em;
-margin-right: .07em;
 }
 
 
 .services-image {
-    width: 100%;
-    position: relative;
-    top: 10%;
-    left: 15%;
-    border-radius: 2%;
-    box-shadow:  60px 0 80px 20px #86868638;
+width: 100%;
+position: relative;
+top: 15%;
+left: 10%;
+border-radius: 2%;
 }
 
 .slogan-down-services {
 position: relative;
 width: 70%;
-top: 95%;
+top: 10%;
 left: 20%;
 background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 background-size: cover;
@@ -72,79 +66,59 @@ font-size: 24px;
 margin: 10px 0;
 }
 
-.card-description-service {
-max-width: 60%;
-height: fit-content;
-transition: all 0.2s;
+
+
+.cards-services-container {
+display: flex;
+flex-direction: column;
+gap: 15px;
 position: relative;
-cursor: pointer;
+top: -50%;
 }
 
-.card-inner {
+.tip {
+font-size: 10px;
+color: #f8f8f8;
+background-color: #f8f8f800;
+}
+
+.cards-services-container {
+background-color: #7a7a7a00;
+z-index: 1000;
+}
+
+.cards-services-container .card-layout-services {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+height: 17rem;
+max-width: 60rem;
 width: fit-content;
-height: fit-content;
-padding: 5%;
-font-size: 15px;
-background: rgba(255, 255, 255, .05);
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(10px);
-border-radius: 8px;
+border-radius: 10px;
+cursor: pointer;
+transition: 400ms;
+border-radius: 10px;
+backdrop-filter: blur(30px);
+background-color: rgba(65, 65, 65, 0.308);
+border: 1px solid rgba(107, 107, 107, 0.089);
 }
 
-.card-description-service:hover {
-transform: scale(1.04) rotate(1deg);
+.cards-services-container .card-layout-services p.tip {
+font-size: 0.5em;
+font-weight: 400;
 }
 
-.square {
-width: 100px;
-height: 100px;
-background-color: rgb(250, 170, 21);
-filter: opacity(0.5);
-background-repeat: no-repeat;
-color: transparent;
-border-radius: 10%;
-position: absolute;
-animation: move-up6 2s ease-in infinite alternate-reverse;
+.cards-services-container .card-layout-services p.second-text {
+font-size: .7em;
 }
 
-.card1-services {
-position: relative;
-left: -10%;
-
+.cards-services-container .card-layout-services:hover {
+transform: scale(1.1, 1.1);
 }
 
-.card2-services {
-position: relative;
-right: -10%;
-top: 60%;
-}
-
-.card3-services {
-position: relative;
-right: 10%;
-top: 100%;
-}
-
-.square:nth-child(1) {
-top: -25px;
-left: -25px;
-}
-
-.square:nth-child(2) {
-bottom: -25px;
-right: -25px;
-animation-name: move-down1;
-}
-
-
-@keyframes move-up6 {
-to {
-transform: translateY(-10px);
-}
-}
-
-@keyframes move-down1 {
-to {
-transform: translateY(10px);
-}
+.cards-services-container:hover>.card-layout-services:not(:hover) {
+filter: blur(10px);
+transform: scale(0.9, 0.9);
 }
