@@ -96,6 +96,7 @@ width: 671px;
 
 .card-project:hover {
     transform: rotateY(180deg);
+    z-index: 10000;
 }
 
 .card-body .bg {
@@ -133,14 +134,17 @@ width: 671px;
 .card-project:hover .card-body .bg {
     width: 200%;
     transition-delay: 1s;
+    z-index: 10000;
 }
 
 .card-project:hover .card-body .bg:nth-child(2) {
     transition-delay: 1.5s;
+    z-index: 10000;
 }
 
 .card-project:hover .card-body .bg:nth-child(3) {
     transition-delay: 2s;
+    z-index: 10000;
 }
 
 .card-content {
@@ -155,7 +159,7 @@ width: 671px;
     font-size: 30px;
     position: relative;
     top: 75%;
-    color: #f3aa66;
+    color: #a7a5a3;
     text-align: center;
     background-color: #292929b7;
 
@@ -165,6 +169,7 @@ width: 671px;
 .para {
     font-size: 16px;
     padding-top: 20px;
+    color: #f8dfd1;
 }
 
 .title {

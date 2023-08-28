@@ -128,7 +128,7 @@ export default function About() {
                 <img
                   className="profile-image-inside-card"
                   src={ProfileImage}
-                  alt="profile image"
+                  alt="presentation"
                 />
               </span>
             </div>

@@ -1,8 +1,5 @@
 import React from "react";
 import "../styling/Clients.css";
-import CoverProject from "../assets/portfolio.jpg";
-import CoverProject1 from "../assets/portfolio1.jpg";
-import CoverProject2 from "../assets/portfolio2.jpg";
 
 function Clients() {
   return (
