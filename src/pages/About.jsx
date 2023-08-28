@@ -17,7 +17,7 @@ export default function About() {
       </div>
 
       <div class="cards-container">
-        <div class="card-container">
+        <div class="card-container-about">
           <div class="card-layout">
             <div class="logo-card">
               <span class="circle circle1"></span>
@@ -68,7 +68,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div class="card-container">
+        <div class="card-container-about">
           <div class="card-layout">
             <div class="logo-card">
               <span class="circle circle1"></span>
@@ -119,7 +119,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div class="card-container">
+        <div class="card-container-about">
           <div class="card-layout">
             <div class="logo-card">
               <span class="circle circle1"></span>

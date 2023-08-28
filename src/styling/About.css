@@ -55,7 +55,7 @@
     width: 100%;
 }
 
-.card-container {
+.card-container-about {
     width: 25rem;
     height: 30rem;
     perspective: 1000px;
@@ -97,7 +97,7 @@
     display: block;
     color: #454545;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .content .text {
@@ -269,28 +269,28 @@
     fill: white;
 }
 
-.card-container:hover .card-layout {
+.cards-container-about:hover .card-layout {
     transform: rotate3d(1, 1, 0, 30deg);
     box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
 }
 
-.card-container:hover .card-layout .bottom .social-buttons-container .social-button {
+.cards-container-about:hover .card-layout .bottom .social-buttons-container .social-button {
     transform: translate3d(0, 0, 50px);
     box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
 }
 
-.card-container:hover .card-layout .logo-card .circle2 {
+.cards-container-about:hover .card-layout .logo-card .circle2 {
     transform: translate3d(0, 0, 60px);
 }
 
-.card-container:hover .card-layout .logo-card .circle3 {
+.cards-container-about:hover .card-layout .logo-card .circle3 {
     transform: translate3d(0, 0, 80px);
 }
 
-.card-container:hover .card-layout .logo-card .circle4 {
+.cards-container-about:hover .card-layout .logo-card .circle4 {
     transform: translate3d(0, 0, 100px);
 }
 
-.card-container:hover .card-layout .logo-card .circle5 {
+.cards-container-about:hover .card-layout .logo-card .circle5 {
     transform: translate3d(0, 0, 120px);
 }
