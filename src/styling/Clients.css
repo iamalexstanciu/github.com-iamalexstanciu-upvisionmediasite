@@ -87,11 +87,11 @@ width: 671px;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, -40px) rotateY(180deg);
-    width: 85%;
-    height: 87%;
+    width: 96%;
+    height: 98%;
     border-radius: 20px;
     overflow: hidden;
-    border: 5px solid #070707cb;
+    border: 2px solid #070707cb;
 }
 
 .card-project:hover {
@@ -100,7 +100,7 @@ width: 671px;
 
 .card-body .bg {
     position: absolute;
-    background: #f3aa66;
+    background: #aaaaaa;
     border-radius: 100px;
     width: 0%;
     transition: .5s;
@@ -152,8 +152,11 @@ width: 671px;
 }
 
 .title-front {
-    font-size: 30px;
+    font-size: 25px;
+    width: 96%;
     position: relative;
+    left: 2%;
+    border-radius: 5px;
     top: 75%;
     color: #a7a5a3;
     text-align: center;
