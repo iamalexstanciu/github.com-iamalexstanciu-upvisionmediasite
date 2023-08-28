@@ -67,7 +67,7 @@ border-radius: 50px;
 background: #1a191a;
 transition: all 0.5s ease-in-out;
 transform-style: preserve-3d;
-box-shadow: rgba(2, 8, 3, 0.295) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+box-shadow: rgba(187, 119, 17, 0.295) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
 }
 
 .glass {

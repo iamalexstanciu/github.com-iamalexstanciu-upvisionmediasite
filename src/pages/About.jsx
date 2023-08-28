@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="about-section" id="aboutUs">
       <div class="meet-our-team">Meet our team</div>
-      <div class="description-about">
+      <div class="description">
         Our team consists of highly qualified specialists with international
         Experience in Web Development, Mobile Development, Product management
         and design. We design ideas, put them into practice and take the user
