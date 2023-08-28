@@ -5,7 +5,6 @@ import UseScroll from "../data/UseScroll";
 import moment from "moment-timezone";
 
 export default function NavigationBar() {
-
   const [currentDateTime, setCurrentDateTime] = useState("");
 
   useEffect(() => {
@@ -51,7 +50,11 @@ export default function NavigationBar() {
         </div>
       </div>
       <div className="frame-4">
-        <div className="group-1">
+        <div
+          className="group-1"
+          onClick={() => {
+            UseScroll("home");
+          }}>
           <div className="digital">upVision</div>
           <div className="studio">Media</div>
           <img src={Logo} alt="" className="logo-navbar" />

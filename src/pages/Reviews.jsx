@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styling/Reviews.css"
-import ReviewImage from "../assets/portfolio.jpg"
+import ReviewImage from "../assets/portfolio1.jpg"
 
 function Reviews() {
   return (

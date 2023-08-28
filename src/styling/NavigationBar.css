@@ -11,7 +11,8 @@ flex-direction: row;
 align-items: center;
 justify-content: space-evenly;
 width: 100vw;
-position: relative;
+position: fixed;
+z-index: 100000;
 }
 
 .frame-1 {

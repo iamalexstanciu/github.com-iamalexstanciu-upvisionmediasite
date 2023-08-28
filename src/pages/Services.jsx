@@ -1,6 +1,6 @@
 import React from "react";
 import "../styling/Services.css";
-import ServicesImage from "../assets/services-image.png";
+import ServicesImage from "../assets/gif-page2.gif";
 
 export default function Services() {
   return (

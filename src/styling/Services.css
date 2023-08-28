@@ -2,6 +2,8 @@
 .services-section * {
     box-sizing: border-box;
     background: #1a191a;
+    position: relative;
+    top: 7%;
 }
 
 .services-section {
@@ -47,16 +49,18 @@ margin-right: .07em;
 
 
 .services-image {
-width: 40%;
-height: 90%;
-position: absolute;
-border-radius: 5%;
+    width: 100%;
+    position: relative;
+    top: 10%;
+    left: 15%;
+    border-radius: 2%;
+    box-shadow:  60px 0 80px 20px #86868638;
 }
 
 .slogan-down-services {
 position: relative;
 width: 70%;
-top: 5%;
+top: 95%;
 left: 20%;
 background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 background-size: cover;
@@ -94,7 +98,7 @@ transform: scale(1.04) rotate(1deg);
 .square {
 width: 100px;
 height: 100px;
-background-color: rgba(12, 170, 167, 0.547);
+background-color: rgb(250, 170, 21);
 filter: opacity(0.5);
 background-repeat: no-repeat;
 color: transparent;
