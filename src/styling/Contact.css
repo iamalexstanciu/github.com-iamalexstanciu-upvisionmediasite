@@ -10,6 +10,8 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+     transform-style: preserve-3d;
+  transition: all 1s ease;
 }
 
 .let-s-talk {
@@ -36,23 +38,37 @@
     background-color: 1a191a;
     width: 60%;
     height: 60%;
+   
     position: relative;
     top: 38%;
     left: 14%;
     color: #ffffff;
+     backface-visibility: hidden;
+  padding: 65px 45px;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
 }
 
 .contact-form {
     display: flex;
+    margin-top: -60px;
         flex-direction: column;
-        gap: 10px;
+        gap: 0px;
         font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
         border: none;
 }
 
 .contact-form input,
 .contact-form textarea {
-    background-color: rgba(255, 166, 0, 0.637) ;
+    outline: none;
+  transition: 0.35s;
+  padding: 0px 7px;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6);
 }
 
 .contact-form input::placeholder,
@@ -62,7 +78,58 @@
 }
 
 .contact-form button {
-    background-color: orange;
-    color: black;
-    font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
+  padding: 10px 35px;
+  cursor: pointer;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.35s;
+}
+.input {
+ 
+  min-height: 25px;
+  color: #fff;
+  outline: none;
+  transition: 0.35s;
+  padding: 0px 7px;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6);
+}
+.input::placeholder {
+  color: #999;
+}
+
+.input:focus.input::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+}
+.input:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+button:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
 }

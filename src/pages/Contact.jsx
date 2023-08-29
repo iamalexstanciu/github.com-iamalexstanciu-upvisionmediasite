@@ -74,6 +74,7 @@ export default function Contact() {
         <form className="contact-form" onSubmit={handleSubmit}>
           <label>Name</label>
           <input
+            className="input"
             id="name"
             name="name"
             placeholder="You name"
@@ -82,8 +83,10 @@ export default function Contact() {
             required
             onChange={handleChange}
           />
+          <br />
           <label>Email</label>
           <input
+            className="input"
             id="email"
             name="email"
             placeholder="Please, your email address"
@@ -92,15 +95,19 @@ export default function Contact() {
             required
             onChange={handleChange}
           />
+          <br />
           <label>Message</label>
           <textarea
+            className="input"
             id="message"
             name="message"
             placeholder="Let's get in touch "
             rows="5"
             value={formData.message}
             onChange={handleChange}
-            required></textarea>
+            required
+          ></textarea>
+          <br />
           <button className="submitButton" type="submit">
             {formData.loading ? "Sending..." : "Send"}
           </button>
