@@ -13,7 +13,11 @@ position: relative;
 
 
 .meet-our-team {
-color: #f08c51;
+background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
 text-align: left;
 font: 500 60px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;

@@ -20,7 +20,11 @@
 }
 
 .simple-solutions-for-complex-problems {
-  color: hsl(0, 0%, 100%);
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
   text-align: left;
   font: var(--h-1, 500 96px "Rubik", sans-serif);
   position: absolute;

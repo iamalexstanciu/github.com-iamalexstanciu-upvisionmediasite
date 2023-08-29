@@ -14,7 +14,11 @@
 }
 
 .quote {
-    color: rgba(255, 99, 51, 0.7);
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
     text-align: left;
     font: 400 407px "Ribeye", sans-serif;
     position: absolute;
@@ -23,7 +27,11 @@
 }
 
 .our-clients-speak {
-    color: #ffffff;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
     text-align: left;
     font: var(--h-2, 500 72px "Rubik", sans-serif);
     position: absolute;

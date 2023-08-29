@@ -15,7 +15,11 @@ transition: all 1s ease;
 }
 
 .let-s-talk {
-color: #ffffff;
+background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
 text-align: left;
 font: var(--h-2, 500 72px "Rubik", sans-serif);
 position: absolute;
