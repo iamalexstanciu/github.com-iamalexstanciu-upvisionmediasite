@@ -259,7 +259,7 @@ function CursorCore({
       transition: "opacity 0.15s ease-in-out, transform 0.25s ease-in-out",
     },
     cursorOuter: {
-      zIndex: 999,
+      zIndex: 99,
       display: "block",
       position: "fixed",
       borderRadius: "50%",
