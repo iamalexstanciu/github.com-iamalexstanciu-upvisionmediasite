@@ -42,155 +42,153 @@ width: fit-content;
 position: absolute;
 top: 45%;
 width: 100vw;
-gap: 5%;
+gap: 10%;
+}
+
+
+.card-layout {
+    width: 22rem;
+    height: 33rem;
+    background: rgb(39, 39, 39);
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition-duration: .5s;
+}
+
+.profileImage {
+    padding-top: 15px;
+    width: 17rem;
+    height: 17rem;
+    filter: grayscale(1);
+}
+
+.profileImage img {
+    width: 100%;
+}
+
+.textContainer {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.profile {
+    font-size: 0.84em;
+    color: rgb(194, 194, 194);
+    letter-spacing: 0.2px;
+    position: relative;
+    top: -10%;
+    text-align: center;
+}
+
+.profile2 {
+    font-size: 0.84em;
+    color: rgb(194, 194, 194);
+    letter-spacing: 0.2px;
+    position: relative;
+    top: -20%;
+    text-align: center;
+}
+
+.card-layout:hover {
+    background-color: rgb(43, 43, 43);
+    transition-duration: .5s;
+    
+}
+
+.card-layout:hover .profileImage {
+    filter: grayscale(0);
 }
 
 
 
-
-/* cards */
-
-.profile-image-inside-card {
-width: 100%;
+.card-social-about {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    position: relative;
+    top: -20%;
+    left: -5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
-.card-container-about {
-width: 25rem;
-height: 30rem;
-perspective: 1000px;
-z-index: 10000;
+/* for all social containers*/
+.socialContainer {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
 }
 
-.card-layout-about {
-height: 100%;
-border-radius: 20px;
-background: #2b2a2b;
-transition: all 0.5s ease-in-out;
-transform-style: preserve-3d;
-box-shadow: rgba(2, 8, 3, 0.295) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
 }
 
-.content-services-card {
-position: relative;
-top: 55%;
-left: 10%;
-transform: translate3d(0, 0, 26px);
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
 }
 
-.content-services-card .title {
-display: block;
-color: #ffffff;
-position: relative;
-font: 600 19px/40.1% 'LT Binary Neue Round', sans-serif;
-
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
 }
 
-.text {
-color: #ffffff;
-font: 600 14px/146.1% 'LT Binary Neue Round', sans-serif;
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
 }
 
-.bottom {
-padding: 10px 12px;
-transform-style: preserve-3d;
-position: absolute;
-bottom: 10px;
-left: 20px;
-right: 20px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-transform: translate3d(0, 0, 26px);
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
 }
 
-
-
-
-.bottom .social-buttons-container {
-display: flex;
-gap: 5%;
-position: relative;
-left: 25%;
-transform-style: preserve-3d;
+.socialSvg {
+    width: 17px;
 }
 
-.bottom .social-buttons-container .social-button {
-width: 30px;
-aspect-ratio: 1;
-padding: 3%;
-background: rgb(207, 132, 70);
-border-radius: 50%;
-border: none;
-display: grid;
-place-content: center;
+.socialSvg path {
+    fill: rgb(255, 255, 255);
 }
 
-.bottom .social-buttons-container .social-button:first-child {
-transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
 }
 
-.bottom .social-buttons-container .social-button:nth-child(2) {
-transition: transform 0.2s ease-in-out 0.6s, box-shadow 0.2s ease-in-out 0.6s;
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-
-.bottom .social-buttons-container .social-button:nth-child(3) {
-transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.8s;
-}
-
-.bottom .social-buttons-container .social-button .svg {
-width: 15px;
-fill: #454545;
-}
-
-.bottom .social-buttons-container .social-button:hover {
-background: black;
-}
-
-.bottom .social-buttons-container .social-button:hover .svg {
-fill: rgb(255, 255, 255);
-}
-
-.bottom .social-buttons-container .social-button:active {
-background: #1a191a;
-}
-
-.bottom .social-buttons-container .social-button:active .svg {
-fill: rgb(224, 131, 9);
-}
-
-
-
-.logo-card .circle {
-display: block;
-position: absolute;
-aspect-ratio: 1;
-top: 0;
-right: 0;
-backdrop-filter: blur(5px);
-background: #47474765;
-transition: all 1s ease-in-out;
-}
-
-.logo-card .circle1 {
-width: 240px;
-transform: translate3d(0, 0, 20px);
-top: 5px;
-right: 5px;
-}
-
-
-
-
-
-
-.card-container-about:hover .card-layout-about {
-
-transform: translateY(-30px);
-}
-
-.card-container-about:hover .card-layout-about .bottom .social-buttons-container .social-button {
-transform: translate3d(0, 0, 50px);
-}
-
-
-
