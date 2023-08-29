@@ -7,11 +7,12 @@ function Reviews() {
     <div className="reviews-section" id="review">
       <div className="quote">“</div>
       <div className="our-clients-speak">Our clients speak</div>
-      <div className="description">
-        Наша команда состоит из высококлассных специалистов с международным
-        опытом работы в сфере Web-разработки, мобильной разработки, Product
-        менеджмента и дизайна. Мы предоставляем премиум сервис по доступным
-        ценам и всегда нацелены на успех наших клиентов.
+      <div className="description-review">
+        Our team consists of highly qualified specialists with international
+        experience. Experience in Web Development, Mobile Development, Product
+        Management and Design. We are always willing to listen and read what our
+        customers have to say about us in order to improve our service day after
+        day.
       </div>
       <h3 className="description2">TextLab CEO</h3>
       <h4 className="description3">Henry Paddington</h4>

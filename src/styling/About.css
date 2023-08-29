@@ -17,18 +17,19 @@ color: #f08c51;
 text-align: left;
 font: 500 60px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
-top: 7%;
-left: 13.8%;
+top: 8%;
+left: 15%;
 }
 
 .description-about {
 color: #d1d1d1;
 font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
-left: 14%;
+left: 15%;
 top: 21%;
 max-width: fit-content;
-width: 55%;
+width: 70%;
+text-align: justify;
 height: fit-content;
 }
 
@@ -40,155 +41,157 @@ align-items: center;
 justify-content: center;
 width: fit-content;
 position: absolute;
-top: 45%;
+top: 42%;
 width: 100vw;
 gap: 10%;
 }
 
 
 .card-layout {
-    width: 22rem;
-    height: 33rem;
-    background: rgb(39, 39, 39);
-    border-radius: 8px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    transition-duration: .5s;
+width: 22rem;
+height: 33rem;
+background: rgb(39, 39, 39);
+border-radius: 8px;
+box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+transition-duration: .5s;
 }
 
 .profileImage {
-    padding-top: 15px;
-    width: 17rem;
-    height: 17rem;
-    filter: grayscale(1);
+padding-top: 15px;
+width: 17rem;
+height: 17rem;
+filter: grayscale(1);
 }
 
 .profileImage img {
-    width: 100%;
+width: 100%;
 }
 
 .textContainer {
-    width: 100%;
-    text-align: left;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+width: 100%;
+text-align: left;
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 .name {
-    font-size: 1.3em;
-    font-weight: 600;
-    color: white;
-    letter-spacing: 0.5px;
-    text-align: center;
+font-size: 1.3em;
+font-weight: 600;
+color: white;
+letter-spacing: 0.5px;
+text-align: center;
 }
 
 .profile {
-    font-size: 0.84em;
-    color: rgb(194, 194, 194);
-    letter-spacing: 0.2px;
-    position: relative;
-    top: -10%;
-    text-align: center;
+font-size: 0.84em;
+color: rgb(194, 194, 194);
+letter-spacing: 0.2px;
+position: relative;
+top: -10%;
+text-align: center;
 }
 
 .profile2 {
-    font-size: 0.84em;
-    color: rgb(194, 194, 194);
-    letter-spacing: 0.2px;
-    position: relative;
-    top: -20%;
-    text-align: center;
+font-size: 0.84em;
+color: rgb(194, 194, 194);
+letter-spacing: 0.2px;
+position: relative;
+top: -20%;
+text-align: center;
 }
 
 .card-layout:hover {
-    background-color: rgb(43, 43, 43);
-    transition-duration: .5s;
-    
+background-color: rgb(43, 43, 43);
+transition-duration: .5s;
+transform: translateY(-30px) scale(1.2);
 }
 
 .card-layout:hover .profileImage {
-    filter: grayscale(0);
+filter: grayscale(0);
 }
 
 
 
 .card-social-about {
-    width: fit-content;
-    height: fit-content;
-    background-color: rgb(238, 238, 238);
-    display: flex;
-    position: relative;
-    top: -20%;
-    left: -5%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+width: fit-content;
+height: fit-content;
+background-color: rgb(238, 238, 238);
+display: flex;
+position: relative;
+top: -20%;
+left: -5%;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
 /* for all social containers*/
 .socialContainer {
-    width: 5rem;
-    height: 5rem;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition-duration: .3s;
+width: 5rem;
+height: 5rem;
+background-color: rgb(46, 46, 46);
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transition-duration: .3s;
+border: rgb(46, 46, 46) 1px solid;
 }
 
 /* instagram*/
 .containerOne:hover {
-    background-color: #d62976;
-    transition-duration: .3s;
+background-color: #d62976;
+transition-duration: .3s;
 }
 
 /* twitter*/
 .containerTwo:hover {
-    background-color: #00acee;
-    transition-duration: .3s;
+background-color: #00acee;
+transition-duration: .3s;
 }
 
 /* linkdin*/
 .containerThree:hover {
-    background-color: #0072b1;
-    transition-duration: .3s;
+background-color: #0072b1;
+transition-duration: .3s;
 }
 
 /* Whatsapp*/
 .containerFour:hover {
-    background-color: #128C7E;
-    transition-duration: .3s;
+background-color: #128C7E;
+transition-duration: .3s;
 }
 
 .socialContainer:active {
-    transform: scale(0.9);
-    transition-duration: .3s;
+transform: scale(0.9);
+transition-duration: .3s;
 }
 
 .socialSvg {
-    width: 17px;
+width: 17px;
 }
 
 .socialSvg path {
-    fill: rgb(255, 255, 255);
+fill: rgb(255, 255, 255);
 }
 
 .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
+animation: slide-in-top 0.3s both;
+
 }
 
 @keyframes slide-in-top {
-    0% {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
+0% {
+transform: translateY(-50px);
+opacity: 0;
+}
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+100% {
+transform: translateY(0);
+opacity: 1;
+}
 }

@@ -10,6 +10,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    
 }
 
 .quote {
@@ -28,16 +29,17 @@
     position: absolute;
     left: 8%;
     top: 13%;
+    text-align: justify;
 }
 
-.description {
+.description-review {
     color: #ffffff;
-    text-align: left;
     font: 400 18px/27px "Rubik", sans-serif;
     position: absolute;
     left: 10%;
     top: 25%;
-    width: 60%;
+    text-align: justify;
+    width: 80%;
     height: 40vh;
 }
 
@@ -46,8 +48,8 @@
     text-align: left;
     font: 400 18px/27px "Rubik", sans-serif;
     position: absolute;
-    right: 32.5%;
-    top: 75%;
+    right: 31%;
+    top: 77%;
 }
 
 .description3 {
@@ -55,8 +57,8 @@
     text-align: left;
     font: 400 18px/27px "Rubik", sans-serif;
     position: absolute;
-    right: 30%;
-        top: 72%;
+    right: 31%;
+    top: 74%;
 }
 
 .description4 {
@@ -64,9 +66,10 @@
     text-align: left;
     font: 400 18px "Rubik", sans-serif;
     position: absolute;
-    left: 925px;
+    left: 60%;
     top: 45%;
-    width: 35%;
+    text-align: justify;
+    width: 30%;
     height: 50%;
 }
 
@@ -75,7 +78,7 @@
     height: 55%;
     position: absolute;
     left: 10%;
-    top: 40%;
+    top: 37%;
 }
 
 .frame-42 {
@@ -85,8 +88,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 70%;
-    top: 90%;
+    left: 68%;
+    top: 88%;
 }
 
 .prev {
