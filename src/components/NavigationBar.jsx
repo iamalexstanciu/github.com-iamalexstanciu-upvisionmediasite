@@ -69,7 +69,7 @@ export default function NavigationBar() {
         onClick={() => {
           UseScroll("contact");
         }}>
-        <span class="button-content">Contact Us </span>
+        <span className="button-content">Contact Us </span>
       </button>
     </div>
   );

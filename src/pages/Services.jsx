@@ -18,9 +18,9 @@ export default function Services() {
           />
         </div>
         <div className="services-right-side">
-          <div class="cards-services-container">
-            <div class="card-layout-services red">
-              <p class="tip">
+          <div className="cards-services-container">
+            <div className="card-layout-services red">
+              <p className="tip">
                 Embark on a transformative digital voyage with our cutting-edge
                 web development agency. Our journey begins by crafting
                 captivating
@@ -30,8 +30,8 @@ export default function Services() {
                 your brand's unique story takes center stage.
               </p>
             </div>
-            <div class="card-layout-services white">
-              <p class="tip">
+            <div className="card-layout-services white">
+              <p className="tip">
                 {" "}
                 Navigating the modern online landscape requires adaptability,
                 which is why we meticulously tailor your website's{" "}
@@ -41,8 +41,8 @@ export default function Services() {
                 devices.
               </p>
             </div>
-            <div class="card-layout-services blue">
-              <p class="tip">
+            <div className="card-layout-services blue">
+              <p className="tip">
                 But our journey doesn't end there. We understand the importance
                 of visibility in the vast digital expanse. Our{" "}
                 <ins className="orange">SEO</ins> expertise ensures your

@@ -10,68 +10,68 @@ function Clients() {
         professionalism and passion.
       </div>
       <div className="projects-container">
-        <div class="card-project">
-          <div class="card1 card-img">
+        <div className="card-project">
+          <div className="card1 card-img">
             <p className="title-front">Hover to see more</p>
           </div>
-          <div class="card-body">
-            <span class="bg"></span>
-            <span class="bg"></span>
-            <span class="bg"></span>
-            <div class="card-content">
-              <h2 class="title">Website Name</h2>
-              <p class="para">
+          <div className="card-body">
+            <span className="bg"></span>
+            <span className="bg"></span>
+            <span className="bg"></span>
+            <div className="card-content">
+              <h2 className="title">Website Name</h2>
+              <p className="para">
                 A project description to tell user what we've done for this
                 client.
               </p>
             </div>
           </div>
         </div>
-        <div class="card-project">
-          <div class="card2 card-img">
+        <div className="card-project">
+          <div className="card2 card-img">
             <p className="title-front">Hover to see more</p>
           </div>
-          <div class="card-body">
-            <span class="bg"></span>
-            <span class="bg"></span>
-            <span class="bg"></span>
-            <div class="card-content">
-              <h2 class="title">Website Name</h2>
-              <p class="para">
+          <div className="card-body">
+            <span className="bg"></span>
+            <span className="bg"></span>
+            <span className="bg"></span>
+            <div className="card-content">
+              <h2 className="title">Website Name</h2>
+              <p className="para">
                 A project description to tell user what we've done for this
                 client.
               </p>
             </div>
           </div>
         </div>
-        <div class="card-project">
-          <div class="card3 card-img">
+        <div className="card-project">
+          <div className="card3 card-img">
             <p className="title-front">Hover to see more</p>
           </div>
-          <div class="card-body">
-            <span class="bg"></span>
-            <span class="bg"></span>
-            <span class="bg"></span>
-            <div class="card-content">
-              <h2 class="title">Website Name</h2>
-              <p class="para">
+          <div className="card-body">
+            <span className="bg"></span>
+            <span className="bg"></span>
+            <span className="bg"></span>
+            <div className="card-content">
+              <h2 className="title">Website Name</h2>
+              <p className="para">
                 A project description to tell user what we've done for this
                 client.
               </p>
             </div>
           </div>
         </div>
-        <div class="card-project">
-          <div class="card4 card-img">
+        <div className="card-project">
+          <div className="card4 card-img">
             <p className="title-front">Hover to see more</p>
           </div>
-          <div class="card-body">
-            <span class="bg"></span>
-            <span class="bg"></span>
-            <span class="bg"></span>
-            <div class="card-content">
-              <h2 class="title">Website Name</h2>
-              <p class="para">
+          <div className="card-body">
+            <span className="bg"></span>
+            <span className="bg"></span>
+            <span className="bg"></span>
+            <div className="card-content">
+              <h2 className="title">Website Name</h2>
+              <p className="para">
                 A project description to tell user what we've done for this
                 client.
               </p>
