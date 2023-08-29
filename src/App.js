@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AnimatedCursor from "./js/CustomCursor";
+// import AnimatedCursor from "./js/CustomCursor";
 import "./styling/App.css";
 import Footer from "./components/Footer";
 import { Element } from "react-scroll";

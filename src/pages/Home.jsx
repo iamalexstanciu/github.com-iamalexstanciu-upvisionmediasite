@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import "../styling/Home.css";
 import UseScroll from "../data/UseScroll";
@@ -147,7 +148,7 @@ export default function Home() {
         </a>
       </div>
       <a
-        href="#"
+        href="/"
         onClick={() => {
           UseScroll("services");
         }}

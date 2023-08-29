@@ -25,7 +25,7 @@ function Reviews() {
         Highly recommend their services for anyone seeking top-notch web
         development solutions.
       </p>
-      <img className="review-image" src={ReviewImage} />
+      <img className="review-image" src={ReviewImage} alt='banner page' />
       <div className="frame-42">
         <div className="prev">Prev</div>
         <svg
