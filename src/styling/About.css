@@ -61,7 +61,7 @@ perspective: 1000px;
 z-index: 10000;
 }
 
-.card-layout-about-about {
+.card-layout-about {
 height: 100%;
 border-radius: 50px;
 background: #2b2a2b;
@@ -72,7 +72,7 @@ box-shadow: rgba(2, 8, 3, 0.295) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 
 
 .content-services-card {
 position: relative;
-top: 18%;
+top: 50%;
 left: 10%;
 transform: translate3d(0, 0, 26px);
 }
@@ -175,10 +175,10 @@ transition: all 0.5s ease-in-out;
 }
 
 .logo-card .circle1 {
-width: 160px;
+width: 140px;
 transform: translate3d(0, 0, 20px);
-top: 8px;
-right: 8px;
+top: 5px;
+right: 5px;
 }
 
 
@@ -187,26 +187,12 @@ right: 8px;
 
 
 .card-container-about:hover .card-layout-about {
-transform: rotate3d(1, 1, 0, 30deg);
+transform: rotate3d(5, 5, 0, 30deg);
 }
 
 .card-container-about:hover .card-layout-about .bottom .social-buttons-container .social-button {
 transform: translate3d(0, 0, 50px);
 }
 
-.card-container-about:hover .card-layout-about .logo-card .circle2 {
-transform: translate3d(0, 0, 60px);
-}
 
-.card-container-about:hover .card-layout-about .logo-card .circle3 {
-transform: translate3d(0, 0, 80px);
-}
-
-.card-container-about:hover .card-layout-about .logo-card .circle4 {
-transform: translate3d(0, 0, 100px);
-}
-
-.card-container-about:hover .card-layout-about .logo-card .circle5 {
-transform: translate3d(0, 0, 120px);
-}
 
