@@ -72,7 +72,7 @@ box-shadow: rgba(2, 8, 3, 0.295) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 
 
 .content-services-card {
 position: relative;
-top: 50%;
+top: 55%;
 left: 10%;
 transform: translate3d(0, 0, 26px);
 }
@@ -81,8 +81,7 @@ transform: translate3d(0, 0, 26px);
 display: block;
 color: #ffffff;
 position: relative;
-top: 40%;
-font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
+font: 600 19px/40.1% 'LT Binary Neue Round', sans-serif;
 
 }
 
@@ -165,17 +164,15 @@ fill: rgb(224, 131, 9);
 display: block;
 position: absolute;
 aspect-ratio: 1;
-border-radius: 50%;
 top: 0;
 right: 0;
--webkit-backdrop-filter: blur(5px);
 backdrop-filter: blur(5px);
 background: #47474765;
-transition: all 0.5s ease-in-out;
+transition: all 1s ease-in-out;
 }
 
 .logo-card .circle1 {
-width: 140px;
+width: 240px;
 transform: translate3d(0, 0, 20px);
 top: 5px;
 right: 5px;
