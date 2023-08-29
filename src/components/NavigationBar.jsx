@@ -7,6 +7,8 @@ import moment from "moment-timezone";
 export default function NavigationBar() {
   const [currentDateTime, setCurrentDateTime] = useState("");
 
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const interval = setInterval(() => {
       const now = moment().tz("Europe/Bucharest");
@@ -17,8 +19,24 @@ export default function NavigationBar() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="frame-3">
+    <div className={`frame-3 ${scrolled ? 'scrolled' : ''}`}>
       <div className="frame-1">
         <div
           className="buttons-navbar"

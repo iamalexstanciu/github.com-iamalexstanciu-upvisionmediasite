@@ -13,6 +13,11 @@ justify-content: space-evenly;
 width: 100vw;
 position: fixed;
 z-index: 100000;
+transition: background-color 0.3s ease-in-out;
+}
+
+.frame-3.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Change the background color and opacity as needed */
 }
 
 .frame-1 {
