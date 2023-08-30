@@ -48,15 +48,17 @@ position: absolute;
 top: 42%;
 width: 100vw;
 gap: 10%;
+
 }
 
 
 .card-layout {
 width: 22rem;
 height: 33rem;
-background: rgb(39, 39, 39);
+background-color: 1a191a;
 border-radius: 8px;
-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+inset -1px -1px 5px rgba(255, 255, 255, 0.6);
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -121,16 +123,21 @@ filter: grayscale(0);
 }
 
 
-
+.socialContainer{   
+    background-color: 1a191a;
+    box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
 .card-social-about {
 width: fit-content;
 height: fit-content;
-background-color: rgb(238, 238, 238);
+background-color: 1a191a;
 display: flex;
 position: relative;
 top: -20%;
 left: -5%;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+inset -1px -1px 5px rgba(255, 255, 255, 0.6);
 }
 
 /* for all social containers*/
