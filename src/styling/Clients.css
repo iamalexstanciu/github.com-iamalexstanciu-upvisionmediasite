@@ -48,6 +48,8 @@ width: 671px;
     top: 25%;
     left: -30%;
     gap: 5%;
+    
+     
 }
 
 .card-project {
@@ -262,8 +264,12 @@ body.menu-toggled > .meta-link > span {
     border-radius: 25px;
     margin-bottom: 10px;
     animation: wipe-in-left 3s; 
-    
+     box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(60, 60, 60);
 }
+/* #image-track{
+    animation: wipe-in-left 3s; 
+} */
 @keyframes wipe-in-left {
   from {
     clip-path: inset(0 0 0 100%);
