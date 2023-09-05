@@ -14,13 +14,13 @@ overflow: hidden;
 
 
 .our-cases {
-background-image: url(https://media1.giphy.com/media/kBq8PArX5ofmAlDwHq/200w.webp);
+background-image: url(https://media1.giphy.com/media/XGa7LjLlGE5V6CUFj1/200w.webp);
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
 text-align: left;
-font: 500 60px/136.1% 'LT Binary Neue Round', sans-serif;
+font: 500 80px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
 left: 10%;
 top: 5%;
@@ -28,11 +28,7 @@ top: 5%;
 
 
 .description-clients {
-background-image: url(https://media1.giphy.com/media/kBq8PArX5ofmAlDwHq/200w.webp);
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
+color: whitesmoke;
 text-align: left;
 font: 600 23px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
