@@ -65,6 +65,42 @@ function Clients() {
       window.removeEventListener("touchmove", handleOnMove);
     };
   });
+
+  //intersection observer
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            const images = entry.target.getElementsByClassName("image");
+            for (const image of images) {
+              image.classList.add("animate");
+            }
+          } else {
+            const images = entry.target.getElementsByClassName("image");
+            for (const image of images) {
+              image.classList.remove("animate");
+            }
+          }
+        },
+        {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.1,
+        }
+      );
+
+      if (sectionRef.current) {
+        observer.observe(sectionRef.current);
+      }
+
+      return () => {
+        if (sectionRef.current) {
+          observer.unobserve(sectionRef.current);
+        }
+      };
+    }, []);
   
   return (
     <div className="clients-section" id="clients">
@@ -73,7 +109,7 @@ function Clients() {
         These are some examples of projects in which we have put all our
         professionalism and passion.
       </div>
-      <div className="projects-container">
+      <div className="projects-container" ref={sectionRef}>
         <div
           id="image-track"
           ref={trackRef}

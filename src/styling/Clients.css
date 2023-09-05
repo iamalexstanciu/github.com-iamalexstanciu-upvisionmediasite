@@ -263,9 +263,12 @@ body.menu-toggled > .meta-link > span {
 #img{
     border-radius: 25px;
     margin-bottom: 10px;
-    animation: wipe-in-left 3s; 
+    
      box-shadow: 15px 15px 30px rgb(25, 25, 25),
              -15px -15px 30px rgb(60, 60, 60);
+}
+.animate{
+    animation: wipe-in-left 3s; 
 }
 /* #image-track{
     animation: wipe-in-left 3s; 
