@@ -12,12 +12,17 @@ function Clients() {
 
   const handleOnUp = () => {
     setMouseDownAt(0);
-    setPrevPercentage(trackRef.current.dataset.percentage);
+    //Added this 2 lines to fix the Nan issue of trackRef.current.dataset.percentage;
+    const newPercentage = trackRef.current.dataset.percentage;
+    setPrevPercentage(
+      isNaN(parseFloat(newPercentage)) ? 0 : parseFloat(newPercentage)
+    );
   };
 
   const handleOnMove = (e) => {
-    if (mouseDownAt === 0) return;
 
+    if (mouseDownAt === 0) return;
+   console.log({ mouseDownAt, prevPercentage });
     const mouseDelta = parseFloat(mouseDownAt) - e.clientX;
     const maxDelta = window.innerWidth / 2;
 

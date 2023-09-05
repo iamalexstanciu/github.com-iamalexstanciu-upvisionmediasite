@@ -264,8 +264,7 @@ body.menu-toggled > .meta-link > span {
     border-radius: 25px;
     margin-bottom: 10px;
     
-     box-shadow: 15px 15px 30px rgb(25, 25, 25),
-             -15px -15px 30px rgb(60, 60, 60);
+   
 }
 .animate{
     animation: wipe-in-left 3s; 
@@ -284,4 +283,16 @@ body.menu-toggled > .meta-link > span {
 
 [transition-style="in:wipe:left"] {
   animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
+
+
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
