@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../styling/Clients.css";
 
 function Clients() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const [mouseDownAt, setMouseDownAt] = useState(0);
   const [prevPercentage, setPrevPercentage] = useState(0);
 
@@ -13,6 +13,7 @@ function Clients() {
   const handleOnUp = () => {
     setMouseDownAt(0);
     //Added this 2 lines to fix the Nan issue of trackRef.current.dataset.percentage;
+    //setPrevPercentage(trackRef.current.dataset.percentage); replaced
     const newPercentage = trackRef.current.dataset.percentage;
     setPrevPercentage(
       isNaN(parseFloat(newPercentage)) ? 0 : parseFloat(newPercentage)
