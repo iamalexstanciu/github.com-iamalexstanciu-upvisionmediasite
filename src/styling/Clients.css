@@ -18,6 +18,7 @@ background-image: url(https://media0.giphy.com/media/1H8sdPP3JDAR5iY0Yv/giphy.gi
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
+    background-clip: text;
     -webkit-background-clip: text;
 text-align: left;
 font: 500 60px/136.1% 'LT Binary Neue Round', sans-serif;

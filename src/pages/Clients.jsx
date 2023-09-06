@@ -117,32 +117,32 @@ function Clients() {
           data-prev-percentage={prevPercentage}
         >
           <img
-            class="image"
+            className="image"
             src="https://assets.awwwards.com/awards/sites_of_the_day/2023/08/opal-3.jpg"
             draggable="false"
             id="img"
           />
           <img
-            class="image"
+            className="image"
             draggable="false"
             id="img"
             src="https://assets.awwwards.com/awards/external/2022/03/621e4a6fbf64c448769373.jpg"
           ></img>
           <img
             id="img"
-            class="image"
+            className="image"
             src="https://assets.awwwards.com/awards/sites_of_the_day/2016/12/awwwards-sotd-monochrome.jpg"
             draggable="false"
           />{" "}
           <img
             id="img"
-            class="image"
+            className="image"
             src="https://assets.awwwards.com/awards/sites_of_the_day/2023/09/b-egg-3.jpg"
             draggable="false"
           />{" "}
           <img
             id="img"
-            class="image"
+            className="image"
             src="https://assets.awwwards.com/awards/element/2023/08/64db58a407e32382517187.jpg"
             draggable="false"
           />
