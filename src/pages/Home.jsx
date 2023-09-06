@@ -148,7 +148,6 @@ export default function Home() {
         </a>
       </div>
       <a
-        href="/"
         onClick={() => {
           UseScroll("services");
         }}
