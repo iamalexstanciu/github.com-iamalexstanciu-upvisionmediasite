@@ -14,14 +14,14 @@ overflow: hidden;
 
 
 .our-cases {
-background-image: url(https://media0.giphy.com/media/1H8sdPP3JDAR5iY0Yv/giphy.gif);
+background-image: url(https://media1.giphy.com/media/XGa7LjLlGE5V6CUFj1/200w.webp);
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-background-clip: text;
 text-align: left;
-font: 500 60px/136.1% 'LT Binary Neue Round', sans-serif;
+font: 500 80px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
 left: 10%;
 top: 5%;
@@ -29,9 +29,9 @@ top: 5%;
 
 
 .description-clients {
-color: #f8dfd1;
+color: whitesmoke;
 text-align: left;
-font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
+font: 600 23px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
 left: 10%;
 top: 20%;
@@ -265,8 +265,7 @@ body.menu-toggled > .meta-link > span {
     border-radius: 25px;
     margin-bottom: 10px;
     
-     box-shadow: 15px 15px 30px rgb(25, 25, 25),
-             -15px -15px 30px rgb(60, 60, 60);
+   
 }
 .animate{
     animation: wipe-in-left 3s; 
@@ -285,4 +284,16 @@ body.menu-toggled > .meta-link > span {
 
 [transition-style="in:wipe:left"] {
   animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
+
+
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
