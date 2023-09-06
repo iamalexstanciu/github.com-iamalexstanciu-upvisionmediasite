@@ -53,7 +53,7 @@ function Footer() {
         viewBox="0 0 960 720"
         fill="none"
         xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_75_40)">
+        <g clipPath="url(#clip0_75_40)">
           <g filter="url(#filter0_f_75_40)">
             <ellipse
               cx="596"
@@ -67,7 +67,7 @@ function Footer() {
             <path
               d="M383 204L720 287.696V594L383 510.304V204Z"
               fill="url(#paint1_linear_75_40)"
-              fill-opacity="0.4"
+              fillOpacity="0.4"
             />
           </g>
         </g>
@@ -79,8 +79,8 @@ function Footer() {
             width="766"
             height="765"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -99,8 +99,8 @@ function Footer() {
             width="637"
             height="690"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -119,8 +119,8 @@ function Footer() {
             x2="596"
             y2="448"
             gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FF7A00" stop-opacity="0" />
-            <stop offset="1" stop-color="#FF5858" />
+            <stop stopColor="#FF7A00" stopOpacity="0" />
+            <stop offset="1" stopColor="#FF5858" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_75_40"
@@ -129,8 +129,8 @@ function Footer() {
             x2="551.5"
             y2="594"
             gradientUnits="userSpaceOnUse">
-            <stop stop-color="#000F30" />
-            <stop offset="1" stop-color="#003099" />
+            <stop stopColor="#000F30" />
+            <stop offset="1" stopColor="#003099" />
           </linearGradient>
           <clipPath id="clip0_75_40">
             <rect width="960" height="720" fill="white" />
