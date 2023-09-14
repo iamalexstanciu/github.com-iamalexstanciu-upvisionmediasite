@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styling/Clients.css";
+import Project1 from "../assets/project1.png";
+import Project2 from "../assets/project1.1.png";
+import Project3 from "../assets/project2.png";
+import Project4 from "../assets/project2.1.png";
 
 function Clients() {
-
   const [mouseDownAt, setMouseDownAt] = useState(0);
   const [prevPercentage, setPrevPercentage] = useState(0);
 
@@ -21,9 +24,8 @@ function Clients() {
   };
 
   const handleOnMove = (e) => {
-
     if (mouseDownAt === 0) return;
-   console.log({ mouseDownAt, prevPercentage });
+    console.log({ mouseDownAt, prevPercentage });
     const mouseDelta = parseFloat(mouseDownAt) - e.clientX;
     const maxDelta = window.innerWidth / 2;
 
@@ -73,41 +75,41 @@ function Clients() {
   });
 
   //intersection observer
-    const sectionRef = useRef(null);
+  const sectionRef = useRef(null);
 
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            const images = entry.target.getElementsByClassName("image");
-            for (const image of images) {
-              image.classList.add("animate");
-            }
-          } else {
-            const images = entry.target.getElementsByClassName("image");
-            for (const image of images) {
-              image.classList.remove("animate");
-            }
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          const images = entry.target.getElementsByClassName("image");
+          for (const image of images) {
+            image.classList.add("animate");
           }
-        },
-        {
-          root: null,
-          rootMargin: "0px",
-          threshold: 0.1,
+        } else {
+          const images = entry.target.getElementsByClassName("image");
+          for (const image of images) {
+            image.classList.remove("animate");
+          }
         }
-      );
-
-      if (sectionRef.current) {
-        observer.observe(sectionRef.current);
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
       }
+    );
 
-      return () => {
-        if (sectionRef.current) {
-          observer.unobserve(sectionRef.current);
-        }
-      };
-    }, []);
-  
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="clients-section" id="clients">
       <div className="our-cases">Our cases</div>
@@ -120,32 +122,15 @@ function Clients() {
           id="image-track"
           ref={trackRef}
           data-mouse-down-at={mouseDownAt}
-          data-prev-percentage={prevPercentage}
-        >
-          <img
-            className="image"
-            src="https://assets.awwwards.com/awards/sites_of_the_day/2023/08/opal-3.jpg"
-            draggable="false"
-            id="img"
-          />
+          data-prev-percentage={prevPercentage}>
+          <img className="image" src={Project1} draggable="false" id="img" />
           <img
             className="image"
             draggable="false"
             id="img"
-            src="https://assets.awwwards.com/awards/external/2022/03/621e4a6fbf64c448769373.jpg"
-          ></img>
-          <img
-            id="img"
-            className="image"
-            src="https://assets.awwwards.com/awards/sites_of_the_day/2016/12/awwwards-sotd-monochrome.jpg"
-            draggable="false"
-          />{" "}
-          <img
-            id="img"
-            className="image"
-            src="https://assets.awwwards.com/awards/sites_of_the_day/2023/09/b-egg-3.jpg"
-            draggable="false"
-          />{" "}
+            src={Project2}></img>
+          <img id="img" className="image" src={Project3} draggable="false" />{" "}
+          <img id="img" className="image" src={Project4} draggable="false" />{" "}
           <img
             id="img"
             className="image"
