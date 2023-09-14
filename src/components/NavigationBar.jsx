@@ -70,7 +70,7 @@ export default function NavigationBar() {
           UseScroll("contact");
         }}>
         {" "}
-        Get started
+        Contattaci
         <div class="icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
