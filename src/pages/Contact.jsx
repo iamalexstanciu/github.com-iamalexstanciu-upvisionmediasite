@@ -71,12 +71,12 @@ export default function Contact() {
       </div>
 
       <div className="form-container">
-        <form class="contact-form row">
-          <div class="form-field col x-50">
+        <form className="contact-form row">
+          <div className="form-field col x-50">
             <input
               id="name"
               name="name"
-              class="input-text js-input"
+              className="input-text js-input"
               placeholder="You name"
               value={formData.name || ""}
               type="text"
@@ -84,10 +84,10 @@ export default function Contact() {
               onChange={handleChange}
             />
           </div>
-          <div class="form-field col x-50">
+          <div className="form-field col x-50">
             <input
               id="email"
-              class="input-text js-input"
+              className="input-text js-input"
               name="email"
               placeholder="Please, your email address"
               type="email"
@@ -96,24 +96,24 @@ export default function Contact() {
               onChange={handleChange}
             />
           </div>
-          <div class="form-field col x-100">
+          <div className="form-field col x-100">
             <input
               id="message"
-              class="input-text js-input"
+              className="input-text js-input"
               placeholder="Let's get in touch "
               value={formData.message}
               onChange={handleChange}
               required
             />
           </div>
-          <div class="form-field col x-100 align-center">
+          <div className="form-field col x-100 align-center">
             <button
               className="submit-btn"
               type="submit"
               value="Submit"
               onClick={handleSubmit}>
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
+              <div className="svg-wrapper-1">
+                <div className="svg-wrapper">
                   <svg
                     height="24"
                     width="24"
