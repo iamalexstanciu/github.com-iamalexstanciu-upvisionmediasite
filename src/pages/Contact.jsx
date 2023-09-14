@@ -71,45 +71,45 @@ export default function Contact() {
       </div>
 
       <div className="form-container">
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <label>Name</label>
-          <input
-            className="input-contact"
-            id="name"
-            name="name"
-            placeholder="You name"
-            value={formData.name || ""}
-            type="text"
-            required
-            onChange={handleChange}
-          />
-          <br />
-          <label>Email</label>
-          <input
-            className="input-contact"
-            id="email"
-            name="email"
-            placeholder="Please, your email address"
-            type="email"
-            value={formData.email || ""}
-            required
-            onChange={handleChange}
-          />
-          <br />
-          <label>Message</label>
-          <textarea
-            className="textarea-contact"
-            id="message"
-            name="message"
-            placeholder="Let's get in touch "
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            required></textarea>
-          <br />
-          <button className="submitButton" type="submit">
-            {formData.loading ? "Sending..." : "Send"}
-          </button>
+        <form class="contact-form row">
+          <div class="form-field col x-50">
+            <input
+              id="name"
+              class="input-text js-input"
+              placeholder="You name"
+              value={formData.name || ""}
+              type="text"
+              required
+              onChange={handleChange}
+            />
+          </div>
+          <div class="form-field col x-50">
+            <input
+              id="email"
+              class="input-text js-input"
+              name="email"
+              placeholder="Please, your email address"
+              type="email"
+              value={formData.email || ""}
+              required
+              onChange={handleChange}
+            />
+          </div>
+          <div class="form-field col x-100">
+            <input
+              id="message"
+              class="input-text js-input"
+              placeholder="Let's get in touch "
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div class="form-field col x-100 align-center">
+            <button className="submit-btn" type="submit" value="Submit">
+              {formData.loading ? "Sending..." : "Send"}
+            </button>
+          </div>
         </form>
       </div>
     </div>
