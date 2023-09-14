@@ -83,7 +83,7 @@ position: static;
   padding: 0 2rem;
   left: 4%;
   border-radius: 2rem;
-  background: #A5DD01;
+  background: #F96D00;
   background-size: 400%;
   font: 600 19px/136.1% 'LT Binary Neue Round', sans-serif;
   color: #080808;
@@ -140,7 +140,7 @@ position: static;
 .logo-navbar {
 width: 25%;
 position: relative;
-top: -15px;
+top: 5px;
 left: 20%;
 
 }
