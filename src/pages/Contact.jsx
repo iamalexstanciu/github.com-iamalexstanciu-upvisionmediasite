@@ -75,6 +75,7 @@ export default function Contact() {
           <div class="form-field col x-50">
             <input
               id="name"
+              name="name"
               class="input-text js-input"
               placeholder="You name"
               value={formData.name || ""}
@@ -106,7 +107,11 @@ export default function Contact() {
             />
           </div>
           <div class="form-field col x-100 align-center">
-            <button className="submit-btn" type="submit" value="Submit">
+            <button
+              className="submit-btn"
+              type="submit"
+              value="Submit"
+              onClick={handleSubmit}>
               <div class="svg-wrapper-1">
                 <div class="svg-wrapper">
                   <svg

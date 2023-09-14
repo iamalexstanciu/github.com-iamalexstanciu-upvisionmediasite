@@ -47,11 +47,13 @@ width: 40%;
 position: relative;
 top: 10%;
 left: 0%;
+z-index: 10000;
 color: #ffffff;
 }
 
 .contact-form {
 
+    z-index: 10000;
     position: relative;
     padding-top: 5%;
 
@@ -74,6 +76,7 @@ color: #ffffff;
         font-size: 18px;
         line-height: 26px;
         font-weight: 500;
+        color: #F96D00;
 
         &:focus {
             outline: none;
@@ -87,17 +90,8 @@ color: #ffffff;
         }
     }
 
-    .label {
-        position: absolute;
-        left: 20px;
-        bottom: 11px;
-        font-family: Lusitana, serif;
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 400;
-        color: #979797;
-        cursor: text;
-        transition: transform .2s ease-in-out;
+    .input-text::placeholder {
+        color: rgba(184, 184, 184, 0.795);
     }
 
     .submit-btn {
