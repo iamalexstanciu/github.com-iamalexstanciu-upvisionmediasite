@@ -15,11 +15,11 @@ overflow: hidden;
 
 .our-cases {
 background-image: url(https://media1.giphy.com/media/XGa7LjLlGE5V6CUFj1/200w.webp);
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-background-clip: text;
+background-size: cover;
+color: transparent;
+-moz-background-clip: text;
+background-clip: text;
+-webkit-background-clip: text;
 text-align: left;
 font: 500 60px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
@@ -41,259 +41,277 @@ width: 671px;
 
 /* cards */
 .projects-container {
-    display: flex;
-    flex-direction: row;
-    width: 95%;
-    height: 80%;
-    position: relative;
-    top: 25%;
-    left: -30%;
-    gap: 5%;
-    
-     
+display: flex;
+flex-direction: row;
+width: 95%;
+height: 80%;
+position: relative;
+top: 25%;
+left: -30%;
+gap: 5%;
+
+
 }
 
 .card-project {
-    width: 25rem;
-    height: 40rem;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 1s;
-    z-index: 10000;
+width: 25rem;
+height: 40rem;
+position: relative;
+transform-style: preserve-3d;
+transition: 1s;
+z-index: 10000;
 }
 
 .card-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    transform: translateZ(40px);
+position: relative;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+transform: translateZ(40px);
 }
 
 .card1 {
-    background: url("../assets/portfolio1.jpg");
-        background-size: cover;
+background: url("../assets/portfolio1.jpg");
+background-size: cover;
 }
 
 .card2 {
-    background: url("../assets/portfolio1.jpg");
-        background-size: cover;
+background: url("../assets/portfolio1.jpg");
+background-size: cover;
 }
 .card3 {
-    background: url("../assets/portfolio2.jpg");
-        background-size: cover;
+background: url("../assets/portfolio2.jpg");
+background-size: cover;
 }
 
 .card4 {
-    background: url("../assets/portfolio1.jpg");
-        background-size: cover;
+background: url("../assets/portfolio1.jpg");
+background-size: cover;
 }
 
 .card-body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, -40px) rotateY(180deg);
-    width: 96%;
-    height: 98%;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 2px solid #070707cb;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate3d(-50%, -50%, -40px) rotateY(180deg);
+width: 96%;
+height: 98%;
+border-radius: 20px;
+overflow: hidden;
+border: 2px solid #070707cb;
 }
 
 .card-project:hover {
-    transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
 
 .card-body .bg {
-    position: absolute;
-    background: #aaaaaa;
-    border-radius: 100px;
-    width: 0%;
-    transition: .5s;
+position: absolute;
+background: #aaaaaa;
+border-radius: 100px;
+width: 0%;
+transition: .5s;
 }
 
 .card-body .bg:nth-child(1) {
-    height: 25%;
-    transform-origin: left;
-    top: 0;
-    left: -30%;
-    transform: rotate(-10deg);
+height: 25%;
+transform-origin: left;
+top: 0;
+left: -30%;
+transform: rotate(-10deg);
 }
 
 .card-body .bg:nth-child(2) {
-    height: 50%;
-    transform-origin: right;
-    top: 5%;
-    right: -30%;
-    transform: rotate(-10deg);
+height: 50%;
+transform-origin: right;
+top: 5%;
+right: -30%;
+transform: rotate(-10deg);
 }
 
 .card-body .bg:nth-child(3) {
-    height: 50%;
-    transform-origin: left;
-    top: 70%;
-    left: -30%;
-    transform: rotate(-10deg);
+height: 50%;
+transform-origin: left;
+top: 70%;
+left: -30%;
+transform: rotate(-10deg);
 }
 
 .card-project:hover .card-body .bg {
-    width: 200%;
-    transition-delay: 1s;
+width: 200%;
+transition-delay: 1s;
 }
 
 .card-project:hover .card-body .bg:nth-child(2) {
-    transition-delay: 1.5s;
+transition-delay: 1.5s;
 }
 
 .card-project:hover .card-body .bg:nth-child(3) {
-    transition-delay: 2s;
+transition-delay: 2s;
 }
 
 .card-content {
-    position: relative;
-    opacity: 0;
-    transition: .5s;
-    padding: 40px 10px;
-    text-align: center;
+position: relative;
+opacity: 0;
+transition: .5s;
+padding: 40px 10px;
+text-align: center;
 }
 
 .title-front {
-    font-size: 25px;
-    width: 96%;
-    position: relative;
-    left: 2%;
-    border-radius: 5px;
-    top: 75%;
-    color: #a7a5a3;
-    text-align: center;
-    background-color: #292929b7;
+font-size: 25px;
+width: 96%;
+position: relative;
+left: 2%;
+border-radius: 5px;
+top: 75%;
+color: #a7a5a3;
+text-align: center;
+background-color: #292929b7;
 
 }
 
 
 .para {
-    font-size: 16px;
-    padding-top: 20px;
-    color: #f8dfd1;
+font-size: 16px;
+padding-top: 20px;
+color: #f8dfd1;
 }
 
 .title {
-    font-size: 40px;
-    margin-bottom: 20px;
-    color: #292929;
-    text-transform: uppercase;
+font-size: 40px;
+margin-bottom: 20px;
+color: #292929;
+text-transform: uppercase;
 }
 
 .card-project:hover .card-content {
-    opacity: 1;
-    transition-delay: 2.5s;
+opacity: 1;
+transition-delay: 2.5s;
 }
 
 
 #image-track {
-  display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%); 
-  user-select: none; /* -- Prevent image highlighting -- */
+display: flex;
+gap: 4vmin;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(0%, -50%); 
+user-select: none; /* -- Prevent image highlighting -- */
 }
 
 #image-track > .image {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: 100% center;
+width: 40vmin;
+height: 56vmin;
+object-fit: cover;
+object-position: 100% center;
 }
 
 /* -- YouTube Link Styles -- */
 
 body.menu-toggled > .meta-link > span {
-  color: rgb(30, 30, 30);
+color: rgb(30, 30, 30);
 }
 
 #source-link {
-  bottom: 60px;
+bottom: 60px;
 }
 
 #source-link > i {
-  color: rgb(94, 106, 210);
+color: rgb(94, 106, 210);
 }
 
 #yt-link > i {
-  color: rgb(239, 83, 80);
+color: rgb(239, 83, 80);
 }
 
 .meta-link {
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  bottom: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;  
-  display: inline-flex;
-  gap: 5px;
-  left: 10px;
-  padding: 10px 20px;
-  position: fixed;
-  text-decoration: none;
-  transition: background-color 400ms, border-color 400ms;
-  z-index: 10000;
+align-items: center;
+backdrop-filter: blur(3px);
+background-color: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 6px;
+bottom: 10px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+cursor: pointer;  
+display: inline-flex;
+gap: 5px;
+left: 10px;
+padding: 10px 20px;
+position: fixed;
+text-decoration: none;
+transition: background-color 400ms, border-color 400ms;
+z-index: 10000;
 }
 
 .meta-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .meta-link > i, .meta-link > span {
-  height: 20px;
-  line-height: 20px;
+height: 20px;
+line-height: 20px;
 }
 
 .meta-link > span {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
+color: white;
+font-family: "Rubik", sans-serif;
+font-weight: 500;
 }
 
 #img{
-    border-radius: 25px;
-    margin-bottom: 10px;
-    
-   
+border-radius: 25px;
+margin-bottom: 10px;
+
+
 }
 .animate{
-    animation: wipe-in-left 3s; 
+animation: wipe-in-left 3s; 
 }
 /* #image-track{
-    animation: wipe-in-left 3s; 
+animation: wipe-in-left 3s; 
 } */
 @keyframes wipe-in-left {
-  from {
-    clip-path: inset(0 0 0 100%);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+from {
+clip-path: inset(0 0 0 100%);
+}
+to {
+clip-path: inset(0 0 0 0);
+}
 }
 
 [transition-style="in:wipe:left"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
 }
 
 
 @keyframes slide-in-from-right {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
+0% {
+transform: translateX(100%);
+opacity: 0;
+}
+100% {
+transform: translateX(0%);
+opacity: 1;
+}
+}
+
+@media (max-width: 768px) {
+
+
+  .our-cases {
+    top: 10%;
   }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
+  .description-clients{
+    top: 22%;
+    width: fit-content;
+  }
+
+  .projects-container {
+    overflow-x: auto;
+    width: 100%;
+    left: 0%;
   }
 }
