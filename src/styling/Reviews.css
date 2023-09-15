@@ -77,7 +77,7 @@ width: 90%;
 .review-text {
 display: flex;
 flex-direction: column;
-gap: 10%;
+gap: 5%;
 color: #ffffff;
 z-index: 1000;
 justify-content: center;
@@ -86,6 +86,8 @@ justify-content: center;
 .text-review {
 color: #ffffff;
 font-size: 16px;
+padding-top: 2.5%;
+text-align: justify;
 }
 
 .prev-button,
@@ -133,6 +135,67 @@ width: 80%;
 max-width: fit-content;
 height: 40vh;
 }
+
+
+}
+
+@media (max-width: 768px) {
+    .quote {
+        background-image: url(https://media2.giphy.com/media/3RqUXYXqd9yOzRA4fO/giphy.gif);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        text-align: left;
+        font: 400 200px "Ribeye", sans-serif;
+        position: absolute;
+        left: 15%;
+        top: 5%;
+    }
+
+    .our-clients-speak {
+        font-size: 55px;
+        position: relative;
+        left: 20%;
+    }
+
+    .description-review {
+        color: #ffffff;
+        font: 400 16px/20px "Rubik", sans-serif;
+        position: absolute;
+        left: 12.5%;
+        top: 25%;
+        text-align: justify;
+        width: 80%;
+        max-width: fit-content;
+        height: fit-content;
+    }
+
+    .image-review {
+        display: none;
+    }
+
+    .review-container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        left: 12.5%;
+        top: 35%;
+        padding: 2%;
+        border-radius: 2%;
+        background-color: rgba(63, 63, 63, 0.726);
+        backdrop-filter: blur(10px);
+    }
+
+    .review-text{
+        width: 100%;
+    }
+
+    .buttons-scroll-reviews {
+        top: 4%;
+        position: relative;
+    }
+    
 
 
 }

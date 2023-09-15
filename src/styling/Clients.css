@@ -34,7 +34,7 @@ font: 600 23px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
 left: 10%;
 top: 20%;
-width: 671px;
+width: 85%;
 }
 
 
@@ -267,12 +267,14 @@ opacity: 1;
   }
   .description-clients{
     top: 22%;
-    width: fit-content;
+    width: 85%;
+    
   }
 
   .projects-container {
     overflow-x: auto;
     width: 100%;
     left: 0%;
+    top: 30%;
   }
 }

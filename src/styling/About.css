@@ -227,12 +227,13 @@ opacity: 1;
 
     .meet-our-team{
         top: 5%;
-        left: 20%;
+        left: 15%;
     }
 
     .description-about {
-        top: 10%;
-        left: 15%;
+        top: 12%;
+        left: 5%;
+        width: 90%;
     }
 
     .cards-container {
