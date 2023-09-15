@@ -1,5 +1,6 @@
-/* @import url('https://fonts.cdnfonts.com/css/lt-binary-neue');
+ @import url('https://fonts.cdnfonts.com/css/lt-binary-neue');
 
+ /*
 .frame-3,
 .frame-3 * {
 box-sizing: border-box;
@@ -202,6 +203,7 @@ body {
 {
   color: var(--orange);
   text-transform: none;
+  font: 600 16px/106.1% 'LT Binary Neue Round', sans-serif;
 }
 .nav>.nav-header>.nav-title {
 display: flex;
@@ -209,6 +211,7 @@ display: flex;
   align-items: center;
   width: fit-content;
   width: 25rem;
+  
 }
 
 .nav-title img {
@@ -222,7 +225,8 @@ display: flex;
 .nav>.nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font: 600 20px/136.1% 'LT Binary Neue Round', sans-serif;
+
 }
 
 .nav>.nav-links>a {
@@ -230,6 +234,7 @@ display: flex;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
+  font: 600 20px/136.1% 'LT Binary Neue Round', sans-serif;
 }
 
 .nav>.nav-links>a:hover {
@@ -261,6 +266,7 @@ display: flex;
   .nav>.nav-btn>label:hover,
   .nav #nav-check:checked~.nav-btn>label {
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10000;
   }
 
   .nav>.nav-btn>label>span {
@@ -274,18 +280,26 @@ display: flex;
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: #000000d0;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
-    z-index: 1000;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav>.nav-links>a {
     display: block;
-    width: 100%;
+    width: -50%;
+    position: relative;
+    top: -5%;
+    z-index: 10000;
+    font: 600 40px/200% 'LT Binary Neue Round', sans-serif;
   }
 
   .nav>#nav-check:not(:checked)~.nav-links {
