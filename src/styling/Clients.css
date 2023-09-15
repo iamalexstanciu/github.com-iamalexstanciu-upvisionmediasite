@@ -169,23 +169,7 @@ object-fit: cover;
 object-position: 100% center;
 }
 
-/* -- YouTube Link Styles -- */
 
-body.menu-toggled > .meta-link > span {
-color: rgb(30, 30, 30);
-}
-
-#source-link {
-bottom: 60px;
-}
-
-#source-link > i {
-color: rgb(94, 106, 210);
-}
-
-#yt-link > i {
-color: rgb(239, 83, 80);
-}
 
 .meta-link {
 align-items: center;
@@ -268,7 +252,7 @@ opacity: 1;
   .description-clients{
     top: 22%;
     width: 85%;
-    
+
   }
 
   .projects-container {

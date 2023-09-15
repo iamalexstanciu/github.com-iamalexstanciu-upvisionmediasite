@@ -57,10 +57,10 @@ width: 70%;
 top: 10%;
 left: 20%;
 background-image: url(https://media2.giphy.com/media/tbRLQQzokLepWgFWpJ/200w.webp);
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
+background-size: cover;
+color: transparent;
+-moz-background-clip: text;
+-webkit-background-clip: text;
 text-transform: uppercase;
 font-size: 24px;
 margin: 10px 0;
@@ -121,4 +121,84 @@ transform: scale(1.1, 1.1);
 .cards-services-container:hover>.card-layout-services:not(:hover) {
 filter: blur(10px);
 transform: scale(0.9, 0.9);
+}
+
+@media (max-width: 980px) {
+.container-content-services {
+grid-template-columns: 1fr;
+}
+
+.services-left-side {
+display: none;
+}
+
+.services-right-side {
+font-size: 30px;
+}
+
+.slogan-down-services {
+width: 100%;
+left: 0;
+text-align: center;
+}
+
+.cards-services-container .card-layout-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 18rem;
+    left: 5%;
+    padding: 2%;
+    max-width: 90%;
+    width: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(65, 65, 65, 0.308);
+    border: 1px solid rgba(107, 107, 107, 0.089);
+}
+}
+
+@media (max-width: 768px) {
+    .container-content-services {
+        grid-template-columns: 1fr;
+    }
+
+    .services-left-side {
+        display: none;
+    }
+
+    .services-right-side {
+        font-size: 30px;
+    }
+
+    .slogan-down-services {
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .cards-services-container .card-layout-services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 18rem;
+        left: 7%;
+        padding: 2%;
+        max-width: 85%;
+        width: fit-content;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 400ms;
+        border-radius: 10px;
+        backdrop-filter: blur(30px);
+        background-color: rgba(65, 65, 65, 0.308);
+        border: 1px solid rgba(107, 107, 107, 0.089);
+    }
 }
