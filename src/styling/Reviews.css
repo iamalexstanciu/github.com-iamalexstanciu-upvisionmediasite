@@ -16,11 +16,11 @@ overflow: hidden;
 }
 
 .quote {
-background-image: url(https://media2.giphy.com/media/3RqUXYXqd9yOzRA4fO/giphy.gif);
-background-size: cover;
-color: transparent;
--moz-background-clip: text;
--webkit-background-clip: text;
+background-color: var(--orange);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
 text-align: left;
 font: 400 250px "Ribeye", sans-serif;
 position: absolute;
@@ -29,11 +29,11 @@ top: 4%;
 }
 
 .our-clients-speak {
-background-image: url(https://media2.giphy.com/media/1k3mSvfX5lUwYktSSm/200w.webp);
-background-size: cover;
-color: transparent;
--moz-background-clip: text;
--webkit-background-clip: text;
+background-image: url(https://media2.giphy.com/media/tbRLQQzokLepWgFWpJ/200w.webp);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
 text-align: left;
 font: var(--h-2, 500 72px "Rubik", sans-serif);
 position: absolute;
