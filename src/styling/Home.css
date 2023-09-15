@@ -63,14 +63,12 @@ color: transparent;
 
 .social-media-container .social-link1,
 .social-media-container .social-link2,
-.social-media-container .social-link3,
 .social-media-container .social-link4 {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 25%;
-  font-size: 24px;
   text-decoration: none;
   transition: 0.25s;
   border-radius: 50px;
@@ -181,5 +179,37 @@ color: transparent;
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
+  }
+}
+
+/* Media queries for tablet screens */
+@media screen and (max-width: 980px) {
+  .homepage {
+    height: 100vh;
+    /* Remove fixed height for responsiveness */
+  }
+
+  .simple-solutions-for-complex-problems {
+    font-size: 40px;
+    width: 80%;
+    left: 0;
+    height: fit-content;
+    top: 35%;
+    left: 10%;
+    font: 700 50px/180% 'LT Binary Neue Round', sans-serif;
+  }
+
+  .social-media-container {
+    top: 75%;
+  }
+
+
+}
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 480px) {
+  .simple-solutions-for-complex-problems {
+    font-size: 36px;
+    /* Further reduce font size for mobile screens */
   }
 }

@@ -246,6 +246,11 @@ display: flex;
 }
 
 @media (max-width:980px) {
+
+  .nav{
+    justify-content: space-between;
+    max-width: 100vw;
+  }
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -260,12 +265,17 @@ display: flex;
     padding: 13px;
   }
 
+  .nav-title{
+    position: relative;
+    left: -25%;
+  }
+
   .date-time-local{
     left: -15%;
   }
   .nav>.nav-btn>label:hover,
   .nav #nav-check:checked~.nav-btn>label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
     z-index: 10000;
   }
 
@@ -310,4 +320,103 @@ display: flex;
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+}
+
+@media (max-width:768px) {
+
+  .nav {
+    justify-content: space-between;
+    max-width: 100vw;
+  }
+
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 5%;
+  }
+
+  .nav-title {
+    position: relative;
+    left: -5%;
+  }
+
+  .date-time-local {
+    left: -15%;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: rgba(235, 116, 5, 0.671);
+    z-index: 10000;
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #000000d0;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: -50%;
+    position: relative;
+    top: -5%;
+    z-index: 10000;
+    font: 600 40px/200% 'LT Binary Neue Round', sans-serif;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+@media (max-width:550px) {
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-title {
+    position: relative;
+    left: -35%;
+  }
+
+  .date-time-local {
+    display: none;
+  }
+
 }
