@@ -28,25 +28,15 @@ function Reviews() {
             smooth. Highly recommend their services for anyone seeking top-notch
             web development solutions.
           </div>
-          <div class="prev-button">Prev</div>
-          <div class="next-button">Next</div>
-          <div class="\-">
-            <svg
-              className="ant-design-line-outlined"
-              width="109"
-              height="40"
-              viewBox="0 0 109 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            />
-            <path
-              d="M102.03 19H6.97C6.4365 19 6 19.1 6 19.2222V20.7778C6 20.9 6.4365 21 6.97 21H102.03C102.563 21 103 20.9 103 20.7778V19.2222C103 19.1 102.563 19 102.03 19Z"
-              fill="white"
-            />
-          </div>
+
           <div class="author">
             <h3 className="description2">TextLab CEO</h3>
             <h4 className="description3">Henry Paddington</h4>
+          </div>
+          <div className="buttons-scroll-reviews">
+            <div class="prev-button">Prev</div>
+            <div class="minus">-</div>
+            <div class="next-button">Next</div>
           </div>
         </div>
       </div>
