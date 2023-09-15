@@ -173,13 +173,17 @@ body {
 }
 
 .nav {
-  height: 50px;
+  height: 10%;
   width: 100%;
   background-color: #4d4d4d00;
-  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  text-transform: lowercase;
 }
 
 .nav>.nav-header {
@@ -189,22 +193,26 @@ body {
 
 .date-time-local {
   color: #eee;
+  position: relative;
+  left: 0%;
 }
 
 .city-date,
 .nav-title p
 {
   color: var(--orange);
+  text-transform: none;
 }
 .nav>.nav-header>.nav-title {
 display: flex;
   flex-direction: row;
   align-items: center;
   width: fit-content;
+  width: 25rem;
 }
 
 .nav-title img {
-  width: 15%;
+  width: 40%;
 }
 
 .nav>.nav-btn {
@@ -232,7 +240,7 @@ display: flex;
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:980px) {
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -247,6 +255,9 @@ display: flex;
     padding: 13px;
   }
 
+  .date-time-local{
+    left: -15%;
+  }
   .nav>.nav-btn>label:hover,
   .nav #nav-check:checked~.nav-btn>label {
     background-color: rgba(0, 0, 0, 0.3);

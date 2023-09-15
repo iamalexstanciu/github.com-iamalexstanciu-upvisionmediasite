@@ -21,7 +21,11 @@ export default function NavigationBar() {
     <div class="nav">
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
-        <div class="nav-title">
+        <div
+          class="nav-title"
+          onClick={() => {
+            UseScroll("home");
+          }}>
           <img src={Logo} alt="" />
           <p>
             upVision
