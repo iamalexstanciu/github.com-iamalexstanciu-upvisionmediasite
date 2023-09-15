@@ -18,72 +18,56 @@ export default function NavigationBar() {
   }, []);
 
   return (
-    <div className="frame-3">
-      <div className="frame-1">
-        <div
-          className="buttons-navbar"
-          onClick={() => {
-            UseScroll("services");
-          }}>
-          services
-        </div>
-        <div
-          className="buttons-navbar"
-          onClick={() => {
-            UseScroll("aboutUs");
-          }}>
-          about
-        </div>
-        <div
-          className="buttons-navbar"
-          onClick={() => {
-            UseScroll("clients");
-          }}>
-          clients
-        </div>
-        <div
-          className="buttons-navbar"
-          onClick={() => {
-            UseScroll("review");
-          }}>
-          reviews
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <img src={Logo} alt="" />
+          <p>
+            upVision
+            <br />
+            Media
+          </p>
         </div>
       </div>
-      <div className="frame-4">
-        <div
-          className="group-1"
-          onClick={() => {
-            UseScroll("home");
-          }}>
-          <div className="digital">upVision</div>
-          <div className="studio">Media</div>
-          <img src={Logo} alt="" className="logo-navbar" />
-        </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
       </div>
       <div className="date-time-local">
         <p className="city-date">Bucharest</p>
         <p>{currentDateTime}</p>
       </div>
-      <button
-        className="button-contact-navbar"
-        onClick={() => {
-          UseScroll("contact");
-        }}>
-        {" "}
-        Contattaci
-        <div className="icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24">
-            <path fill="none" d="M0 0h24v24H0z"></path>
-            <path
-              fill="currentColor"
-              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
-          </svg>
-        </div>
-      </button>
+
+      <div class="nav-links">
+        <a
+          onClick={() => {
+            UseScroll("services");
+          }}>
+          services
+        </a>
+        <a
+          onClick={() => {
+            UseScroll("aboutUs");
+          }}>
+          about
+        </a>
+        <a
+          onClick={() => {
+            UseScroll("clients");
+          }}>
+          clients
+        </a>
+        <a
+          onClick={() => {
+            UseScroll("review");
+          }}>
+          reviews
+        </a>
+      </div>
     </div>
   );
 }
