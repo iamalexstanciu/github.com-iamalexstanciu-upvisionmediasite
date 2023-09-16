@@ -107,3 +107,25 @@ opacity: 1;
 }
 }
 
+@media (max-width: 768px) {
+
+  .clients-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .our-cases{
+    left: 5;
+    top: 10%;
+  }
+
+  .description-clients{
+    top: 22.5%;
+  }
+
+  .projects-container{
+    top: 5%;
+  }
+}

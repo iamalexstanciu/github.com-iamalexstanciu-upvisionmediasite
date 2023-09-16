@@ -6,9 +6,10 @@ box-sizing: border-box;
 .about-section {
 background: #1a191a;
 flex-shrink: 0;
-width: 98.8vw;
+width: 100vw;
 height: 100vh;
 position: relative;
+display: flex;
 }
 
 
@@ -228,15 +229,21 @@ opacity: 1;
 
 @media (max-width: 768px) {
 
+    .about-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+    }
+
     .meet-our-team{
         top: 5%;
-        left: 15%;
+        max-width: 80%;
     }
 
     .description-about {
         top: 12%;
-        left: 5%;
-        width: 90%;
+        width: 75%;
     }
 
     .cards-container {
@@ -251,9 +258,6 @@ opacity: 1;
 
     }
 
-    .about-section{
-        height: 200vh;
-    }
 
     .card-layout{
         margin: 2%;
