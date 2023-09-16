@@ -6,7 +6,7 @@ import Project3 from "../assets/project2.png";
 import Project4 from "../assets/project2.1.png";
 
 function Clients() {
-  const [mouseDownAt, setMouseDownAt] = useState(0);
+  const [mouseDownAt, setMouseDownAt] = useState(-45);
   const [prevPercentage, setPrevPercentage] = useState(0);
 
   const trackRef = useRef(null);
