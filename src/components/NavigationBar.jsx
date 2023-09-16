@@ -27,11 +27,11 @@ export default function NavigationBar() {
             UseScroll("home");
           }}>
           <img src={Logo} alt="" />
-          <p>
+          {/* <p>
             upVision
             <br />
             Media
-          </p>
+          </p> */}
         </div>
       </div>
       <div class="nav-btn">
