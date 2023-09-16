@@ -41,10 +41,6 @@ function Footer() {
       <div className="group-82">
         <img className="logo-footer" src={Logo} />
 
-        <div className="logo-text">
-          <h4 className="logo-footer-text-up">upVision</h4>
-          <h4 className="logo-footer-text-down">Media</h4>
-        </div>
       </div>
       <svg
         className="footer-fragment-of-saturn"
