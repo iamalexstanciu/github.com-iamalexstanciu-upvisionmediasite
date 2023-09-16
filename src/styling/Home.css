@@ -25,6 +25,7 @@ background-size: cover;
 color: transparent;
 -moz-background-clip: text;
 -webkit-background-clip: text;
+background-clip: text;
   text-align: left;
   font: var(--h-1, 500 96px "Rubik", sans-serif);
   position: absolute;

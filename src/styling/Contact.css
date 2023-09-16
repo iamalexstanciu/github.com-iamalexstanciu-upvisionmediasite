@@ -23,6 +23,7 @@ background-image: url(https://media2.giphy.com/media/tbRLQQzokLepWgFWpJ/200w.web
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
 text-align: left;
 font: var(--h-2, 500 72px "Rubik", sans-serif);
 position: absolute;

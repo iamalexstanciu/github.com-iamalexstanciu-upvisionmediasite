@@ -19,6 +19,7 @@ background-size: cover;
 color: transparent;
 -moz-background-clip: text;
 -webkit-background-clip: text;
+background-clip: text;
 text-align: left;
 font: 500 60px/136.1% 'LT Binary Neue Round', sans-serif;
 position: absolute;
