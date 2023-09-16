@@ -75,6 +75,9 @@ height: 17rem;
 
 .profileImage img {
 width: 100%;
+border-radius: 45%;
+box-shadow: inset 5px 5px 15px rgb(223, 152, 0),
+        inset 5px 5px 10px rgba(245, 99, 2, 0.6);
 }
 
 .textContainer {
@@ -124,14 +127,14 @@ filter: grayscale(0);
 
 
 .socialContainer{   
-background-color: 1a191a;
-box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
-inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+background-color: #1a191a;
+box-shadow: inset 2px 2px 10px rgb(0, 0, 0),
+inset -1px -1px 5px rgba(48, 48, 48, 0.459);
 }
 .card-social-about {
 width: fit-content;
 height: fit-content;
-background-color: 1a191a;
+background-color: #1a191a;
 display: flex;
 position: relative;
 top: -20%;

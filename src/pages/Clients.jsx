@@ -4,6 +4,9 @@ import Project1 from "../assets/project1.png";
 import Project2 from "../assets/project1.1.png";
 import Project3 from "../assets/project2.png";
 import Project4 from "../assets/project2.1.png";
+import Project5 from "../assets/project3.png";
+import Project6 from "../assets/project3.1.png";
+
 
 function Clients() {
   const [mouseDownAt, setMouseDownAt] = useState(-45);
@@ -131,12 +134,8 @@ function Clients() {
             src={Project2}></img>
           <img id="img" className="image" src={Project3} draggable="false" />{" "}
           <img id="img" className="image" src={Project4} draggable="false" />{" "}
-          <img
-            id="img"
-            className="image"
-            src="https://assets.awwwards.com/awards/element/2023/08/64db58a407e32382517187.jpg"
-            draggable="false"
-          />
+          <img id="img" className="image" src={Project5} draggable="false" />
+          <img id="img" className="image" src={Project6} draggable="false" />
         </div>
       </div>
     </div>

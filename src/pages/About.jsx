@@ -104,7 +104,7 @@ export default function About() {
             <img src={ProfileImage} alt="" />
           </div>
           <div className="textContainer">
-            <p className="name">Razvan Tache</p>
+            <p className="name">Constantin Iancu</p>
             <p className="profile">Full-Stack Developer</p>
             <p className="profile2">CEO & Founder</p>
             <div className="card-social-about">
