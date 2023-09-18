@@ -82,30 +82,30 @@ export default function NavigationBar() {
       </div>
 
       <div className="nav-links">
-        <a
+        <button
           onClick={() => {
             UseScroll("services");
           }}>
           services
-        </a>
-        <a
+        </button>
+        <button
           onClick={() => {
             UseScroll("aboutUs");
           }}>
           about
-        </a>
-        <a
+        </button>
+        <button
           onClick={() => {
             UseScroll("clients");
           }}>
           clients
-        </a>
-        <a
+        </button>
+        <button
           onClick={() => {
             UseScroll("review");
           }}>
           reviews
-        </a>
+        </button>
         <button
           className="cta-button"
           onClick={() => {
