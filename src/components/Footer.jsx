@@ -39,7 +39,7 @@ function Footer() {
         </div>
       </div>
       <div className="group-82">
-        <img className="logo-footer" src={Logo} />
+        <img className="logo-footer" src={Logo} alt="upvision media" />
 
       </div>
       <svg

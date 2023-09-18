@@ -7,7 +7,6 @@ import Project4 from "../assets/project2.1.png";
 import Project5 from "../assets/project3.png";
 import Project6 from "../assets/project3.1.png";
 
-
 function Clients() {
   const [mouseDownAt, setMouseDownAt] = useState(-45);
   const [prevPercentage, setPrevPercentage] = useState(0);
@@ -80,38 +79,40 @@ function Clients() {
   //intersection observer
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          const images = entry.target.getElementsByClassName("image");
-          for (const image of images) {
-            image.classList.add("animate");
-          }
-        } else {
-          const images = entry.target.getElementsByClassName("image");
-          for (const image of images) {
-            image.classList.remove("animate");
-          }
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        const images = entry.target.getElementsByClassName("image");
+        for (const image of images) {
+          image.classList.add("animate");
         }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
+      } else {
+        const images = entry.target.getElementsByClassName("image");
+        for (const image of images) {
+          image.classList.remove("animate");
+        }
       }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    },
+    {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
     }
+  );
 
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  const sectionRefCurrent = sectionRef.current; // Capture the current value of sectionRef
+
+  if (sectionRefCurrent) {
+    observer.observe(sectionRefCurrent);
+  }
+
+  return () => {
+    if (sectionRefCurrent) {
+      observer.unobserve(sectionRefCurrent);
+    }
+  };
+}, []);
 
   return (
     <div className="clients-section" id="clients">
@@ -126,16 +127,47 @@ function Clients() {
           ref={trackRef}
           data-mouse-down-at={mouseDownAt}
           data-prev-percentage={prevPercentage}>
-          <img className="image" src={Project1} draggable="false" id="img" />
+          <img
+            className="image"
+            src={Project1}
+            draggable="false"
+            id="img"
+            alt="upvision media agency"
+          />
           <img
             className="image"
             draggable="false"
             id="img"
+            alt="upvision media agency"
             src={Project2}></img>
-          <img id="img" className="image" src={Project3} draggable="false" />{" "}
-          <img id="img" className="image" src={Project4} draggable="false" />{" "}
-          <img id="img" className="image" src={Project5} draggable="false" />
-          <img id="img" className="image" src={Project6} draggable="false" />
+          <img
+            id="img"
+            className="image"
+            src={Project3}
+            draggable="false"
+            alt="upvision media agency"
+          />{" "}
+          <img
+            id="img"
+            className="image"
+            src={Project4}
+            draggable="false"
+            alt="upvision media agency"
+          />{" "}
+          <img
+            id="img"
+            className="image"
+            src={Project5}
+            draggable="false"
+            alt="upvision media agency"
+          />
+          <img
+            id="img"
+            className="image"
+            src={Project6}
+            draggable="false"
+            alt="upvision media agency"
+          />
         </div>
       </div>
     </div>
