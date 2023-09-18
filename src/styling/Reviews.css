@@ -203,3 +203,60 @@ height: 40vh;
 
 
 }
+
+@media (max-width: 480px) {
+    .quote {
+        font: 400 160px "Ribeye", sans-serif;
+        position: absolute;
+        left: 10%;
+        top: 6%;
+    }
+
+    .our-clients-speak {
+        font-size: 35px;
+        position: relative;
+        left: 15%;
+        width: 80%;
+    }
+
+    .description-review {
+        color: #ffffff;
+        font: 400 14px/14px "Rubik", sans-serif;
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        text-align: justify;
+        width: 90%;
+        max-width: fit-content;
+        height: fit-content;
+    }
+
+    .image-review {
+        display: none;
+    }
+
+    .review-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        left: 5%;
+        top: 35%;
+        padding: 2%;
+        border-radius: 2%;
+        background-color: rgba(63, 63, 63, 0.726);
+        backdrop-filter: blur(10px);
+    }
+
+    .review-text {
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .buttons-scroll-reviews {
+        top: 4%;
+        position: relative;
+    }
+
+
+
+}

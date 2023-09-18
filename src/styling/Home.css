@@ -229,8 +229,13 @@ top: 75%;
 
 /* Media queries for mobile screens */
 @media screen and (max-width: 480px) {
+
+  .homepage{
+    height: 100vh;
+  }
 .simple-solutions-for-complex-problems {
-font-size: 60px;
+font-size: 40px;
+width: 85%;
 top: 30%;
 }
 
