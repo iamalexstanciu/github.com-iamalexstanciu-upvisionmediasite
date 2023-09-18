@@ -5,31 +5,35 @@ import UseScroll from "../data/UseScroll";
 import moment from "moment-timezone";
 import axios from "axios";
 
-
 export default function NavigationBar() {
   const [currentDateTime, setCurrentDateTime] = useState("");
   const [location, setLocation] = useState(null);
- const [city, setCity] = useState(null);
+  const [city, setCity] = useState(null);
 
   useEffect(() => {
     // Check if geolocation is available in the browser
     if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(async (position) => {
-        // Extract latitude and longitude from the position object
-        const { latitude, longitude } = position.coords;
-        setLocation({ latitude, longitude });
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          // Extract latitude and longitude from the position object
+          const { latitude, longitude } = position.coords;
+          setLocation({ latitude, longitude });
 
-        // Use reverse geocoding to fetch the city name based on coordinates
-        try {
-          const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?key=YOUR_API_KEY&q=${latitude}+${longitude}`);
-          const cityName = response.data.results[0].components.city;
-          setCity(cityName);
-        } catch (error) {
-          console.error("Error fetching city name:", error);
+          // Use reverse geocoding to fetch the city name based on coordinates
+          try {
+            const response = await axios.get(
+              `https://api.opencagedata.com/geocode/v1/json?key=55958d4bc95c411aaffe04311e2f7bd0&q=${latitude}+${longitude}`
+            );
+            const cityName = response.data.results[0].components.city;
+            setCity(cityName);
+          } catch (error) {
+            console.error("Error fetching city name:", error);
+          }
+        },
+        (error) => {
+          console.error("Error getting location:", error);
         }
-      }, (error) => {
-        console.error("Error getting location:", error);
-      });
+      );
     } else {
       console.error("Geolocation is not available in your browser.");
     }
@@ -67,8 +71,9 @@ export default function NavigationBar() {
       <div className="date-time-local">
         {location ? (
           <div>
-            <p>Your current location is:</p>
-            <p>{city}</p>
+            <p className="city-holder">
+              You are currently in: <span className="city"> {city} </span>
+            </p>
             <p>{currentDateTime}</p>
           </div>
         ) : (

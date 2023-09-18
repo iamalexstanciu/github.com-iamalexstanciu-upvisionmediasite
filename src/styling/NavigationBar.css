@@ -20,9 +20,14 @@ body {
   align-items: center;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  text-transform: lowercase;
 }
 
+
+.city{
+  text-transform: none;
+  color: var(--orange);
+  font: 600 14px/100.1% 'LT Binary Neue Round', sans-serif;
+}
 .nav>.nav-header {
   display: flex;
   flex-direction: row;
@@ -32,6 +37,8 @@ body {
   color: #eee;
   position: relative;
   left: -5%;
+  text-transform: lowercase;
+  font: 400 14px/100.1% 'LT Binary Neue Round', sans-serif;
 }
 
 .city-date,
