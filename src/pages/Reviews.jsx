@@ -14,12 +14,12 @@ function Reviews() {
         customers have to say about us in order to improve our service day after
         day.
       </div>
-      <div class="review-container">
-        <div class="image-review">
+      <div className="review-container">
+        <div className="image-review">
           <img className="review-image" src={ReviewImage} alt="banner page" />
         </div>
         <div className="review-text">
-          <div class="text-review">
+          <div className="text-review">
             Outstanding experience with the client web development agency! Their
             team showcased exceptional skill in translating our vision into a
             dynamic website. From responsive design to seamless functionality,
@@ -29,14 +29,14 @@ function Reviews() {
             web development solutions.
           </div>
 
-          <div class="author">
+          <div className="author">
             <h3 className="description2">TextLab CEO</h3>
             <h4 className="description3">Henry Paddington</h4>
           </div>
           <div className="buttons-scroll-reviews">
-            <div class="prev-button">Prev</div>
-            <div class="minus">-</div>
-            <div class="next-button">Next</div>
+            <div className="prev-button">Prev</div>
+            <div className="minus">-</div>
+            <div className="next-button">Next</div>
           </div>
         </div>
       </div>

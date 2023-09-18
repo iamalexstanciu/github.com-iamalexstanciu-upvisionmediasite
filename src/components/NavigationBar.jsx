@@ -18,23 +18,18 @@ export default function NavigationBar() {
   }, []);
 
   return (
-    <div class="nav">
+    <div className="nav">
       <input type="checkbox" id="nav-check" />
-      <div class="nav-header">
+      <div className="nav-header">
         <div
-          class="nav-title"
+          className="nav-title"
           onClick={() => {
             UseScroll("home");
           }}>
           <img src={Logo} alt="" />
-          {/* <p>
-            upVision
-            <br />
-            Media
-          </p> */}
         </div>
       </div>
-      <div class="nav-btn">
+      <div className="nav-btn">
         <label for="nav-check">
           <span></span>
           <span></span>
@@ -46,7 +41,7 @@ export default function NavigationBar() {
         <p>{currentDateTime}</p>
       </div>
 
-      <div class="nav-links">
+      <div className="nav-links">
         <a
           onClick={() => {
             UseScroll("services");
