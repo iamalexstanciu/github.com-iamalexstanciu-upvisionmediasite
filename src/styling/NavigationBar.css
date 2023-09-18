@@ -53,6 +53,7 @@ display: flex;
 
 .nav-title img {
   width: 40%;
+  position: relative;
 }
 
 .nav>.nav-btn {
@@ -248,9 +249,8 @@ display: flex;
     top: 5%;
   }
 
-  .nav-title {
-    position: relative;
-    left: -5%;
+  .nav-title img {
+    left: 35%;
   }
 
   .date-time-local {
@@ -306,7 +306,7 @@ display: flex;
   }
 }
 
-@media (max-width:550px) {
+@media (max-width:480px) {
 
   .nav>.nav-btn>label {
     display: inline-block;
@@ -323,4 +323,16 @@ display: flex;
     display: none;
   }
 
+  .nav-title img{
+    width: 6rem;
+    left: 0%;
+  }
+
+}
+
+@media (max-width: 370px) {
+
+  .nav-title img {
+    left: 20%;
+  }
 }

@@ -187,7 +187,6 @@ background-clip: text;
 @media screen and (max-width: 980px) {
   .homepage {
     height: 100vh;
-    /* Remove fixed height for responsiveness */
   }
 
   .simple-solutions-for-complex-problems {
@@ -195,9 +194,8 @@ background-clip: text;
     width: 80%;
     left: 0;
     height: fit-content;
-    top: 30%;
+    top: 40%;
     left: 10%;
-    font: 700 50px/180% 'LT Binary Neue Round', sans-serif;
   }
 
   .social-media-container {
@@ -210,7 +208,10 @@ background-clip: text;
 /* Media queries for mobile screens */
 @media screen and (max-width: 480px) {
   .simple-solutions-for-complex-problems {
-    font-size: 36px;
-    /* Further reduce font size for mobile screens */
+    font-size: 40px;
+  }
+
+  .social-media-container{
+    width: 60%;
   }
 }
