@@ -31,7 +31,7 @@ left: 10%;
 top: 10%;
 }
 
-.description {
+.description-contact {
 color: #ffffff;
 text-align: left;
 font: 400 18px/27px "Rubik", sans-serif;
@@ -552,4 +552,17 @@ color: #ffffff;
         }
     }
 
+}
+
+@media (max-width: 360px){
+
+    .let-s-talk{
+        font-size: 45px;
+    }
+        .description-contact{
+            top: 24%;
+        }
+        .form-container{
+            top: 18%;
+        }
 }

@@ -117,21 +117,54 @@
 }
 
 @media screen and (max-width: 480px) {
+        .footer {
+                height: 30vh;
+                width: 100%;
+            }
+        
+            .links {
+                left: 5%;
+                top: 15%;
+                flex-direction: column;
+            }
+        
+            .logo-footer {
+                width: 100%;
+                left: -100%;
+            }
+        
+            .label {
+        
+                left: 25%;
+                top: 80%;
+            }
+
+    .footer-fragment-of-saturn {
+        left: 10%;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
     .footer {
-        height: 60vh;
+        height: 30vh;
+        width: 100%;
     }
 
     .links {
         left: 5%;
-        top: 10%;
+        top: 15%;
+        flex-direction: column;
     }
 
     .logo-footer {
-        width: 50%;
+        width: 100%;
+        left: -100%;
     }
 
     .label {
-        right: 30%;
+        
+        left: 25%;
         top: 80%;
     }
 

@@ -64,7 +64,7 @@ export default function Contact() {
   return (
     <div className="contact-section" id="contact">
       <div className="let-s-talk">Let’s talk</div>
-      <div className="description">
+      <div className="description-contact">
         Do you want to take your business to another level by having 100% online
         exposure? Write to us and we will get in touch to find the best solution
         made especially for you.
