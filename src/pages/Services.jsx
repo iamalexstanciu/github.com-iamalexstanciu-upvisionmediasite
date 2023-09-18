@@ -24,10 +24,10 @@ export default function Services() {
                 Embark on a transformative digital voyage with our cutting-edge
                 web development agency. Our journey begins by crafting
                 captivating
-                <ins className="orange">landing pages</ins> that captivate your
-                audience's attention and leave a lasting impression. Through
-                meticulous design and strategic content placement, we ensure
-                your brand's unique story takes center stage.
+                <span className="highlight">landing pages </span> that captivate
+                your audience's attention and leave a lasting impression.
+                Through meticulous design and strategic content placement, we
+                ensure your brand's unique story takes center stage.
               </p>
             </div>
             <div className="card-layout-services white">
@@ -35,17 +35,17 @@ export default function Services() {
                 {" "}
                 Navigating the modern online landscape requires adaptability,
                 which is why we meticulously tailor your website's{" "}
-                <ins className="orange">mobile responsiveness.</ins> Whether on
-                a smartphone, tablet, or desktop, your site will seamlessly
-                adapt, delivering an exceptional user experience that transcends
-                devices.
+                <span className="highlight">mobile responsiveness.</span>{" "}
+                Whether on a smartphone, tablet, or desktop, your site will
+                seamlessly adapt, delivering an exceptional user experience that
+                transcends devices.
               </p>
             </div>
             <div className="card-layout-services blue">
               <p className="tip">
                 But our journey doesn't end there. We understand the importance
                 of visibility in the vast digital expanse. Our{" "}
-                <ins className="orange">SEO</ins> expertise ensures your
+                <span className="highlight">SEO</span> expertise ensures your
                 website's prominence, employing industry-leading strategies to
                 elevate your search engine rankings. By optimizing keywords,
                 enhancing site speed, and refining metadata, we pave the path

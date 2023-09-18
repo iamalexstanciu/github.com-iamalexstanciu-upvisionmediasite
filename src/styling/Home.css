@@ -27,12 +27,14 @@ color: transparent;
 -webkit-background-clip: text;
 background-clip: text;
 text-align: left;
-font: var(--h-1, 500 96px "Rubik", sans-serif);
+font-size: 80px;
+font-weight: 700;
+font-family: "Rubik", sans-serif;
 position: absolute;
 left: 10%;
 top: 35%;
-width: 814px;
-height: 388px;
+width: 80rem;
+height: 40rem;
 }
 
 
@@ -50,7 +52,6 @@ left: 10%;
 .social-media-container svg {
 position: absolute;
 display: flex;
-
 width: 60%;
 height: 100%;
 font-size: 24px;
@@ -190,11 +191,12 @@ height: 100vh;
 }
 
 .simple-solutions-for-complex-problems {
-font-size: 40px;
 width: 80%;
+text-align: left;
 left: 0;
 height: fit-content;
-top: 40%;
+top: 35%;
+font-size: 70px;
 left: 10%;
 }
 
@@ -202,16 +204,38 @@ left: 10%;
 top: 75%;
 }
 
+}
+
+@media screen and (max-width: 768px) {
+  .homepage {
+    height: 100vh;
+  }
+
+  .simple-solutions-for-complex-problems {
+    width: 80%;
+    text-align: left;
+    left: 0;
+    height: fit-content;
+    top: 35%;
+    font-size: 70px;
+    left: 10%;
+  }
+
+  .social-media-container {
+    top: 80%;
+  }
 
 }
 
 /* Media queries for mobile screens */
 @media screen and (max-width: 480px) {
 .simple-solutions-for-complex-problems {
-font-size: 40px;
+font-size: 60px;
+top: 30%;
 }
 
 .social-media-container{
-width: 60%;
+width: 50%;
+top: 75%;
 }
 }

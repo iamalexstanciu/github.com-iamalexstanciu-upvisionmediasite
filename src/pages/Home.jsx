@@ -123,7 +123,7 @@ export default function Home() {
           <svg
             viewBox="0 0 16 16"
             className="bi bi-twitter"
-            fill="currentColor"
+            fill="url(https://media2.giphy.com/media/3RqUXYXqd9yOzRA4fO/giphy.gif))"
             height="16"
             width="16"
             xmlns="http://www.w3.org/2000/svg"
@@ -152,8 +152,7 @@ export default function Home() {
           UseScroll("services");
         }}
         className="scroll-down"
-        address="true"
-      ></a>
+        address="true"></a>
     </div>
   );
 }

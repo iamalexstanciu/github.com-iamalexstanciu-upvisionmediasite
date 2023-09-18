@@ -31,7 +31,7 @@ body {
 .date-time-local {
   color: #eee;
   position: relative;
-  left: 0%;
+  left: -5%;
 }
 
 .city-date,
@@ -170,7 +170,7 @@ display: flex;
   }
 
   .date-time-local{
-    left: -15%;
+    left: -20%;
   }
   .nav>.nav-btn>label:hover,
   .nav #nav-check:checked~.nav-btn>label {
@@ -249,11 +249,11 @@ display: flex;
   }
 
   .nav-title img {
-    left: 35%;
+    left: 25%;
   }
 
   .date-time-local {
-    left: -15%;
+    left: -17%;
   }
 
   .nav>.nav-btn>label:hover,
