@@ -185,7 +185,6 @@ color: #ffffff;
 
     /* Grid */
     .row {
-        @include clearfix;
         margin: 10px 0;
 
         .col {
@@ -324,7 +323,6 @@ color: #ffffff;
 
     /* Grid */
     .row {
-        @include clearfix;
         margin: 10px 0;
 
         .col {
@@ -469,7 +467,6 @@ color: #ffffff;
 
     /* Grid */
     .row {
-        @include clearfix;
         margin: 10px 0;
 
         .col {
