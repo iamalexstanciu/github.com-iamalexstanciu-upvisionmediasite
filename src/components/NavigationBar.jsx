@@ -3,9 +3,37 @@ import "../styling/NavigationBar.css";
 import Logo from "../assets/logo-upvision.png";
 import UseScroll from "../data/UseScroll";
 import moment from "moment-timezone";
+import axios from "axios";
+
 
 export default function NavigationBar() {
   const [currentDateTime, setCurrentDateTime] = useState("");
+  const [location, setLocation] = useState(null);
+ const [city, setCity] = useState(null);
+
+  useEffect(() => {
+    // Check if geolocation is available in the browser
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(async (position) => {
+        // Extract latitude and longitude from the position object
+        const { latitude, longitude } = position.coords;
+        setLocation({ latitude, longitude });
+
+        // Use reverse geocoding to fetch the city name based on coordinates
+        try {
+          const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?key=YOUR_API_KEY&q=${latitude}+${longitude}`);
+          const cityName = response.data.results[0].components.city;
+          setCity(cityName);
+        } catch (error) {
+          console.error("Error fetching city name:", error);
+        }
+      }, (error) => {
+        console.error("Error getting location:", error);
+      });
+    } else {
+      console.error("Geolocation is not available in your browser.");
+    }
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -37,8 +65,15 @@ export default function NavigationBar() {
         </label>
       </div>
       <div className="date-time-local">
-        <p className="city-date">Bucharest</p>
-        <p>{currentDateTime}</p>
+        {location ? (
+          <div>
+            <p>Your current location is:</p>
+            <p>{city}</p>
+            <p>{currentDateTime}</p>
+          </div>
+        ) : (
+          <p>Loading location...</p>
+        )}
       </div>
 
       <div className="nav-links">

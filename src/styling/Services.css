@@ -34,7 +34,7 @@ text-align: center;
 
 
 .highlight {
-background: #b21409bb;
+background: var(--orange);
 height: auto;
 padding: 0.5%;
 position: relative;
