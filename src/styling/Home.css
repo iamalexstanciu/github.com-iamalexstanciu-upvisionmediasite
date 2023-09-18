@@ -133,7 +133,7 @@ transition: all .5s ease-in 3s;
 
 .scroll-down {
 position: absolute;
-bottom: 3rem;
+bottom: 5rem;
 left: 50%;
 margin-left: -16px;
 display: block;

@@ -147,12 +147,13 @@ export default function Home() {
           </svg>
         </a>
       </div>
-      <button
+      <a
+        href="#0"
         onClick={() => {
           UseScroll("services");
         }}
         className="scroll-down"
-        address="true"></button>
+        address="true"></a>
     </div>
   );
 }
