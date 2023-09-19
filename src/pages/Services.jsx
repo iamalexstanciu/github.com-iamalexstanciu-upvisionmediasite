@@ -12,8 +12,8 @@ export default function Services() {
             experienced.
           </h5>
           <video
-            autoPlay="true"
-            loop="true"
+            autoPlay={true}
+            loop={true}
             className="services-image"
             src={ServicesImage}
             alt="presentation"

@@ -27,7 +27,7 @@ function Clients() {
 
   const handleOnMove = (e) => {
     if (mouseDownAt === 0) return;
-    console.log({ mouseDownAt, prevPercentage });
+    // console.log({ mouseDownAt, prevPercentage });
     const mouseDelta = parseFloat(mouseDownAt) - e.clientX;
     const maxDelta = window.innerWidth / 2;
 
