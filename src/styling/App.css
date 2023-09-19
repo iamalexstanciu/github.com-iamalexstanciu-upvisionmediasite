@@ -6,19 +6,19 @@
   --grey: #DBD8E3;
   --h-2: 500 72px "Rubik",sans-serif;
   --h-1: 500 96px "Rubik",sans-serif;
-  background: #1a191a
+  background: #1a191a;
 }
 .App {
   text-align: center;
   color: 4C3D3D;
-  font-family: "Major Mono Display"
+  font-family: "Major Mono Display";
 }
 body,
 html {
-  background: #1a191a
+  background: #1a191a;
 }
 .section {
   height: 100vh;
   width: 100vw;
-  background: #1a191a
+  background: #1a191a;
 }

@@ -1,6 +1,6 @@
 .footer,
 .footer * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 .footer {
   background: #1a191a;
@@ -9,12 +9,12 @@
   height: 40vh;
   position: relative;
   overflow: hidden;
-  border-top: 1.2px solid rgba(255,255,255,.548)
+  border-top: 1.2px solid rgba(255,255,255,.548);
 }
 .social {
   width: 100vw;
   height: 40%;
-  position: static
+  position: static;
 }
 .links {
   padding: 3px 0 3px 0;
@@ -26,7 +26,7 @@
   position: absolute;
   left: 147px;
   top: 190px;
-  overflow: hidden
+  overflow: hidden;
 }
 .buttons-footer {
   color: #fff;
@@ -34,7 +34,7 @@
   font-family: 'LT Binary Neue Round',sans-serif;
   font-size: 16px;
   position: relative;
-  z-index: 100000
+  z-index: 100000;
 }
 .group-82 {
   width: 40%;
@@ -43,13 +43,13 @@
   top: -20%;
   left: 15%;
   display: flex;
-  flex-direction: row
+  flex-direction: row;
 }
 .logo-footer {
   width: 30%;
   height: 80%;
   position: relative;
-  top: -15%
+  top: -15%;
 }
 .label {
   color: #909090;
@@ -57,17 +57,17 @@
   font: 500 16px/20px Rubik,sans-serif;
   position: absolute;
   right: 45%;
-  top: 85%
+  top: 85%;
 }
 .footer-fragment-of-saturn {
   position: absolute;
   left: 25%;
   top: -10%;
-  overflow: visible
+  overflow: visible;
 }
 @media screen and (max-width:980px) {
   .links {
-    left: 5%
+    left: 5%;
   }
 }
 @media screen and (max-width:768px) {
@@ -75,7 +75,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
   }
   .links {
     flex-direction: row;
@@ -83,64 +83,64 @@
     text-align: center;
     gap: 5px;
     top: 35%;
-    left: 15%
+    left: 15%;
   }
   .buttons-footer {
-    text-align: center
+    text-align: center;
   }
   .logo-footer {
     top: 40%;
     left: -65%;
     height: 60%;
-    width: 80%
+    width: 80%;
   }
   .label {
-    left: 40%
+    left: 40%;
   }
 }
 @media screen and (max-width:480px) {
   .footer {
     height: 30vh;
-    width: 100%
+    width: 100%;
   }
   .links {
     left: 5%;
     top: 15%;
-    flex-direction: column
+    flex-direction: column;
   }
   .logo-footer {
     width: 100%;
-    left: -100%
+    left: -100%;
   }
   .label {
     left: 25%;
-    top: 80%
+    top: 80%;
   }
   .footer-fragment-of-saturn {
     left: 10%;
-    top: 0
+    top: 0;
   }
 }
 @media screen and (max-width:360px) {
   .footer {
     height: 30vh;
-    width: 100%
+    width: 100%;
   }
   .links {
     left: 5%;
     top: 15%;
-    flex-direction: column
+    flex-direction: column;
   }
   .logo-footer {
     width: 100%;
-    left: -100%
+    left: -100%;
   }
   .label {
     left: 25%;
-    top: 80%
+    top: 80%;
   }
   .footer-fragment-of-saturn {
     left: 10%;
-    top: 0
+    top: 0;
   }
 }

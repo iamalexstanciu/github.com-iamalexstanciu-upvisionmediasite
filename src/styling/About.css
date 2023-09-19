@@ -8,7 +8,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  display: flex
+  display: flex;
 }
 .meet-our-team {
   background-image: url(https://media2.giphy.com/media/tbRLQQzokLepWgFWpJ/200w.webp);
@@ -21,7 +21,7 @@
   font: 500 60px/136.1% 'LT Binary Neue Round',sans-serif;
   position: absolute;
   top: 8%;
-  left: 15%
+  left: 15%;
 }
 .description-about {
   color: #d1d1d1;
@@ -32,7 +32,7 @@
   max-width: fit-content;
   width: 70%;
   text-align: justify;
-  height: fit-content
+  height: fit-content;
 }
 .cards-container {
   display: flex;
@@ -43,7 +43,7 @@
   position: absolute;
   top: 42%;
   width: 100vw;
-  gap: 10%
+  gap: 10%;
 }
 .card-layout {
   width: 22rem;
@@ -55,16 +55,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  transition-duration: .5s
+  transition-duration: .5s;
 }
 .profileImage {
   padding-top: 15px;
   width: 17rem;
-  height: 17rem
+  height: 17rem;
 }
 .profileImage img {
   width: 100%;
-  border-radius: 100%
+  border-radius: 100%;
 }
 .textContainer {
   width: 100%;
@@ -72,14 +72,14 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px
+  gap: 10px;
 }
 .name {
   font-size: 1.3em;
   font-weight: 600;
   color: #fff;
   letter-spacing: .5px;
-  text-align: center
+  text-align: center;
 }
 .profile {
   font-size: .84em;
@@ -87,7 +87,7 @@
   letter-spacing: .2px;
   position: relative;
   top: -10%;
-  text-align: center
+  text-align: center;
 }
 .profile2 {
   font-size: .84em;
@@ -95,19 +95,19 @@
   letter-spacing: .2px;
   position: relative;
   top: -20%;
-  text-align: center
+  text-align: center;
 }
 .card-layout:hover {
   background-color: #2b2b2b;
   transition-duration: .5s;
-  transform: translateY(-30px) scale(1.2)
+  transform: translateY(-30px) scale(1.2);
 }
 .card-layout:hover .profileImage {
-  filter: grayscale(0)
+  filter: grayscale(0);
 }
 .socialContainer {
   background-color: #1a191a;
-  box-shadow: inset 2px 2px 10px #000,inset -1px -1px 5px rgba(48,48,48,.459)
+  box-shadow: inset 2px 2px 10px #000,inset -1px -1px 5px rgba(48,48,48,.459);
 }
 .card-social-about {
   width: fit-content;
@@ -117,7 +117,7 @@
   position: relative;
   top: -20%;
   left: -5%;
-  box-shadow: inset 2px 2px 10px #000,inset -1px -1px 5px rgba(255,255,255,.6)
+  box-shadow: inset 2px 2px 10px #000,inset -1px -1px 5px rgba(255,255,255,.6);
 }
 .socialContainer {
   width: 5rem;
@@ -128,45 +128,45 @@
   justify-content: center;
   overflow: hidden;
   transition-duration: .3s;
-  border: #2e2e2e 1px solid
+  border: #2e2e2e 1px solid;
 }
 .containerOne:hover {
   background-color: #d62976;
-  transition-duration: .3s
+  transition-duration: .3s;
 }
 .containerTwo:hover {
   background-color: #00acee;
-  transition-duration: .3s
+  transition-duration: .3s;
 }
 .containerThree:hover {
   background-color: #0072b1;
-  transition-duration: .3s
+  transition-duration: .3s;
 }
 .containerFour:hover {
   background-color: #128c7e;
-  transition-duration: .3s
+  transition-duration: .3s;
 }
 .socialContainer:active {
   transform: scale(.9);
-  transition-duration: .3s
+  transition-duration: .3s;
 }
 .socialSvg {
-  width: 17px
+  width: 17px;
 }
 .socialSvg path {
-  fill: rgb(255,255,255)
+  fill: rgb(255,255,255);
 }
 .socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both
+  animation: slide-in-top 0.3s both;
 }
 @keyframes slide-in-top {
   0% {
     transform: translateY(-50px);
-    opacity: 0
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
-    opacity: 1
+    opacity: 1;
   }
 }
 @media (max-width:980px) {
@@ -179,7 +179,7 @@
     position: absolute;
     top: 42%;
     width: 100vw;
-    gap: 10%
+    gap: 10%;
   }
 }
 @media (max-width:768px) {
@@ -187,15 +187,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200vh
+    height: 200vh;
   }
   .meet-our-team {
     top: 5%;
-    max-width: 80%
+    max-width: 80%;
   }
   .description-about {
     top: 12%;
-    width: 75%
+    width: 75%;
   }
   .cards-container {
     display: flex;
@@ -205,10 +205,10 @@
     width: fit-content;
     position: absolute;
     top: 25%;
-    width: 100vw
+    width: 100vw;
   }
   .card-layout {
-    margin: 2%
+    margin: 2%;
   }
 }
 @media (max-width:480px) {
@@ -216,17 +216,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200vh
+    height: 200vh;
   }
   .meet-our-team {
     top: 5%;
     font-size: 40px;
-    max-width: 80%
+    max-width: 80%;
   }
   .description-about {
     top: 10%;
     font-size: 14px;
-    width: 75%
+    width: 75%;
   }
   .cards-container {
     display: flex;
@@ -236,10 +236,10 @@
     width: fit-content;
     position: absolute;
     top: 25%;
-    width: 100vw
+    width: 100vw;
   }
   .card-layout {
-    margin: 2%
+    margin: 2%;
   }
 }
 @media (max-width:375px) {
@@ -247,17 +247,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200vh
+    height: 200vh;
   }
   .meet-our-team {
     top: 5%;
     font-size: 30px;
-    max-width: 80%
+    max-width: 80%;
   }
   .description-about {
     top: 10%;
     font-size: 12px;
-    width: 75%
+    width: 75%;
   }
   .cards-container {
     display: flex;
@@ -267,9 +267,9 @@
     width: fit-content;
     position: absolute;
     top: 25%;
-    width: 100vw
+    width: 100vw;
   }
   .card-layout {
-    margin: 4%
+    margin: 4%;
   }
 }
