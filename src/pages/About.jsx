@@ -1,7 +1,7 @@
 import React from "react";
 import "../styling/About.css";
-import Alex from "../assets/alex3.png";
-import Razvan from "../assets/razvan7.png";
+import Alex from "../assets/alex.webp";
+import Razvan from "../assets/razvan.webp";
 
 import ProfileImage from "../assets/profile.png";
 

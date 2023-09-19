@@ -77,9 +77,8 @@ height: 17rem;
 
 .profileImage img {
 width: 100%;
-border-radius: 45%;
-box-shadow: inset 5px 5px 15px rgb(223, 152, 0),
-        inset 5px 5px 10px rgba(245, 99, 2, 0.6);
+height: 100%;
+border-radius: 100%;
 }
 
 .textContainer {
