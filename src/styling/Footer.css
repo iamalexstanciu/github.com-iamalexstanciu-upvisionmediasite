@@ -1,175 +1,146 @@
 .footer,
 .footer * {
-    box-sizing: border-box;
+  box-sizing: border-box
 }
-
 .footer {
-    background: #1a191a;
-        flex-shrink: 0;
-        width: 100vw;
-        height: 40vh;
-        position: relative;
-        overflow: hidden;
-        border-top: 1.2px solid rgba(255, 255, 255, 0.548);
+  background: #1a191a;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  border-top: 1.2px solid rgba(255,255,255,.548)
 }
-
 .social {
-    width: 100vw;
-    height: 40%;
-    position: static;
+  width: 100vw;
+  height: 40%;
+  position: static
 }
-
 .links {
-    padding: 3px 0px 3px 0px;
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    left: 147px;
-    top: 190px;
-    overflow: hidden;
+  padding: 3px 0 3px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 147px;
+  top: 190px;
+  overflow: hidden
 }
-
 .buttons-footer {
-    color: #ffffff;
-    text-align: left;
-    font-family: 'LT Binary Neue Round', sans-serif;
-        font-size: 16px;
-    position: relative;
-    z-index: 100000;
+  color: #fff;
+  text-align: left;
+  font-family: 'LT Binary Neue Round',sans-serif;
+  font-size: 16px;
+  position: relative;
+  z-index: 100000
 }
-
-
 .group-82 {
-    width: 40%;
-    height: 50%;
-    position: relative;
-    top: -20%;
-    left: 15%;
-    display: flex;
-    flex-direction: row;
+  width: 40%;
+  height: 50%;
+  position: relative;
+  top: -20%;
+  left: 15%;
+  display: flex;
+  flex-direction: row
 }
-
-
 .logo-footer {
-    width: 30%;
-    height: 80%;
-    position: relative;
-    top: -15%;
+  width: 30%;
+  height: 80%;
+  position: relative;
+  top: -15%
 }
-
 .label {
-    color: #909090;
-    text-align: left;
-    font: 500 16px/20px "Rubik", sans-serif;
-    position: absolute;
-    right: 45%;
-    top: 85%;
+  color: #909090;
+  text-align: left;
+  font: 500 16px/20px Rubik,sans-serif;
+  position: absolute;
+  right: 45%;
+  top: 85%
 }
-
 .footer-fragment-of-saturn {
-    position: absolute;
-    left: 25%;
-    top: -10%;
-    overflow: visible;
+  position: absolute;
+  left: 25%;
+  top: -10%;
+  overflow: visible
 }
-
-@media screen and (max-width: 980px) {
-    .links {
-        left: 5%;
-    }
+@media screen and (max-width:980px) {
+  .links {
+    left: 5%
+  }
 }
-
-@media screen and (max-width: 768px) {
-
-.footer {
+@media screen and (max-width:768px) {
+  .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center
+  }
+  .links {
+    flex-direction: row;
     align-items: center;
+    text-align: center;
+    gap: 5px;
+    top: 35%;
+    left: 15%
+  }
+  .buttons-footer {
+    text-align: center
+  }
+  .logo-footer {
+    top: 40%;
+    left: -65%;
+    height: 60%;
+    width: 80%
+  }
+  .label {
+    left: 40%
+  }
 }
-
-    .links {
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        gap: 5px;
-        top: 35%;
-        left: 15%;
-    }
-
-    .buttons-footer {
-        text-align: center;
-    }
-
-    .logo-footer {
-        top: 40%;
-        left: -65%;
-        height: 60%;
-        width: 80%;
-    }
-
-    .label {
-        left: 40%;
-    }
+@media screen and (max-width:480px) {
+  .footer {
+    height: 30vh;
+    width: 100%
+  }
+  .links {
+    left: 5%;
+    top: 15%;
+    flex-direction: column
+  }
+  .logo-footer {
+    width: 100%;
+    left: -100%
+  }
+  .label {
+    left: 25%;
+    top: 80%
+  }
+  .footer-fragment-of-saturn {
+    left: 10%;
+    top: 0
+  }
 }
-
-@media screen and (max-width: 480px) {
-        .footer {
-                height: 30vh;
-                width: 100%;
-            }
-        
-            .links {
-                left: 5%;
-                top: 15%;
-                flex-direction: column;
-            }
-        
-            .logo-footer {
-                width: 100%;
-                left: -100%;
-            }
-        
-            .label {
-        
-                left: 25%;
-                top: 80%;
-            }
-
-    .footer-fragment-of-saturn {
-        left: 10%;
-        top: 0;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .footer {
-        height: 30vh;
-        width: 100%;
-    }
-
-    .links {
-        left: 5%;
-        top: 15%;
-        flex-direction: column;
-    }
-
-    .logo-footer {
-        width: 100%;
-        left: -100%;
-    }
-
-    .label {
-        
-        left: 25%;
-        top: 80%;
-    }
-
-    .footer-fragment-of-saturn {
-        left: 10%;
-        top: 0;
-    }
+@media screen and (max-width:360px) {
+  .footer {
+    height: 30vh;
+    width: 100%
+  }
+  .links {
+    left: 5%;
+    top: 15%;
+    flex-direction: column
+  }
+  .logo-footer {
+    width: 100%;
+    left: -100%
+  }
+  .label {
+    left: 25%;
+    top: 80%
+  }
+  .footer-fragment-of-saturn {
+    left: 10%;
+    top: 0
+  }
 }

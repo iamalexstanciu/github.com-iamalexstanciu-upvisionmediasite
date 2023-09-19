@@ -1,15 +1,11 @@
- @import url('https://fonts.cdnfonts.com/css/lt-binary-neue');
-
-
+@import url(https://fonts.cdnfonts.com/css/lt-binary-neue);
 * {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
-
 body {
-  margin: 0px;
-  font-family: 'segoe ui';
+  margin: 0;
+  font-family: 'segoe ui'
 }
-
 .nav {
   height: 10%;
   width: 100%;
@@ -19,77 +15,63 @@ body {
   position: fixed;
   align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px)
 }
-
-
-.city{
+.city {
   text-transform: none;
   color: var(--orange);
-  font: 600 14px/100.1% 'LT Binary Neue Round', sans-serif;
+  font: 600 14px/100.1% 'LT Binary Neue Round',sans-serif
 }
-.nav>.nav-header {
+.nav > .nav-header {
   display: flex;
-  flex-direction: row;
+  flex-direction: row
 }
-
 .date-time-local {
   color: #eee;
   position: relative;
   left: -5%;
   text-transform: lowercase;
-  font: 400 14px/100.1% 'LT Binary Neue Round', sans-serif;
+  font: 400 14px/100.1% 'LT Binary Neue Round',sans-serif
 }
-
 .city-date,
-.nav-title p
-{
+.nav-title p {
   color: var(--orange);
   text-transform: none;
-  font: 600 16px/106.1% 'LT Binary Neue Round', sans-serif;
+  font: 600 16px/106.1% 'LT Binary Neue Round',sans-serif
 }
-.nav>.nav-header>.nav-title {
-display: flex;
+.nav > .nav-header > .nav-title {
+  display: flex;
   flex-direction: row;
   align-items: center;
   width: fit-content;
-  width: 25rem;
-  
+  width: 25rem
 }
-
 .nav-title img {
   width: 40%;
-  position: relative;
+  position: relative
 }
-
-.nav>.nav-btn {
-  display: none;
+.nav > .nav-btn {
+  display: none
 }
-
-.nav>.nav-links {
+.nav > .nav-links {
   float: right;
   display: flex;
   flex-direction: row;
-  font: 600 20px/106.1% 'LT Binary Neue Round', sans-serif;
-
+  font: 600 20px/106.1% 'LT Binary Neue Round',sans-serif
 }
-
-.nav>.nav-links>a {
+.nav > .nav-links > a {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
-  font: 600 20px/136.1% 'LT Binary Neue Round', sans-serif;
+  font: 600 20px/136.1% 'LT Binary Neue Round',sans-serif
 }
-
-.nav>.nav-links>a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.nav > .nav-links > a:hover {
+  background-color: rgba(0,0,0,.3)
 }
-
-.nav>#nav-check {
-  display: none;
+.nav > #nav-check {
+  display: none
 }
-
 .cta-button {
   --color: var(--orange);
   position: relative;
@@ -99,253 +81,214 @@ display: flex;
   align-items: center;
   transition: all .5s;
   border: none;
-  background-color: transparent;
+  background-color: transparent
 }
-
 .cta-button div {
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 700;
   background: var(--color);
   border-radius: 2rem;
-  color: white;
-  padding: 1rem;
+  color: #fff;
+  padding: 1rem
 }
-
 .cta-button::before {
   content: '';
   z-index: -1;
   background-color: var(--color);
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 2rem;
   width: 110%;
   height: 100%;
   position: absolute;
-  opacity: 0.2;
+  opacity: .2
 }
-
 .cta-button:hover {
   cursor: pointer;
   filter: brightness(1.2);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
-
 .cta-button:hover::before {
-  transform: rotate(0deg);
-  opacity: 1;
+  transform: rotate(0);
+  opacity: 1
 }
-
 .cta-button svg {
   transform: translateX(-200%);
   transition: .5s;
   width: 0;
-  opacity: 0;
+  opacity: 0
 }
-
 .cta-button:hover svg {
   width: 25px;
-  transform: translateX(0%);
-  opacity: 1;
+  transform: translateX(0);
+  opacity: 1
 }
-
 .cta-button:active {
-  filter: brightness(1.4);
+  filter: brightness(1.4)
 }
-
 @media (max-width:980px) {
-
-  .nav{
+  .nav {
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 100%
   }
-  .nav>.nav-btn {
+  .nav > .nav-btn {
     display: inline-block;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 10px
   }
-
-  .nav>.nav-btn>label {
+  .nav > .nav-btn > label {
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin-top: 25%;
+    margin-top: 25%
   }
-
-  .nav-title{
+  .nav-title {
     position: relative;
-    left: -25%;
+    left: -25%
   }
-
-  .date-time-local{
-    left: -20%;
+  .date-time-local {
+    left: -20%
   }
-  .nav>.nav-btn>label:hover,
-  .nav #nav-check:checked~.nav-btn>label {
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 10000;
+  .nav #nav-check:checked ~ .nav-btn > label,
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0,0,0,0);
+    z-index: 10000
   }
-
-  .nav>.nav-btn>label>span {
+  .nav > .nav-btn > label > span {
     display: block;
     position: relative;
     width: 25px;
     height: 10px;
-    border-top: 3px solid #eee;
+    border-top: 3px solid #eee
   }
-
-  .nav>.nav-links {
+  .nav > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
     backdrop-filter: blur(10px);
-    height: 0px;
-    transition: all 0.3s ease-in;
+    height: 0;
+    transition: all .3s ease-in;
     overflow-y: hidden;
     top: 50px;
-    left: 0px;
+    left: 0;
     z-index: 10000;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center
   }
-
   .cta-button {
-    left: 0%;
+    left: 0
   }
-
-  .nav>.nav-links>a {
+  .nav > .nav-links > a {
     display: block;
     width: -50%;
     position: relative;
     top: -5%;
     z-index: 10000;
-    font: 600 40px/200% 'LT Binary Neue Round', sans-serif;
+    font: 600 40px/200% 'LT Binary Neue Round',sans-serif
   }
-
-  .nav>#nav-check:not(:checked)~.nav-links {
-    height: 0px;
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0
   }
-
-  .nav>#nav-check:checked~.nav-links {
+  .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
-    overflow-y: auto;
+    overflow-y: auto
   }
 }
-
 @media (max-width:768px) {
-
   .nav {
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 100%
   }
-
-  .nav>.nav-btn {
+  .nav > .nav-btn {
     display: inline-block;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 10px
   }
-
-  .nav>.nav-btn>label {
+  .nav > .nav-btn > label {
     display: inline-block;
     width: 50px;
     height: 50px;
     position: relative;
-    top: 5%;
+    top: 5%
   }
-
   .nav-title img {
-    left: 25%;
+    left: 25%
   }
-
   .date-time-local {
-    left: -17%;
+    left: -17%
   }
-
-  .nav>.nav-btn>label:hover,
-  .nav #nav-check:checked~.nav-btn>label {
-    background-color: rgba(235, 116, 5, 0);
-    z-index: 10000;
+  .nav #nav-check:checked ~ .nav-btn > label,
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(235,116,5,0);
+    z-index: 10000
   }
-
-  .nav>.nav-btn>label>span {
+  .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid #eee
   }
-
-  .nav>.nav-links {
+  .nav > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
-    height: 0px;
-    transition: all 0.3s ease-in;
+    height: 0;
+    transition: all .3s ease-in;
     overflow-y: hidden;
-    background-color: black;
+    background-color: #000;
     top: 70px;
-    left: 0px;
+    left: 0;
     z-index: 100000;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center
   }
-
-
-  .nav>.nav-links>a {
+  .nav > .nav-links > a {
     display: block;
     width: -50%;
     position: relative;
     top: -5%;
     z-index: 10000;
-    font: 600 40px/200% 'LT Binary Neue Round', sans-serif;
+    font: 600 40px/200% 'LT Binary Neue Round',sans-serif
   }
-
-  .nav>#nav-check:not(:checked)~.nav-links {
-    height: 0px;
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0
   }
-
-  .nav>#nav-check:checked~.nav-links {
+  .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
-    overflow-y: auto;
+    overflow-y: auto
   }
 }
-
 @media (max-width:480px) {
-
-  .nav>.nav-btn>label {
+  .nav > .nav-btn > label {
     display: inline-block;
     width: 60px;
-    height: 60px;
+    height: 60px
   }
-     .nav>.nav-btn {
-       display: inline-block;
-       position: absolute;
-       right: 0px;
-       top: 10px;
-     }
-
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px
+  }
   .nav-title {
     position: relative;
-    left: -20%;
+    left: -20%
   }
-
   .date-time-local {
-    display: none;
+    display: none
   }
-
-  .nav-title img{
-    width: 6rem;
-    left: 0%;
-  }
-
-}
-
-@media (max-width: 370px) {
-
   .nav-title img {
-    left: 20%;
+    width: 6rem;
+    left: 0
+  }
+}
+@media (max-width:370px) {
+  .nav-title img {
+    left: 20%
   }
 }

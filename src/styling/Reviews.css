@@ -1,262 +1,222 @@
 .reviews-section,
 .reviews-section * {
-box-sizing: border-box;
+  box-sizing: border-box
 }
-
 .reviews-section {
+  display: flex;
+  flex-direction: column;
+  background: #1a191a;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden
+}
+.quote {
+  background-color: var(--orange);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: left;
+  font: 400 250px Ribeye,sans-serif;
+  position: absolute;
+  left: 7%;
+  top: 4%
+}
+.our-clients-speak {
+  background-image: url(https://media2.giphy.com/media/tbRLQQzokLepWgFWpJ/200w.webp);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: left;
+  font: var(--h-2, 500 72px "Rubik", sans-serif);
+  position: absolute;
+  left: 10%;
+  top: 12%;
+  text-align: justify
+}
+.description-review {
+  color: #fff;
+  font: 400 18px/27px Rubik,sans-serif;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  text-align: justify;
+  width: 80%;
+  height: 40vh
+}
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(2,100%);
+  position: relative;
+  top: 40%;
+  left: 10%;
+  height: 50%;
+  width: 40%
+}
+.image-review {
+  width: 100%
+}
+.review-image {
+  width: 90%
+}
+.review-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  color: #fff;
+  z-index: 1000;
+  justify-content: center
+}
+.text-review {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 2.5%;
+  text-align: justify
+}
+.next-button,
+.prev-button {
+  color: #fff;
+  font-size: 30px
+}
+.buttons-scroll-reviews {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: space-around
+}
+.minus {
+  font-size: 30px
+}
+@media (max-width:980px) {
+  .quote {
+    background-image: url(https://media2.giphy.com/media/3RqUXYXqd9yOzRA4fO/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: left;
+    font: 400 250px Ribeye,sans-serif;
+    position: absolute;
+    left: 2.5%;
+    top: 5%
+  }
+  .our-clients-speak {
+    font-size: 65px
+  }
+  .description-review {
+    color: #fff;
+    font: 400 16px/20px Rubik,sans-serif;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    text-align: justify;
+    width: 80%;
+    max-width: fit-content;
+    height: 40vh
+  }
+}
+@media (max-width:768px) {
+  .quote {
+    background-image: url(https://media2.giphy.com/media/3RqUXYXqd9yOzRA4fO/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: left;
+    font: 400 200px Ribeye,sans-serif;
+    position: absolute;
+    left: 15%;
+    top: 5%
+  }
+  .our-clients-speak {
+    font-size: 55px;
+    position: relative;
+    left: 20%
+  }
+  .description-review {
+    color: #fff;
+    font: 400 16px/20px Rubik,sans-serif;
+    position: absolute;
+    left: 12.5%;
+    top: 25%;
+    text-align: justify;
+    width: 80%;
+    max-width: fit-content;
+    height: fit-content
+  }
+  .image-review {
+    display: none
+  }
+  .review-container {
     display: flex;
     flex-direction: column;
-background: #1a191a;
-flex-shrink: 0;
-width: 100vw;
-height: 100vh;
-position: relative;
-overflow: hidden;
-
+    width: 80%;
+    left: 12.5%;
+    top: 35%;
+    padding: 2%;
+    border-radius: 2%;
+    background-color: rgba(63,63,63,.726);
+    backdrop-filter: blur(10px)
+  }
+  .review-text {
+    width: 100%
+  }
+  .buttons-scroll-reviews {
+    top: 4%;
+    position: relative
+  }
 }
-
-.quote {
-background-color: var(--orange);
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    background-clip: text;
-text-align: left;
-font: 400 250px "Ribeye", sans-serif;
-position: absolute;
-left: 7%;
-top: 4%;
-}
-
-.our-clients-speak {
-background-image: url(https://media2.giphy.com/media/tbRLQQzokLepWgFWpJ/200w.webp);
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    background-clip: text;
-text-align: left;
-font: var(--h-2, 500 72px "Rubik", sans-serif);
-position: absolute;
-left: 10%;
-top: 12%;
-text-align: justify;
-}
-
-.description-review {
-color: #ffffff;
-font: 400 18px/27px "Rubik", sans-serif;
-position: absolute;
-left: 10%;
-top: 25%;
-text-align: justify;
-width: 80%;
-height: 40vh;
-}
-
-
-/* Review container */
-
-.review-container {
-display: grid;
-grid-template-columns: repeat(2, 100%);
-position: relative;
-top: 40%;
-left: 10%;
-height: 50%;
-width: 40%;
-}
-
-.image-review {
-width: 100%;
-}
-
-.review-image {
-width: 90%;
-}
-
-.review-text {
-display: flex;
-flex-direction: column;
-gap: 5%;
-color: #ffffff;
-z-index: 1000;
-justify-content: center;
-}
-
-.text-review {
-color: #ffffff;
-font-size: 16px;
-padding-top: 2.5%;
-text-align: justify;
-}
-
-.prev-button,
-.next-button {
-color: rgb(255, 255, 255);
-font-size: 30px;
-}
-
-.buttons-scroll-reviews{
+@media (max-width:480px) {
+  .quote {
+    font: 400 160px Ribeye,sans-serif;
+    position: absolute;
+    left: 10%;
+    top: 6%
+  }
+  .our-clients-speak {
+    font-size: 35px;
+    position: relative;
+    left: 15%;
+    width: 80%
+  }
+  .description-review {
+    color: #fff;
+    font: 400 14px/14px Rubik,sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    text-align: justify;
+    width: 90%;
+    max-width: fit-content;
+    height: fit-content
+  }
+  .image-review {
+    display: none
+  }
+  .review-container {
     display: flex;
-    flex-direction: row;
-    gap: 10%;
-    justify-content: space-around;
-}
-
-.minus {
-    font-size: 30px;
-}
-
-@media (max-width: 980px) {
-.quote {
-background-image: url(https://media2.giphy.com/media/3RqUXYXqd9yOzRA4fO/giphy.gif);
-background-size: cover;
-color: transparent;
--moz-background-clip: text;
--webkit-background-clip: text;
-background-clip: text;
-text-align: left;
-font: 400 250px "Ribeye", sans-serif;
-position: absolute;
-left: 2.5%;
-top: 5%;
-}
-
-.our-clients-speak{
-font-size: 65px;
-}
-.description-review {
-color: #ffffff;
-font: 400 16px/20px "Rubik", sans-serif;
-position: absolute;
-left: 10%;
-top: 25%;
-text-align: justify;
-width: 80%;
-max-width: fit-content;
-height: 40vh;
-}
-
-
-}
-
-@media (max-width: 768px) {
-    .quote {
-        background-image: url(https://media2.giphy.com/media/3RqUXYXqd9yOzRA4fO/giphy.gif);
-        background-size: cover;
-        color: transparent;
-        -moz-background-clip: text;
-        -webkit-background-clip: text;
-        background-clip: text;
-        text-align: left;
-        font: 400 200px "Ribeye", sans-serif;
-        position: absolute;
-        left: 15%;
-        top: 5%;
-    }
-
-    .our-clients-speak {
-        font-size: 55px;
-        position: relative;
-        left: 20%;
-    }
-
-    .description-review {
-        color: #ffffff;
-        font: 400 16px/20px "Rubik", sans-serif;
-        position: absolute;
-        left: 12.5%;
-        top: 25%;
-        text-align: justify;
-        width: 80%;
-        max-width: fit-content;
-        height: fit-content;
-    }
-
-    .image-review {
-        display: none;
-    }
-
-    .review-container{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        left: 12.5%;
-        top: 35%;
-        padding: 2%;
-        border-radius: 2%;
-        background-color: rgba(63, 63, 63, 0.726);
-        backdrop-filter: blur(10px);
-    }
-
-    .review-text{
-        width: 100%;
-    }
-
-    .buttons-scroll-reviews {
-        top: 4%;
-        position: relative;
-    }
-    
-
-
-}
-
-@media (max-width: 480px) {
-    .quote {
-        font: 400 160px "Ribeye", sans-serif;
-        position: absolute;
-        left: 10%;
-        top: 6%;
-    }
-
-    .our-clients-speak {
-        font-size: 35px;
-        position: relative;
-        left: 15%;
-        width: 80%;
-    }
-
-    .description-review {
-        color: #ffffff;
-        font: 400 14px/14px "Rubik", sans-serif;
-        position: absolute;
-        left: 5%;
-        top: 20%;
-        text-align: justify;
-        width: 90%;
-        max-width: fit-content;
-        height: fit-content;
-    }
-
-    .image-review {
-        display: none;
-    }
-
-    .review-container {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        left: 5%;
-        top: 35%;
-        padding: 2%;
-        border-radius: 2%;
-        background-color: rgba(63, 63, 63, 0.726);
-        backdrop-filter: blur(10px);
-    }
-
-    .review-text {
-        width: 100%;
-        padding-top: 5%;
-    }
-
-    .buttons-scroll-reviews {
-        top: 4%;
-        position: relative;
-    }
-
-
-
+    flex-direction: column;
+    width: 90%;
+    left: 5%;
+    top: 35%;
+    padding: 2%;
+    border-radius: 2%;
+    background-color: rgba(63,63,63,.726);
+    backdrop-filter: blur(10px)
+  }
+  .review-text {
+    width: 100%;
+    padding-top: 5%
+  }
+  .buttons-scroll-reviews {
+    top: 4%;
+    position: relative
+  }
 }
