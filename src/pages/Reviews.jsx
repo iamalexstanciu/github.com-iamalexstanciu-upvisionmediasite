@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styling/Reviews.css";
 import ReviewImage from "../assets/portfolio1.jpg";
+import data from "../js/reviewsfake.json";
 
 function Reviews() {
+  const [currentReview, setCurrentReview] = useState(0);
+
+  const prevReview = () => {
+    if (currentReview > 0) {
+      setCurrentReview(currentReview - 1);
+    }
+  };
+
+  const nextReview = () => {
+    if (currentReview < data.length - 1) {
+      setCurrentReview(currentReview + 1);
+    } else setCurrentReview(0);
+  };
+
+  const currReview = data[currentReview];
+
   return (
     <div className="reviews-section" id="review">
       <div className="quote">“</div>
@@ -19,24 +36,19 @@ function Reviews() {
           <img className="review-image" src={ReviewImage} alt="banner page" />
         </div>
         <div className="review-text">
-          <div className="text-review">
-            Outstanding experience with the client web development agency! Their
-            team showcased exceptional skill in translating our vision into a
-            dynamic website. From responsive design to seamless functionality,
-            they exceeded our expectations. Effective communication throughout
-            the project and a commitment to deadlines made the collaboration
-            smooth. Highly recommend their services for anyone seeking top-notch
-            web development solutions.
-          </div>
-
+          <div className="text-review">{currReview.review_text}</div>
           <div className="author">
-            <h3 className="description2">TextLab CEO</h3>
-            <h4 className="description3">Henry Paddington</h4>
+            <h3 className="description2">{currReview.user}</h3>
+            <h4 className="description3">{currReview.company}</h4>
           </div>
           <div className="buttons-scroll-reviews">
-            <div className="prev-button">Prev</div>
+            <div className="prev-button" onClick={prevReview}>
+              Prev
+            </div>
             <div className="minus">-</div>
-            <div className="next-button">Next</div>
+            <div className="next-button" onClick={nextReview}>
+              Next
+            </div>
           </div>
         </div>
       </div>

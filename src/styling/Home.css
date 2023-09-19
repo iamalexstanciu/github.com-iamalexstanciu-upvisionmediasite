@@ -213,7 +213,7 @@
 }
 @media screen and (max-width:360px) {
   .homepage {
-    height: 95vh
+    height: 100vh
   }
   .simple-solutions-for-complex-problems {
     font-size: 40px;
