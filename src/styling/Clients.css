@@ -131,14 +131,14 @@
   }
   .our-cases {
     left: 5;
-    top: 10%
+    top: 10%;
   }
   .description-clients {
     top: 22%
   }
   .projects-container {
-    top: -5%;
-    height: 100%;
+    top: -7%;
+    height: 110%;
     overflow-x: auto
   }
   #image-track > .image {
@@ -156,11 +156,12 @@
   }
   .our-cases {
     left: 5;
-    top: 10%
+    top: 10%;
+    font-size: 40px;
   }
   .description-clients {
     top: 25%;
-    font-size: 18px
+    font-size: 16px
   }
   .projects-container {
     top: 0;
