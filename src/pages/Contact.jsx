@@ -34,7 +34,7 @@ export default function Contact() {
       )
       .then(
         (res) => {
-          console.log("🚀 ~ file: Contact.jsx:36 ~ handleSubmit ~ res:", res);
+          // console.log("🚀 ~ file: Contact.jsx:36 ~ handleSubmit ~ res:", res);
           setFormData({
             loading: false,
             alertMessage:

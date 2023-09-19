@@ -8,7 +8,7 @@ export default function UseScroll(sectionId) {
       inline: "nearest",
     });
 
-    console.log(sectionId + " is scrolled to.");
+    // console.log(sectionId + " is scrolled to.");
   } else {
     console.log("Section " + sectionId + " not found.");
   }
