@@ -1,6 +1,6 @@
 import React from "react";
 import "../styling/Services.css";
-import ServicesImage from "../assets/gif-page2.gif";
+import ServicesImage from "../assets/video-services.webm";
 
 export default function Services() {
   return (
@@ -11,10 +11,13 @@ export default function Services() {
             Your destination: a website that's not just visited, but
             experienced.
           </h5>
-          <img
+          <video
+            autoPlay="true"
+            loop="true"
             className="services-image"
             src={ServicesImage}
             alt="presentation"
+            muted
           />
         </div>
         <div className="services-right-side">
