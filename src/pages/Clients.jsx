@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styling/Clients.css";
-import Project1 from "../assets/project1.png";
-import Project2 from "../assets/project1.1.png";
-import Project3 from "../assets/project2.png";
-import Project4 from "../assets/project2.1.png";
-import Project5 from "../assets/project3.png";
-import Project6 from "../assets/project3.1.png";
+import Project1 from "../assets/project1.jpg";
+import Project2 from "../assets/project1.1.jpg";
+import Project3 from "../assets/project2.jpg";
+import Project4 from "../assets/project2.1.jpg";
+import Project5 from "../assets/project3.jpg";
+import Project6 from "../assets/project3.1.jpg";
 
 function Clients() {
   const [mouseDownAt, setMouseDownAt] = useState(-45);
@@ -79,40 +79,40 @@ function Clients() {
   //intersection observer
   const sectionRef = useRef(null);
 
-useEffect(() => {
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        const images = entry.target.getElementsByClassName("image");
-        for (const image of images) {
-          image.classList.add("animate");
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          const images = entry.target.getElementsByClassName("image");
+          for (const image of images) {
+            image.classList.add("animate");
+          }
+        } else {
+          const images = entry.target.getElementsByClassName("image");
+          for (const image of images) {
+            image.classList.remove("animate");
+          }
         }
-      } else {
-        const images = entry.target.getElementsByClassName("image");
-        for (const image of images) {
-          image.classList.remove("animate");
-        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
       }
-    },
-    {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1,
-    }
-  );
+    );
 
-  const sectionRefCurrent = sectionRef.current; // Capture the current value of sectionRef
+    const sectionRefCurrent = sectionRef.current; // Capture the current value of sectionRef
 
-  if (sectionRefCurrent) {
-    observer.observe(sectionRefCurrent);
-  }
-
-  return () => {
     if (sectionRefCurrent) {
-      observer.unobserve(sectionRefCurrent);
+      observer.observe(sectionRefCurrent);
     }
-  };
-}, []);
+
+    return () => {
+      if (sectionRefCurrent) {
+        observer.unobserve(sectionRefCurrent);
+      }
+    };
+  }, []);
 
   return (
     <div className="clients-section" id="clients">
