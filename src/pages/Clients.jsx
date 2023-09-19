@@ -35,7 +35,7 @@ function Clients() {
     const nextPercentageUnconstrained = parseFloat(prevPercentage) + percentage;
     const nextPercentage = Math.max(
       Math.min(nextPercentageUnconstrained, 0),
-      -45
+      0
     );
 
     trackRef.current.dataset.percentage = nextPercentage;
