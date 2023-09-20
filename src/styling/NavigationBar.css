@@ -67,14 +67,15 @@ body {
   font: 600 20px/136.1% 'LT Binary Neue Round',sans-serif;
 }
 .nav > .nav-links > a:hover {
-  background-color: rgba(0,0,0,.3);
+  background-color: var(--orange);
+  color: #000;
+  border-radius: 2rem;
 }
 .nav > #nav-check {
   display: none;
 }
 .cta-button {
   --color: var(--orange);
-  
   position: relative;
   left: 5%;
   display: flex;
@@ -87,7 +88,6 @@ body {
 .cta-button div {
   letter-spacing: 2px;
   font-weight: 700;
-  
   background: var(--color);
   border-radius: 2rem;
   color: #fff;
