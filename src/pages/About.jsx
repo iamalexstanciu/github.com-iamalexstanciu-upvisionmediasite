@@ -23,7 +23,7 @@ export default function About() {
               <p class="text-blk name">Razvan Tache</p>
               <p class="text-blk position">CEO</p>
               <img class="team-member-image" src={Razvan} alt="presentation" />
-
+              <div class="social-container">
                 <a
                   href="https://www.twitter.com"
                   target="_blank"
@@ -64,48 +64,55 @@ export default function About() {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
                   />
                 </a>
+              </div>
             </div>
             <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-mobile-12 wk-tab-12 card-container">
               <p class="text-blk name">Alexandru Stanciu</p>
               <p class="text-blk position">CEO</p>
               <img class="team-member-image" src={Alex} alt="presentation" />
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noreferrer">
-                <img
-                  class="social-media-icon"
-                  alt="account"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
-                />
-              </a>
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noreferrer">
-                <img
-                  class="social-media-icon"
-                  alt="account"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
-                />
-              </a>
-              <a href="https://www.gmail.com" target="_blank" rel="noreferrer">
-                <img
-                  class="social-media-icon"
-                  alt="account"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noreferrer">
-                <img
-                  class="social-media-icon"
-                  alt="account"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
-                />
-              </a>
+              <div class="social-container">
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img
+                    class="social-media-icon"
+                    alt="account"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img
+                    class="social-media-icon"
+                    alt="account"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.gmail.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img
+                    class="social-media-icon"
+                    alt="account"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  />
+                </a>
+
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img
+                    class="social-media-icon"
+                    alt="account"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
+                  />
+                </a>
+              </div>
             </div>
             <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-mobile-12 wk-tab-12 card-container">
               <p class="text-blk name">Constantin Iancu</p>
@@ -115,43 +122,48 @@ export default function About() {
                 src={ProfileImage}
                 alt="presentation"
               />
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noreferrer">
-                <img
-                  class="social-media-icon"
-                  alt="account"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
-                />
-              </a>
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noreferrer">
-                <img
-                  class="social-media-icon"
-                  alt="account"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
-                />
-              </a>
-              <a href="https://www.gmail.com" target="_blank" rel="noreferrer">
-                <img
-                  class="social-media-icon"
-                  alt="account"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noreferrer">
-                <img
-                  alt="account"
-                  class="social-media-icon"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
-                />
-              </a>
+              <div class="social-container">
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img
+                    class="social-media-icon"
+                    alt="account"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img
+                    class="social-media-icon"
+                    alt="account"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.gmail.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img
+                    class="social-media-icon"
+                    alt="account"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img
+                    alt="account"
+                    class="social-media-icon"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
