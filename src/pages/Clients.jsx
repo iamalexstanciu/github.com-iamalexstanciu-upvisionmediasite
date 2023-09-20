@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "../styling/Clients.css";
 import Project1 from "../assets/project1.jpg";
 import Project2 from "../assets/project1.1.jpg";
