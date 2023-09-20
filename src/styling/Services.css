@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   max-height: 10%;
-  font: 32px Rubik,sans-serif;
+  font: 600 26px/65% 'LT Binary Neue Round', sans-serif;
   position: relative;
   justify-items: center;
   align-content: center;
@@ -162,7 +162,7 @@
     flex-direction: column;
     text-align: center;
     height: 18rem;
-    left: 7%;
+    left: 7.5%;
     padding: 2%;
     max-width: 85%;
     width: fit-content;
@@ -173,5 +173,46 @@
     backdrop-filter: blur(30px);
     background-color: rgba(65,65,65,.308);
     border: 1px solid rgba(107,107,107,.089);
+  }
+}
+
+@media (max-width:480px) {
+  .container-content-services {
+    grid-template-columns: 1fr;
+  }
+
+  .services-left-side {
+    display: none;
+  }
+
+  .services-right-side {
+    font-size: 25px;
+  }
+
+  .slogan-down-services {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .cards-services-container .card-layout-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 20rem;
+    left: 5%;
+    top: 0;
+    padding: 1%;
+    max-width: 90%;
+    width: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(65, 65, 65, .308);
+    border: 1px solid rgba(107, 107, 107, .089);
   }
 }
