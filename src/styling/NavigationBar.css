@@ -74,6 +74,7 @@ body {
 }
 .cta-button {
   --color: var(--orange);
+  
   position: relative;
   left: 5%;
   display: flex;
@@ -86,6 +87,7 @@ body {
 .cta-button div {
   letter-spacing: 2px;
   font-weight: 700;
+  
   background: var(--color);
   border-radius: 2rem;
   color: #fff;
@@ -93,6 +95,7 @@ body {
 }
 .cta-button::before {
   content: '';
+  
   z-index: -1;
   background-color: var(--color);
   border: 2px solid #fff;
@@ -125,6 +128,7 @@ body {
 .cta-button:active {
   filter: brightness(1.4);
 }
+
 @media (max-width:980px) {
   .nav {
     justify-content: space-between;

@@ -78,19 +78,27 @@
   padding-top: 2.5%;
   text-align: justify;
 }
-.next-button,
-.prev-button {
-  color: #fff;
-  font-size: 30px;
-}
 .buttons-scroll-reviews {
   display: flex;
   flex-direction: row;
-  gap: 10%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .minus {
   font-size: 30px;
+  color: #f39f04;
+}
+
+.prev-button,
+.next-button {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-button {
+  width: 30%;
+  border-radius: 50%;
+  box-shadow: #f39f04 0px 0px 5px 0px;
 }
 @media (max-width:980px) {
   .quote {

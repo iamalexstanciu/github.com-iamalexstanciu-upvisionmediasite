@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../styling/Reviews.css";
 import ReviewImage from "../assets/portfolio1.jpg";
 import data from "../js/reviewsfake.json";
+import NextIcon from "../assets/right.png"
+import PrevIcon from "../assets/left.png";
+
 
 function Reviews() {
   const [currentReview, setCurrentReview] = useState(0);
@@ -43,11 +46,11 @@ function Reviews() {
           </div>
           <div className="buttons-scroll-reviews">
             <div className="prev-button" onClick={prevReview}>
-              Prev
+              <img className="icon-button" src={PrevIcon} alt="back" />
             </div>
             <div className="minus">-</div>
             <div className="next-button" onClick={nextReview}>
-              Next
+              <img className="icon-button" src={NextIcon} alt="next" />
             </div>
           </div>
         </div>
