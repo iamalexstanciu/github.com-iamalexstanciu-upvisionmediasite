@@ -2,6 +2,7 @@ import React from "react";
 import "../styling/Footer.css";
 import Logo from "../assets/logo-upvision.png";
 import UseScroll from "../data/UseScroll";
+import Signature from "../assets/signature.png";
 
 function Footer() {
   return (
@@ -40,7 +41,6 @@ function Footer() {
       </div>
       <div className="group-82">
         <img className="logo-footer" src={Logo} alt="upvision media" />
-
       </div>
       <svg
         className="footer-fragment-of-saturn"
@@ -133,7 +133,9 @@ function Footer() {
           </clipPath>
         </defs>
       </svg>
-      <div className="label">© upVisionMedia, 2023.</div>
+      <div className="label">
+        © <img src={Signature} className="signature" alt="designed by upvisionMedia" /> 2023
+      </div>
     </div>
   );
 }

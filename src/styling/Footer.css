@@ -55,9 +55,13 @@
   color: #909090;
   text-align: left;
   font: 500 16px/20px Rubik,sans-serif;
-  position: absolute;
-  right: 45%;
-  top: 85%;
+  position: relative;
+  left: 40%;
+  top: -10%;
+}
+
+.signature {
+  width: 15%;
 }
 .footer-fragment-of-saturn {
   position: absolute;
@@ -70,11 +74,11 @@
     left: 5%;
   }
 }
-@media screen and (max-width:768px) {
+@media (max-width:768px) {
   .footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .links {
@@ -82,62 +86,66 @@
     align-items: center;
     text-align: center;
     gap: 5px;
+    position: relative;
     top: 35%;
-    left: 15%;
+    left: 35%;
   }
   .buttons-footer {
     text-align: center;
   }
   .logo-footer {
     top: 40%;
-    left: -65%;
+    left: -22%;
     height: 60%;
     width: 80%;
   }
+
+  .signature{
+    width: 35%;
+  }
   .label {
-    left: 40%;
+    left: 32%;
   }
 }
-@media screen and (max-width:480px) {
+@media  (max-width:480px) {
   .footer {
     height: 30vh;
     width: 100%;
   }
   .links {
-    left: 5%;
-    top: 15%;
+    left: 25%;
+    top: 60%;
     flex-direction: column;
   }
   .logo-footer {
-    width: 100%;
-    left: -100%;
+    left: -80%;
+    top: 30%;
   }
   .label {
     left: 25%;
-    top: 80%;
+    top: -5%;
   }
   .footer-fragment-of-saturn {
     left: 10%;
     top: 0;
   }
 }
-@media screen and (max-width:360px) {
+@media  (max-width:360px) {
   .footer {
     height: 30vh;
     width: 100%;
   }
   .links {
-    left: 5%;
-    top: 15%;
+    left: 25%;
+    top: 55%;
     flex-direction: column;
   }
   .logo-footer {
-    width: 100%;
-    left: -100%;
+    left: -70%;
   }
   .label {
     left: 25%;
-    top: 80%;
+    top: -10%;
   }
   .footer-fragment-of-saturn {
     left: 10%;

@@ -263,22 +263,22 @@ transition: transform .2s ease-in-out;
 }
 
 .submit-btn {
-    display: inline-block;
-    background-color: #ff7300;
-    color: #fff;
-    font-family: Raleway, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 2% 12%;
-    border: none;
-    cursor: pointer;
+display: inline-block;
+background-color: #ff7300;
+color: #fff;
+font-family: Raleway, sans-serif;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 16px;
+line-height: 24px;
+padding: 2% 12%;
+border: none;
+cursor: pointer;
 }
 }
 
 .svg-wrapper {
-    display: none;
+display: none;
 }
 }
 
@@ -405,21 +405,21 @@ transition: transform .2s ease-in-out;
 }
 .submit-btn {
 display: inline-block;
-    background-color: #ff7300;
-    color: #fff;
-    font-family: Raleway, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 2% 12%;
-    border: none;
-    cursor: pointer;
+background-color: #ff7300;
+color: #fff;
+font-family: Raleway, sans-serif;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 16px;
+line-height: 24px;
+padding: 3% 0%;
+border: none;
+cursor: pointer;
 }
 }
 
 .svg-wrapper {
-    display: none;
+display: none;
 }
 
 }
@@ -557,14 +557,14 @@ text-transform: uppercase;
 letter-spacing: 2px;
 font-size: 16px;
 line-height: 24px;
-padding: 3% 15%;
+padding: 3% 0%;
 border: none;
 cursor: pointer;
 }
 }
 
 .svg-wrapper {
-    display: none;
+display: none;
 }
 
 }
