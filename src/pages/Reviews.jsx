@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "../styling/Reviews.css";
-import ReviewImage from "../assets/portfolio1.jpg";
 import data from "../js/reviewsfake.json";
-import NextIcon from "../assets/right.png"
+import NextIcon from "../assets/right.png";
 import PrevIcon from "../assets/left.png";
-
 
 function Reviews() {
   const [currentReview, setCurrentReview] = useState(0);
@@ -36,7 +34,11 @@ function Reviews() {
       </div>
       <div className="review-container">
         <div className="image-review">
-          <img className="review-image" src={ReviewImage} alt="banner page" />
+          <img
+            className="review-image"
+            src="https://images.unsplash.com/photo-1417733403748-83bbc7c05140?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="banner page"
+          />
         </div>
         <div className="review-text">
           <div className="text-review">{currReview.review_text}</div>
