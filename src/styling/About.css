@@ -20,18 +20,18 @@ background-clip: text;
 text-align: left;
 font: 500 60px/136.1% 'LT Binary Neue Round',sans-serif;
 position: absolute;
-top: 8%;
-left: 15%;
+top: 10%;
+left: 10%;
 }
 .description-about {
 color: #d1d1d1;
 font: 600 19px/136.1% 'LT Binary Neue Round',sans-serif;
 position: absolute;
 left: 15%;
-top: 21%;
+top: 22%;
 max-width: fit-content;
 width: 70%;
-text-align: justify;
+text-align: center;
 height: fit-content;
 }
 
@@ -57,7 +57,6 @@ padding-left: 0px;
 
 .responsive-container-block {
 height: 100%;
-min-height: 60vh;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -370,6 +369,11 @@ margin: 0 20px 10px 0;
 
 top: -5%;
 }
+
+.responsive-container-block {
+  position: relative;
+  top: 10%;
+}
 }
 
 @media (max-width: 768px) {
@@ -392,7 +396,7 @@ align-items: center;
 }
 
 .inner-container{
-top: 10%;
+top: -10%;
 }
 
 .meet-our-team {
@@ -408,7 +412,7 @@ width: 75%;
 
 @media (max-width: 500px) {
 .inner-container {
-  top: 10%;
+  top: -10%;
 }
 
 
