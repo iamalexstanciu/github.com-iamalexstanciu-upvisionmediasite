@@ -111,9 +111,10 @@
   }
 
   100% {
-    box-shadow: 0 0 0 20px rgba(27, 27, 27, 0.281);
+    box-shadow: 0 0 0 20px rgba(68, 65, 65, 0.281);
   }
 }
+
 @media (max-width:980px) {
   .quote {
     background-image: url(https://media2.giphy.com/media/3RqUXYXqd9yOzRA4fO/giphy.gif);
