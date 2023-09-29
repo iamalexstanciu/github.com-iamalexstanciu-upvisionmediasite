@@ -16,6 +16,7 @@
 body,
 html {
   background: #1a191a;
+  overflow-x: auto;
 }
 .section {
   height: 100vh;
