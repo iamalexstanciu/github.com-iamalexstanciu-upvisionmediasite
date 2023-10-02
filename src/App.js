@@ -16,8 +16,18 @@ import NavigationBar from "./components/NavigationBar";
 export default function App() {
   return (
     <>
-      <CookieConsent>
-        This website uses cookies to enhance the user experience.
+      <CookieConsent
+        location="bottom"
+        buttonText="I understand!"
+        cookieName="myAwesomeCookieName2"
+        style={{ background: "#1a191a8a" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "12px" }}
+        expires={150}>
+        This website uses cookies to ensure you get the best experience on our
+        website.{" "}
+        <span style={{ fontSize: "10px", margin: "10px" }}>
+          upvisionMedia Agency ©
+        </span>
       </CookieConsent>
       <NavigationBar />
       {/* <div className="cursor__dot">
