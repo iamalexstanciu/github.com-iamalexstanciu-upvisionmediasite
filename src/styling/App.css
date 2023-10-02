@@ -6,7 +6,6 @@
   --grey: #DBD8E3;
   --h-2: 500 72px "Rubik",sans-serif;
   --h-1: 500 96px "Rubik",sans-serif;
-  background: #1a191a;
 }
 .App {
   text-align: center;
@@ -16,7 +15,6 @@
 body,
 html {
   background: #1a191a;
-  overflow-x: auto;
 }
 .section {
   height: 100vh;

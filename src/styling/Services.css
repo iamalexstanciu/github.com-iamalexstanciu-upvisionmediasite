@@ -1,7 +1,6 @@
 .services-section,
 .services-section * {
   box-sizing: border-box;
-  background: #1a191a;
   position: relative;
   top: 7%;
 }

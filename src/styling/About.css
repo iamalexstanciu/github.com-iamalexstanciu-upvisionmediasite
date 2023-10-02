@@ -3,7 +3,6 @@
 box-sizing: border-box
 }
 .about-section {
-background: #1a191a;
 flex-shrink: 0;
 width: 100vw;
 height: 100vh;
