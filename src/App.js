@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import AnimatedCursor from "./js/CustomCursor";
+import CookieConsent from "react-cookie-consent";
 import "./styling/App.css";
 import Footer from "./components/Footer";
 import { Element } from "react-scroll";
@@ -15,8 +16,11 @@ import NavigationBar from "./components/NavigationBar";
 export default function App() {
   return (
     <>
+      <CookieConsent>
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
       <NavigationBar />
-       {/* <div className="cursor__dot">
+      {/* <div className="cursor__dot">
         <AnimatedCursor
           innerSize={10}
           outerSize={10}
