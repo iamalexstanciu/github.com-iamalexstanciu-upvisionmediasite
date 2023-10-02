@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import AnimatedCursor from "./js/CustomCursor";
 import CookieConsent from "react-cookie-consent";
 import "./styling/App.css";
 import Footer from "./components/Footer";
@@ -30,16 +29,6 @@ export default function App() {
         </span>
       </CookieConsent>
       <NavigationBar />
-      {/* <div className="cursor__dot">
-        <AnimatedCursor
-          innerSize={10}
-          outerSize={10}
-          color="255,255,255"
-          outerAlpha={0.4}
-          innerScale={0.7}
-          outerScale={4}
-        />
-      </div> */}
 
       <Element name="home">
         <Home />
