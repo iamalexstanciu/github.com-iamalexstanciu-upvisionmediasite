@@ -8,7 +8,6 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .our-cases {
@@ -32,200 +31,36 @@
   position: absolute;
   left: 10%;
   top: 22%;
-  width: 85%;
+  width: 25%;
 }
 
-.projects-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
+/* Add these styles to your Clients.css or a separate CSS file */
+
+.carousel-container {
+  overflow: hidden;
+  top: 10rem;
   position: relative;
-  top: 15%;
-  gap: 5%;
-  overflow-x: auto;
 }
 
-#image-track {
+.carousel-track {
   display: flex;
-  gap: 1%;
-  position: absolute;
-  left: 4%;
-  top: 22%;
-  user-select: none;
-  overflow-y: auto;
+  height: 80%;
+  flex-direction: row;
+  transform-origin: left center;
 }
 
-#image-track>.image {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: 100% center;
+.image {
+  width: 300px;
+  /* Adjust the image width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 20px;
+  /* Spacing between images */
+  transition: transform 0.3s ease-in-out;
 }
 
-#img {
-  border-radius: 25px;
-  margin-bottom: 10px;
-}
-
-.animate {
-  animation: wipe-in-left 3s;
-}
-
-#image-track {
-  animation: wipe-in-left 3s;
-}
-
-@keyframes wipe-in-left {
-  from {
-    clip-path: inset(0 0 0 100%);
-  }
-
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
-[transition-style="in:wipe:left"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both
-}
-
-@keyframes slide-in-from-right {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@media (max-width:1200px) {
-  .clients-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .our-cases {
-    left: 5;
-    top: 10%;
-  }
-
-  .description-clients {
-    top: 22.5%;
-  }
-
-  .projects-container {
-    top: 15%;
-    height: 120%;
-  }
-}
-
-@media (max-width:980px) {
-  .clients-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .our-cases {
-    left: 5;
-    top: 10%;
-  }
-
-  .description-clients {
-    top: 22.5%;
-  }
-
-  .projects-container {
-    top: 20%;
-    height: 120%;
-  }
-}
-
-@media (max-width:768px) {
-  .clients-section {
-    display: flex;
-    justify-content: center;
-    align-items: center
-  }
-
-  .our-cases {
-    left: 5;
-    top: 10%;
-  }
-
-  .description-clients {
-    top: 22.5%;
-  }
-
-  .projects-container {
-    top: 25%;
-    height: 120%;
-  }
-}
-
-@media (max-width:480px) {
-  .clients-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .our-cases {
-    left: 5;
-    top: 10%;
-  }
-
-  .description-clients {
-    top: 22%;
-  }
-
-  .projects-container {
-    top: 25%;
-    height: 110%;
-    overflow-x: auto;
-  }
-
-  #image-track>.image {
-    width: 60vmin;
-    height: 90vmin;
-    object-fit: cover;
-    object-position: 100% center;
-  }
-}
-
-@media (max-width:360px) {
-  .clients-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .our-cases {
-    left: 5;
-    top: 10%;
-    font-size: 40px;
-  }
-
-  .description-clients {
-    top: 25%;
-    font-size: 16px;
-  }
-
-  .projects-container {
-    top: 25%;
-    height: 100%;
-    overflow-x: auto;
-  }
-
-  #image-track>.image {
-    width: 60vmin;
-    height: 90vmin;
-    object-fit: cover;
-    object-position: 100% center;
-  }
+/* Optional: Add hover effect */
+.image:hover {
+  transform: scale(1.1);
+  /* Increase image size on hover */
 }
