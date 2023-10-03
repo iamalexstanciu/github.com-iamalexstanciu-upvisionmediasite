@@ -14,11 +14,16 @@ function HorizontalScrollCarousel() {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["-95%", "40%"]);
+  // // Adjust this transformation based on your design
+  const x = useTransform(scrollYProgress, [0, 0.6], ["-40%", "50%"]);
 
   return (
     <div ref={targetRef} className="carousel-container">
-      <motion.div style={{ x }} className="carousel-track">
+      <motion.div
+        style={{
+          x,
+        }}
+        className="carousel-track">
         <img
           className="image"
           src={Project1}
@@ -61,15 +66,11 @@ function HorizontalScrollCarousel() {
 }
 
 function Clients() {
+  
   return (
     <div className="clients-section" id="clients">
-    
       <div className="projects-container">
-          <div className="our-cases">Our cases</div>
-      <div className="description-clients">
-        These are some examples of projects in which we have put all our
-        professionalism and passion.
-      </div>
+        <div className="our-cases">Our cases</div>
         <HorizontalScrollCarousel />
       </div>
     </div>
