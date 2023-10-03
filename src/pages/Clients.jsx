@@ -25,37 +25,37 @@ function HorizontalScrollCarousel() {
         }}
         className="carousel-track">
         <img
-          className="image"
+          className="image-clients"
           src={Project1}
           draggable="false"
           alt="upvision media agency"
         />
         <img
-          className="image"
+          className="image-clients"
           draggable="false"
           src={Project2}
           alt="upvision media agency"
         />
         <img
-          className="image"
+          className="image-clients"
           src={Project3}
           draggable="false"
           alt="upvision media agency"
         />
         <img
-          className="image"
+          className="image-clients"
           src={Project4}
           draggable="false"
           alt="upvision media agency"
         />
         <img
-          className="image"
+          className="image-clients"
           src={Project5}
           draggable="false"
           alt="upvision media agency"
         />
         <img
-          className="image"
+          className="image-clients"
           src={Project6}
           draggable="false"
           alt="upvision media agency"
@@ -66,12 +66,14 @@ function HorizontalScrollCarousel() {
 }
 
 function Clients() {
-  
   return (
     <div className="clients-section" id="clients">
       <div className="projects-container">
         <div className="our-cases">Our cases</div>
         <HorizontalScrollCarousel />
+      </div>
+      <div className="outro-clients">
+        We look forward to seeing your project here!
       </div>
     </div>
   );

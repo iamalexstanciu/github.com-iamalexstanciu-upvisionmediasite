@@ -42,7 +42,7 @@
   transform-origin: left center;
 }
 
-.image {
+.image-clients {
   border-radius: 5%;
   width: 20%;
   /* Adjust the image width as needed */
@@ -54,7 +54,14 @@
 }
 
 /* Optional: Add hover effect */
-.image:hover {
+.image-clients:hover {
   transform: scale(1.1);
   /* Increase image size on hover */
+}
+
+.outro-clients {
+  font-size: 35px;
+  color: rgb(126, 126, 126);
+  position: relative;
+  top: 20%;
 }
