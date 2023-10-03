@@ -14,48 +14,43 @@ function HorizontalScrollCarousel() {
     target: targetRef,
   });
 
-  // // Adjust this transformation based on your design
-  const x = useTransform(scrollYProgress, [0, 0.6], ["-40%", "50%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["-55%", "120%"]);
 
   return (
     <div ref={targetRef} className="carousel-container">
-      <motion.div
-        style={{
-          x,
-        }}
-        className="carousel-track">
+      <motion.div style={{ x }} className="carousel-track">
         <img
-          className="image-clients"
+          className="image"
           src={Project1}
           draggable="false"
           alt="upvision media agency"
         />
         <img
-          className="image-clients"
+          className="image"
           draggable="false"
           src={Project2}
           alt="upvision media agency"
         />
         <img
-          className="image-clients"
+          className="image"
           src={Project3}
           draggable="false"
           alt="upvision media agency"
         />
         <img
-          className="image-clients"
+          className="image"
           src={Project4}
           draggable="false"
           alt="upvision media agency"
         />
         <img
-          className="image-clients"
+          className="image"
           src={Project5}
           draggable="false"
           alt="upvision media agency"
         />
         <img
-          className="image-clients"
+          className="image"
           src={Project6}
           draggable="false"
           alt="upvision media agency"
@@ -68,12 +63,10 @@ function HorizontalScrollCarousel() {
 function Clients() {
   return (
     <div className="clients-section" id="clients">
+    
       <div className="projects-container">
-        <div className="our-cases">Our cases</div>
+          <div className="our-cases">Our cases</div>
         <HorizontalScrollCarousel />
-      </div>
-      <div className="outro-clients">
-        We look forward to seeing your project here!
       </div>
     </div>
   );

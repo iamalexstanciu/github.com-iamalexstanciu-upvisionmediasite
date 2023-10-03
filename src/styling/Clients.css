@@ -1,11 +1,10 @@
-
-
 .clients-section,
 .clients-section * {
   box-sizing: border-box;
 }
 
 .clients-section {
+  flex-shrink: 0;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -20,18 +19,18 @@
   background-clip: text;
   text-align: left;
   max-width: 35%;
-  font: 200 140px/80% 'Orbitron',
-    courier,
-    sans-serif;
+  font: 500 120px/136.1% 'LT Binary Neue Round', sans-serif;
   position: absolute;
-  left: 5%;
-  top: 30%;
+  left: 2%;
+  top: 20%;
 }
 
 
+/* Add these styles to your Clients.css or a separate CSS file */
+
 .carousel-container {
+  overflow: hidden;
   top: 10rem;
-  width: fit-content;
   position: relative;
 }
 
@@ -42,9 +41,8 @@
   transform-origin: left center;
 }
 
-.image-clients {
-  border-radius: 5%;
-  width: 20%;
+.image {
+  width: 300px;
   /* Adjust the image width as needed */
   height: auto;
   /* Maintain aspect ratio */
@@ -54,14 +52,7 @@
 }
 
 /* Optional: Add hover effect */
-.image-clients:hover {
+.image:hover {
   transform: scale(1.1);
   /* Increase image size on hover */
-}
-
-.outro-clients {
-  font-size: 35px;
-  color: rgb(126, 126, 126);
-  position: relative;
-  top: 20%;
 }
